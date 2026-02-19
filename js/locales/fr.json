@@ -1,0 +1,166 @@
+{
+  "app": {
+    "title": "Test de Type de Stress 🔥 - DopaBrain",
+    "description": "Épuisement ? Anxiété ? Colère ? Évitement ? Découvrez votre mode de réaction au stress avec 20 questions.",
+    "loading": "Chargement..."
+  },
+  "intro": {
+    "title": "Test de Type de Stress",
+    "sub": "Quel est votre mode de réaction au stress ?",
+    "desc": "Épuisement, anxiété, colère, évitement — comment réagissez-vous lorsque vous êtes sous stress ?",
+    "meta1": "📋 20 questions",
+    "meta2": "⏱ ~3 minutes",
+    "meta3": "🔒 Gratuit",
+    "start": "Commencer le test",
+    "userCount": "Plus de 32 000 personnes ont déjà passé ce test"
+  },
+  "scale": {
+    "never": "Jamais",
+    "sometimes": "Parfois",
+    "often": "Souvent",
+    "always": "Toujours"
+  },
+  "analyzing": {
+    "text": "Analyse de votre type de stress...",
+    "step1": "Analyse des patterns de réponse...",
+    "step2": "Correspondance du type...",
+    "step3": "Préparation des stratégies personnalisées..."
+  },
+  "result": {
+    "dominant": "Type principal",
+    "scoreBreakdown": "Score par type",
+    "warning": "⚠️ Signaux d'alerte",
+    "strategy": "💊 Stratégies d'adaptation",
+    "recommended": "🔗 Applications recommandées",
+    "copyLink": "🔗 Copier le lien",
+    "tweet": "🐦 Partager sur Twitter",
+    "copied": "Lien copié !",
+    "retry": "↩ Refaire le test",
+    "back": "Accueil DopaBrain"
+  },
+  "share": {
+    "text": "Mon type de stress est {type} ! Découvre le tien 👇"
+  },
+  "types": {
+    "burnout": {
+      "emoji": "🔥",
+      "name": "Épuisement",
+      "chip": "Type épuisé",
+      "subtitle": "Usé par le travail excessif et les responsabilités",
+      "desc": "Vous êtes le type épuisement — quelqu'un qui s'est poussé sans relâche sous le poids des responsabilités et des devoirs. Même quand votre énergie est à bout, vous ressentez de la culpabilité à vous reposer, et ce que vous aimiez autrefois a commencé à sembler sans sens. L'épuisement n'est pas une simple fatigue ; c'est un épuisement profond des ressources physiques, émotionnelles et cognitives. Sans attention, il peut évoluer vers une dépression chronique ou une maladie physique grave — d'où l'importance de faire du soin de soi votre priorité absolue maintenant.",
+      "warnings": [
+        "Fatigue extrême qui ne s'améliore pas même après le repos",
+        "Cynisme croissant et détachement émotionnel du travail et de la vie",
+        "Paralysie cognitive : difficulté à se concentrer ou à prendre de simples décisions",
+        "Symptômes physiques : maux de tête, problèmes digestifs, immunité affaiblie"
+      ],
+      "strategies": [
+        "Planifiez 30 minutes de 'ne rien faire' dans votre agenda chaque jour",
+        "Établissez des limites numériques : désactivez les notifications professionnelles après le travail",
+        "Pratiquez la monotâche : concentrez-vous pleinement sur une seule chose à la fois",
+        "Planifiez au moins une activité plaisante ou un loisir par semaine — c'est non négociable",
+        "Exercez-vous à dire honnêtement à quelqu'un de confiance : 'Je suis en difficulté'"
+      ],
+      "apps": ["white-noise", "pomodoro-timer", "detox-timer"]
+    },
+    "anxiety": {
+      "emoji": "😰",
+      "name": "Anxiété",
+      "chip": "Type inquiet chronique",
+      "subtitle": "Un cycle incessant d'inquiétudes et de tensions",
+      "desc": "Vous êtes le type anxieux — votre esprit se repose rarement, tournant sans cesse autour de grandes et petites inquiétudes. Vous avez tendance à imaginer encore et encore les pires scénarios, et ces pensées perturbent votre sommeil et rendent les activités quotidiennes difficiles. L'anxiété gaspille de l'énergie en vous maintenant piégé dans le passé ou le futur et vous empêche de profiter du présent. La tension chronique affecte aussi le corps — palpitations, tensions musculaires et problèmes digestifs qui peuvent, si ignorés, évoluer en trouble anxieux.",
+      "warnings": [
+        "Rumination incessante — pensées anxieuses qui se répètent en boucle",
+        "Insomnie ou sommeil médiocre menant à une fatigue chronique",
+        "Hypersensibilité aux opinions des autres et anxiété sociale aggravée",
+        "Symptômes physiques : maux de tête, crampes d'estomac, tensions musculaires persistantes"
+      ],
+      "strategies": [
+        "Limitez votre 'temps d'inquiétude' à 15 minutes par jour ; reportez toutes les autres inquiétudes",
+        "Pratiquez la respiration 4-7-8 (inspiration 4 s · rétention 7 s · expiration 8 s) trois fois par jour",
+        "Notez vos inquiétudes et classez-les en 'contrôlables' et 'incontrôlables'",
+        "Essayez la méditation de pleine conscience ou la relaxation musculaire progressive",
+        "Réduisez la caféine et l'alcool et maintenez un horaire de sommeil régulier"
+      ],
+      "apps": ["white-noise", "detox-timer", "pomodoro-timer"]
+    },
+    "anger": {
+      "emoji": "😤",
+      "name": "Colère",
+      "chip": "Type explosif",
+      "subtitle": "Le stress qui éclate en colère intense",
+      "desc": "Vous êtes le type colère — lorsque le stress s'accumule, il explose sous forme de colère intense, parfois écrasante. Vous êtes particulièrement sensible à l'injustice et suivez souvent le schéma de réprimer vos sentiments jusqu'à ce qu'ils s'explosent d'un coup. La colère est une émotion naturelle, mais la colère non maîtrisée endommage des relations importantes et affecte sérieusement votre vie professionnelle. Derrière la colère se cachent souvent des sentiments plus profonds — blessure, peur ou impuissance — qui méritent d'être explorés.",
+      "warnings": [
+        "Paroles ou actes impulsifs qui endommagent des relations proches",
+        "Culpabilité intense et haine de soi après une explosion",
+        "Atteinte à la réputation et escalade des conflits au travail",
+        "Impact physique : tension artérielle élevée et risque cardiovasculaire accru"
+      ],
+      "strategies": [
+        "Lorsque la colère monte, quittez immédiatement la situation et appliquez la 'règle des 10 secondes'",
+        "Tenez un journal de colère pour identifier les situations qui vous déclenchent systématiquement",
+        "Pratiquez la relaxation musculaire progressive : crispez chaque groupe musculaire 5 s puis relâchez",
+        "Exprimez vos sentiments avec des 'messages en je' : 'Je me mets en colère quand...'",
+        "Utilisez l'exercice aérobique régulier comme exutoire sain pour l'énergie de stress accumulée"
+      ],
+      "apps": ["white-noise", "pomodoro-timer", "detox-timer"]
+    },
+    "avoidance": {
+      "emoji": "😔",
+      "name": "Évitement",
+      "chip": "Type fuyant",
+      "subtitle": "Fuir les problèmes plutôt que les affronter",
+      "desc": "Vous êtes le type évitement — face au stress, votre instinct est de reculer, d'ignorer ou de fuir plutôt que d'affronter. Trouver refuge dans le défilement, les jeux ou l'agitation procure un soulagement temporaire, mais les problèmes non résolus s'accumulent et reviennent sous forme de crise plus importante. L'évitement offre une protection émotionnelle à court terme, mais érode à long terme la confiance en soi et approfondit le sentiment d'impuissance. Faire de petits pas vers les problèmes aujourd'hui peut prévenir un grand effondrement demain.",
+      "warnings": [
+        "Les problèmes non résolus s'accumulent jusqu'à éclater en crise",
+        "Dépendance croissante aux réseaux sociaux, aux jeux ou à la nourriture comme évasion",
+        "Opportunités manquées à cause de la procrastination chronique sur des décisions importantes",
+        "Baisse de l'estime de soi et impuissance acquise ('ça ne fonctionnera de toute façon pas')"
+      ],
+      "strategies": [
+        "La 'règle des 5 minutes' : engagez-vous à faire la tâche redoutée pendant seulement 5 minutes — et voyez ce qui se passe",
+        "Décomposez le problème évité en la seule et unique action minimale suivante et ne faites que celle-là",
+        "Utilisez une application pour limiter réseaux sociaux et jeux à une heure par jour",
+        "Ouvrez-vous à un ami de confiance et cherchez des solutions ensemble",
+        "Imaginez vivacement le résultat positif de la résolution du problème pour augmenter votre motivation"
+      ],
+      "apps": ["detox-timer", "pomodoro-timer", "white-noise"]
+    }
+  },
+  "questions": {
+    "q1": "Je me sens déjà fatigué(e) lorsque je me réveille le matin",
+    "q2": "Même après le travail, je n'arrive pas à arrêter de penser aux tâches et responsabilités",
+    "q3": "Ce que j'aimais autrefois ne me semble plus agréable ni significatif",
+    "q4": "Je me demande combien de temps encore je pourrai continuer ainsi",
+    "q5": "Même après un repos adéquat, je ne me sens pas ressourcé(e)",
+    "q6": "Même les petites choses m'inquiètent et ne me quittent pas l'esprit",
+    "q7": "J'imagine constamment les pires scénarios possibles",
+    "q8": "J'ai du mal à m'endormir ou je me réveille fréquemment la nuit",
+    "q9": "Je me soucie excessivement de ce que les autres pensent de moi",
+    "q10": "Je me sens tendu(e) ou anxieux(se) sans raison apparente",
+    "q11": "Quand je suis stressé(e), je me mets facilement en colère pour des broutilles",
+    "q12": "J'ai du mal à tolérer les situations injustes",
+    "q13": "Je me suis laissé(e) emporter émotionnellement après m'être retenu(e) trop longtemps",
+    "q14": "Quand je suis en colère, des mots durs ou des insultes m'échappent",
+    "q15": "J'agis impulsivement d'une façon que je regrette ensuite",
+    "q16": "Même quand j'ai des problèmes à résoudre, je les ignore délibérément",
+    "q17": "Quand je suis stressé(e), je me perds excessivement dans les réseaux sociaux, les jeux ou la télé",
+    "q18": "Je reporte constamment des décisions importantes",
+    "q19": "Je me garde délibérément occupé(e) pour ne pas ressentir mes émotions",
+    "q20": "Fuir un problème apporte un soulagement momentané, mais la situation finit par empirer"
+  },
+  "apps": {
+    "white-noise": {
+      "name": "Bruit Blanc",
+      "desc": "Sons ambiants pour dormir et se concentrer"
+    },
+    "pomodoro-timer": {
+      "name": "Minuteur Pomodoro",
+      "desc": "Travaillez efficacement sans vous épuiser"
+    },
+    "detox-timer": {
+      "name": "Minuteur Détox Numérique",
+      "desc": "Brisez l'habitude de fuite numérique"
+    }
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "app": {
+    "title": "Stres Tipi Testi 🔥 - DopaBrain",
+    "description": "Tükenmişlik mi? Kaygı mı? Öfke mi? Kaçınma mı? 20 soruyla stres tepki kalıbınızı keşfedin.",
+    "loading": "Yükleniyor..."
+  },
+  "intro": {
+    "title": "Stres Tipi Testi",
+    "sub": "Stres tepki kalıbınız nedir?",
+    "desc": "Tükenmişlik, kaygı, öfke, kaçınma — stres altındayken nasıl tepki veriyorsunuz?",
+    "meta1": "📋 20 soru",
+    "meta2": "⏱ ~3 dakika",
+    "meta3": "🔒 Ücretsiz",
+    "start": "Teste başla",
+    "userCount": "32.000'den fazla kişi bu testi tamamladı"
+  },
+  "scale": {
+    "never": "Hiç",
+    "sometimes": "Bazen",
+    "often": "Sıklıkla",
+    "always": "Her zaman"
+  },
+  "analyzing": {
+    "text": "Stres tipiniz analiz ediliyor...",
+    "step1": "Yanıt kalıpları analiz ediliyor...",
+    "step2": "Tip eşleştiriliyor...",
+    "step3": "Kişisel stratejiler hazırlanıyor..."
+  },
+  "result": {
+    "dominant": "Birincil tip",
+    "scoreBreakdown": "Tipe göre puan",
+    "warning": "⚠️ Uyarı işaretleri",
+    "strategy": "💊 Başa çıkma stratejileri",
+    "recommended": "🔗 Önerilen uygulamalar",
+    "copyLink": "🔗 Bağlantıyı kopyala",
+    "tweet": "🐦 Twitter'da paylaş",
+    "copied": "Bağlantı kopyalandı!",
+    "retry": "↩ Testi tekrar yap",
+    "back": "DopaBrain Ana Sayfa"
+  },
+  "share": {
+    "text": "Stres tipim {type}! Seninkini de öğren 👇"
+  },
+  "types": {
+    "burnout": {
+      "emoji": "🔥",
+      "name": "Tükenmişlik",
+      "chip": "Tükenmiş tip",
+      "subtitle": "Aşırı iş ve sorumlulukla yıpranmış tip",
+      "desc": "Tükenmişlik tipindesiniz — sorumluluk ve görev baskısı altında kendinizi uzun süre zorunlu bıraktınız. Enerjiniz tükendiğinde bile dinlenmekten suçluluk duyuyor ve eskiden sevdiğiniz şeyler anlamsız hissettirmeye başlıyor. Tükenmişlik yalnızca yorgunluk değil; fiziksel, duygusal ve bilişsel kaynakların derin bir tükenmesidir. Tedavi edilmezse kronik depresyona veya ciddi fiziksel hastalıklara dönüşebilir — bu yüzden kendinize bakmak şu an en yüksek önceliğinizdir.",
+      "warnings": [
+        "Dinlenmekle bile iyileşmeyen aşırı yorgunluk",
+        "İş ve yaşama yönelik artan sinizm ve duygusal kopukluk",
+        "Odaklanmayı veya basit kararlar almayı zorlaştıran bilişsel felç",
+        "Baş ağrısı, sindirim sorunları, zayıflamış bağışıklık gibi fiziksel belirtiler"
+      ],
+      "strategies": [
+        "Her gün takviminize 30 dakika 'hiçbir şey yapmama zamanı' ekleyin",
+        "Mesai saatleri dışında iş bildirimlerini kapatarak dijital sınırlar belirleyin",
+        "Tek görev alışkanlığı edinin: bir seferde tek bir şeye tam odaklanın",
+        "Haftada en az bir hobi veya keyifli etkinlik planlayın — bu tartışılmaz",
+        "Güvendiğiniz birine dürüstçe 'zorlanıyorum' demeyi pratik edin"
+      ],
+      "apps": ["white-noise", "pomodoro-timer", "detox-timer"]
+    },
+    "anxiety": {
+      "emoji": "😰",
+      "name": "Kaygı",
+      "chip": "Kronik endişe tipi",
+      "subtitle": "Sürekli endişe ve gerilim döngüsü",
+      "desc": "Kaygı tipindesiniz — zihniniz büyük küçük endişelerle neredeyse hiç dinlenmez. En kötü senaryoları tekrar tekrar hayal etme eğilimindesiniz ve bu düşünceler uykunuzu bozarak günlük aktiviteleri zorlaştırıyor. Kaygı, sizi geçmişe veya geleceğe hapsederek enerji tüketiyor ve şu anın tadını çıkarmanıza engel oluyor. Kronik gerilim bedeni de etkiler — kalp çarpıntısı, kas gerginliği ve sindirim sorunları, görmezden gelinirse kaygı bozukluğuna dönüşebilir.",
+      "warnings": [
+        "Durmayan ruminasyon — döngü halinde tekrarlayan endişe düşünceleri",
+        "Kronik yorgunluğa yol açan uykusuzluk veya kötü uyku",
+        "Başkalarının görüşüne karşı aşırı duyarlılık ve sosyal kaygının kötüleşmesi",
+        "Fiziksel belirtiler: baş ağrısı, mide krampları, sürekli kas gerginliği"
+      ],
+      "strategies": [
+        "'Endişe sürenizi' günlük 15 dakikayla sınırlandırın; diğer tüm endişeleri erteleyin",
+        "Günde üç kez 4-7-8 nefes egzersizi yapın (4 sn nefes al · 7 sn tut · 8 sn ver)",
+        "Endişelerinizi yazıp 'kontrol edilebilir' ve 'kontrolüm dışında' olarak ayırın",
+        "Şu ana odaklanmak için farkındalık meditasyonu veya progresif kas gevşemesi deneyin",
+        "Kafein ve alkolü azaltın ve tutarlı bir uyku programı sürdürün"
+      ],
+      "apps": ["white-noise", "detox-timer", "pomodoro-timer"]
+    },
+    "anger": {
+      "emoji": "😤",
+      "name": "Öfke",
+      "chip": "Patlayıcı tip",
+      "subtitle": "Stresin yoğun öfke olarak dışa vurulduğu tip",
+      "desc": "Öfke tipindesiniz — stres biriktiğinde yoğun, bazen bunaltıcı bir öfke olarak patlıyor. Adaletsizliğe karşı özellikle duyarlısınız ve duyguları bastırıp hepsini bir anda boşaltma döngüsünü tekrarlıyorsunuz. Öfke doğal bir duygudur; ancak kontrol edilemeyen öfke önemli ilişkilere zarar verir ve profesyonel yaşamı ciddi biçimde etkiler. Öfkenin arkasında çoğunlukla daha derin duygular — incinme, korku ya da çaresizlik — gizlidir; bunları keşfetmek önemlidir.",
+      "warnings": [
+        "Yakın ilişkilere zarar veren dürtüsel söz veya eylemler",
+        "Patlama sonrası yoğun suçluluk ve öz nefreti",
+        "İş yerinde itibar kaybı ve çatışmaların tırmanması",
+        "Yüksek tansiyon ve artan kardiyovasküler risk gibi fiziksel etkiler"
+      ],
+      "strategies": [
+        "Öfke yükseldiğinde hemen ortamdan ayrılın ve '10 saniye kuralı'nı uygulayın",
+        "Hangi durumların sizi istikrarlı biçimde tetiklediğini bulmak için öfke günlüğü tutun",
+        "Progresif kas gevşemesi: her kas grubunu 5 saniye gerin sonra bırakın",
+        "Suçlamak yerine 'ben ifadeleri' kullanın: 'Ben ... olduğunda öfke hissediyorum'",
+        "Birikmiş stres enerjisini sağlıklı biçimde serbest bırakmak için düzenli aerobik egzersiz yapın"
+      ],
+      "apps": ["white-noise", "pomodoro-timer", "detox-timer"]
+    },
+    "avoidance": {
+      "emoji": "😔",
+      "name": "Kaçınma",
+      "chip": "Kaçış tipi",
+      "subtitle": "Sorunlarla yüzleşmek yerine onlardan kaçan tip",
+      "desc": "Kaçınma tipindesiniz — stresle karşılaştığınızda içgüdünüz yüzleşmek yerine geri çekilmek, görmezden gelmek veya kaçmaktır. Sosyal medyada, oyunlarda veya meşgul olmakta sığınak bulmak geçici bir rahatlama sağlar; ancak çözülmemiş sorunlar birikir ve sonunda daha büyük bir kriz olarak geri döner. Kaçınma kısa vadeli duygusal koruma sunar, ancak uzun vadede öz güveninizi aşındırır ve çaresizlik hissini derinleştirir. Bugün küçük sorunlara adım atmak, yarın büyük bir çöküşü önler.",
+      "warnings": [
+        "Çözülmemiş sorunların birikerek krize dönüşmesi",
+        "Sosyal medya, oyun veya yiyeceğe kaçış olarak artan bağımlılık",
+        "Önemli kararları kronik erteleme nedeniyle fırsatların kaçırılması",
+        "Öz güven düşüşü ve 'nasılsa işe yaramaz' öğrenilmiş çaresizliği"
+      ],
+      "strategies": [
+        "'5 dakika kuralı': korkunç görevi yalnızca 5 dakika yapmayı taahhüt edin ve ne olduğunu görün",
+        "Kaçınılan sorunu tek bir en küçük sonraki eyleme bölün ve yalnızca onu yapın",
+        "Sosyal medya ve oyunları günlük bir saatle sınırlandırmak için bir uygulama kullanın",
+        "Güvendiğiniz bir arkadaşa açılın ve birlikte çözüm arayın",
+        "Sorunu çözmenin olumlu sonucunu canlı biçimde hayal ederek motivasyonunuzu artırın"
+      ],
+      "apps": ["detox-timer", "pomodoro-timer", "white-noise"]
+    }
+  },
+  "questions": {
+    "q1": "Sabah uyandığımda zaten yorgun hissediyorum",
+    "q2": "İşten sonra bile görevler ve sorumluluklar hakkında düşünmeyi bırakamıyorum",
+    "q3": "Eskiden keyif aldığım şeyler artık zevkli veya anlamlı gelmiyor",
+    "q4": "Bu şekilde ne kadar daha devam edebileceğimi merak ediyorum",
+    "q5": "Yeterince dinlensem bile enerjimin yenilendiğini hissetmiyorum",
+    "q6": "Küçük şeyler bile endişemi tetikliyor ve aklımdan çıkmıyor",
+    "q7": "Durumlar hakkında sürekli en kötü senaryoları hayal ediyorum",
+    "q8": "Uyumakta güçlük çekiyor ya da gece sık sık uyanıyorum",
+    "q9": "Başkalarının benim hakkımda ne düşündüğü konusunda aşırı endişeleniyorum",
+    "q10": "Belirgin bir neden olmaksızın gergin veya kaygılı hissediyorum",
+    "q11": "Stres altındayken küçük şeyler bile kolayca sinirimi bozuyor",
+    "q12": "Adaletsiz durumları tolere etmekte güçlük çekiyorum",
+    "q13": "Uzun süre bastırdıktan sonra duygusal olarak patladım",
+    "q14": "Öfkelendiğimde sert sözler veya küfür ağzımdan çıkıyor",
+    "q15": "Sonradan pişman olduğum şekillerde dürtüsel davranıyorum",
+    "q16": "Çözülmesi gereken sorunlar olsa bile bunları kasıtlı olarak görmezden geliyorum",
+    "q17": "Stres altındayken sosyal medyaya, oyunlara veya TV'ye aşırı dalıyorum",
+    "q18": "Önemli kararları sürekli erteliyorum",
+    "q19": "Duygularımı hissetmemek için kendimi kasıtlı olarak meşgul tutuyorum",
+    "q20": "Sorundan kaçmak geçici rahatlama sağlıyor ama durum sonunda kötüleşiyor"
+  },
+  "apps": {
+    "white-noise": {
+      "name": "Beyaz Gürültü",
+      "desc": "Uyku ve konsantrasyon için ortam sesleri"
+    },
+    "pomodoro-timer": {
+      "name": "Pomodoro Zamanlayıcısı",
+      "desc": "Tükenmeden verimli çalışın"
+    },
+    "detox-timer": {
+      "name": "Dijital Detoks Zamanlayıcısı",
+      "desc": "Dijital kaçış alışkanlığından kurtulun"
+    }
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "app": {
+    "title": "Stress Type Test 🔥 - DopaBrain",
+    "description": "Burnout? Anxiety? Anger? Avoidance? Discover your stress response pattern with 20 questions and find personalized coping strategies.",
+    "loading": "Loading..."
+  },
+  "intro": {
+    "title": "Stress Type Test",
+    "sub": "What's your stress response pattern?",
+    "desc": "Burnout, Anxiety, Anger, Avoidance — how do you react when you're under stress?",
+    "meta1": "📋 20 Questions",
+    "meta2": "⏱ ~3 Minutes",
+    "meta3": "🔒 Free",
+    "start": "Start the Test",
+    "userCount": "32,000+ people have taken this test"
+  },
+  "scale": {
+    "never": "Never",
+    "sometimes": "Sometimes",
+    "often": "Often",
+    "always": "Always"
+  },
+  "analyzing": {
+    "text": "Analyzing your stress type...",
+    "step1": "Analyzing response patterns...",
+    "step2": "Matching your type...",
+    "step3": "Preparing personalized strategies..."
+  },
+  "result": {
+    "dominant": "Primary Type",
+    "scoreBreakdown": "Score by Type",
+    "warning": "⚠️ Warning Signs",
+    "strategy": "💊 Coping Strategies",
+    "recommended": "🔗 Recommended Apps",
+    "copyLink": "🔗 Copy Link",
+    "tweet": "🐦 Share on Twitter",
+    "copied": "Link copied to clipboard!",
+    "retry": "↩ Retake the Test",
+    "back": "DopaBrain Home"
+  },
+  "share": {
+    "text": "My stress type is {type}! Find out yours 👇"
+  },
+  "types": {
+    "burnout": {
+      "emoji": "🔥",
+      "name": "Burnout",
+      "chip": "Exhausted type",
+      "subtitle": "Worn out by excessive work and obligations",
+      "desc": "You are the Burnout type — someone who has pushed themselves relentlessly under the weight of responsibility and duty. Even when your energy is depleted, you feel guilty for resting, and things you once loved have started to feel meaningless. Burnout is not mere tiredness; it is a profound depletion of physical, emotional, and cognitive resources. If left unaddressed, it can develop into chronic depression or serious physical illness — making self-care your highest priority right now.",
+      "warnings": [
+        "Extreme fatigue that doesn't improve even after rest",
+        "Growing cynicism and emotional detachment from work and life",
+        "Cognitive paralysis — difficulty focusing or making simple decisions",
+        "Physical symptoms: headaches, digestive issues, weakened immunity"
+      ],
+      "strategies": [
+        "Schedule 30 minutes of 'doing nothing' in your calendar every day",
+        "Set strict digital boundaries — turn off work notifications after hours",
+        "Practice single-tasking: focus on one thing at a time, fully",
+        "Book at least one enjoyable hobby or activity per week, non-negotiably",
+        "Practice telling a trusted person honestly: 'I'm struggling'"
+      ],
+      "apps": ["white-noise", "pomodoro-timer", "detox-timer"]
+    },
+    "anxiety": {
+      "emoji": "😰",
+      "name": "Anxiety",
+      "chip": "Chronic worrier",
+      "subtitle": "A constant cycle of worry and tension",
+      "desc": "You are the Anxiety type — your mind is rarely quiet, cycling through worries large and small. You tend to imagine worst-case scenarios repeatedly, and these thoughts disrupt your sleep and make everyday activities difficult. Anxiety drains energy by locking you in the past or future, preventing you from enjoying the present. Chronic tension also affects the body, causing increased heart rate, muscle tightness, and digestive problems that can worsen into an anxiety disorder if ignored.",
+      "warnings": [
+        "Unstoppable rumination — worry thoughts that loop endlessly",
+        "Insomnia or poor sleep leading to chronic fatigue",
+        "Heightened sensitivity to others' opinions and social anxiety",
+        "Physical symptoms: headaches, stomach cramps, persistent muscle tension"
+      ],
+      "strategies": [
+        "Limit your 'worry time' to 15 minutes a day — postpone all other worrying",
+        "Practice 4-7-8 breathing (inhale 4s · hold 7s · exhale 8s) three times daily",
+        "Write your worries down and sort them into 'controllable' vs. 'uncontrollable'",
+        "Try mindfulness meditation or progressive muscle relaxation to anchor in the present",
+        "Reduce caffeine and alcohol, and commit to a consistent sleep schedule"
+      ],
+      "apps": ["white-noise", "detox-timer", "pomodoro-timer"]
+    },
+    "anger": {
+      "emoji": "😤",
+      "name": "Anger",
+      "chip": "Explosive type",
+      "subtitle": "Stress that erupts as intense anger",
+      "desc": "You are the Anger type — when stress builds up, it explodes outward as intense, sometimes overwhelming anger. You are especially sensitive to injustice, and you often follow a cycle of suppressing feelings until they burst all at once. Anger is a natural emotion, but uncontrolled anger can damage important relationships and seriously affect your professional life. Beneath the anger often lie deeper feelings — hurt, fear, or helplessness — that are worth exploring.",
+      "warnings": [
+        "Impulsive words or actions that damage close relationships",
+        "Intense guilt and self-loathing after an outburst",
+        "Reputation damage and escalating workplace conflicts",
+        "Physical toll: elevated blood pressure and increased cardiovascular risk"
+      ],
+      "strategies": [
+        "When anger rises, immediately remove yourself and apply the '10-second rule'",
+        "Keep an anger journal to identify which situations consistently trigger you",
+        "Practice progressive muscle relaxation: tense each muscle group 5 seconds, then release",
+        "Express feelings using 'I statements': 'I feel angry when...' instead of accusation",
+        "Use regular aerobic exercise as a healthy outlet for accumulated stress energy"
+      ],
+      "apps": ["white-noise", "pomodoro-timer", "detox-timer"]
+    },
+    "avoidance": {
+      "emoji": "😔",
+      "name": "Avoidance",
+      "chip": "Escape artist",
+      "subtitle": "Retreating from problems rather than facing them",
+      "desc": "You are the Avoidance type — when faced with stress, your instinct is to retreat, ignore, or escape rather than confront. You find temporary relief in scrolling, gaming, or staying busy, but unresolved problems stack up and eventually return as a larger crisis. Avoidance gives short-term emotional protection, yet long-term it erodes your self-confidence and deepens feelings of helplessness. Practising small acts of confrontation today can prevent a much bigger collapse tomorrow.",
+      "warnings": [
+        "Unresolved problems accumulating until they erupt into crisis",
+        "Growing dependence on social media, gaming, or food as escape",
+        "Missed opportunities from chronic procrastination on important decisions",
+        "Declining self-confidence and learned helplessness ('it won't work anyway')"
+      ],
+      "strategies": [
+        "The '5-Minute Rule': commit to doing a scary task for just 5 minutes — then see what happens",
+        "Break the avoided problem into the single smallest next action and do only that",
+        "Use an app to cap social media and gaming at one hour per day",
+        "Open up to a trusted friend and brainstorm solutions together",
+        "Vividly imagine the positive outcome of resolving the problem to boost motivation"
+      ],
+      "apps": ["detox-timer", "pomodoro-timer", "white-noise"]
+    }
+  },
+  "questions": {
+    "q1": "I already feel tired when I wake up in the morning",
+    "q2": "Even after work, I can't stop thinking about tasks and responsibilities",
+    "q3": "Things I used to enjoy no longer feel pleasurable or meaningful",
+    "q4": "I wonder how much longer I can keep going like this",
+    "q5": "Even after adequate rest, my energy doesn't feel restored",
+    "q6": "Even small things worry me and won't leave my mind",
+    "q7": "I keep imagining worst-case scenarios about situations",
+    "q8": "I have trouble falling asleep or I wake up frequently during the night",
+    "q9": "I'm overly concerned about what others think of me",
+    "q10": "I feel tense or anxious for no apparent reason",
+    "q11": "When stressed, I get angry easily over minor things",
+    "q12": "I find it hard to tolerate unfair situations",
+    "q13": "I have burst out emotionally after holding things in for too long",
+    "q14": "When I'm angry, harsh words or insults come out",
+    "q15": "I act impulsively in ways I later regret",
+    "q16": "Even when I have problems to solve, I deliberately ignore them",
+    "q17": "When stressed, I excessively lose myself in social media, games, or TV",
+    "q18": "I keep putting off important decisions",
+    "q19": "I deliberately keep myself busy to avoid feeling my emotions",
+    "q20": "Escaping from a problem brings temporary relief, but the situation eventually gets worse"
+  },
+  "apps": {
+    "white-noise": {
+      "name": "White Noise",
+      "desc": "Ambient sounds for sleep and focus"
+    },
+    "pomodoro-timer": {
+      "name": "Pomodoro Timer",
+      "desc": "Work efficiently without burning out"
+    },
+    "detox-timer": {
+      "name": "Digital Detox Timer",
+      "desc": "Break digital escape habits"
+    }
+  }
+}

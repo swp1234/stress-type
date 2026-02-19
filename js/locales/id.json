@@ -1,0 +1,166 @@
+{
+  "app": {
+    "title": "Tes Tipe Stres 🔥 - DopaBrain",
+    "description": "Burnout? Kecemasan? Kemarahan? Penghindaran? Temukan pola respons stres Anda dengan 20 pertanyaan.",
+    "loading": "Memuat..."
+  },
+  "intro": {
+    "title": "Tes Tipe Stres",
+    "sub": "Apa pola respons stres Anda?",
+    "desc": "Burnout, kecemasan, kemarahan, penghindaran — bagaimana Anda bereaksi saat mengalami stres?",
+    "meta1": "📋 20 pertanyaan",
+    "meta2": "⏱ ~3 menit",
+    "meta3": "🔒 Gratis",
+    "start": "Mulai tes",
+    "userCount": "Lebih dari 32.000 orang sudah ikut tes ini"
+  },
+  "scale": {
+    "never": "Tidak pernah",
+    "sometimes": "Kadang-kadang",
+    "often": "Sering",
+    "always": "Selalu"
+  },
+  "analyzing": {
+    "text": "Menganalisis tipe stres Anda...",
+    "step1": "Menganalisis pola jawaban...",
+    "step2": "Mencocokkan tipe...",
+    "step3": "Menyiapkan strategi personal..."
+  },
+  "result": {
+    "dominant": "Tipe utama",
+    "scoreBreakdown": "Skor per tipe",
+    "warning": "⚠️ Tanda peringatan",
+    "strategy": "💊 Strategi mengatasi",
+    "recommended": "🔗 Aplikasi yang direkomendasikan",
+    "copyLink": "🔗 Salin tautan",
+    "tweet": "🐦 Bagikan di Twitter",
+    "copied": "Tautan berhasil disalin!",
+    "retry": "↩ Ikuti tes lagi",
+    "back": "Beranda DopaBrain"
+  },
+  "share": {
+    "text": "Tipe stres saya adalah {type}! Cari tahu tipe stresmu 👇"
+  },
+  "types": {
+    "burnout": {
+      "emoji": "🔥",
+      "name": "Burnout",
+      "chip": "Tipe kelelahan",
+      "subtitle": "Kelelahan akibat pekerjaan dan tanggung jawab berlebihan",
+      "desc": "Anda adalah tipe burnout — seseorang yang telah memaksa diri tanpa henti di bawah tekanan tanggung jawab dan kewajiban. Bahkan saat energi sudah habis, Anda merasa bersalah jika beristirahat, dan hal-hal yang dulu Anda sukai mulai terasa tidak bermakna. Burnout bukan sekadar kelelahan biasa; ini adalah penipisan mendalam dari sumber daya fisik, emosional, dan kognitif. Tanpa penanganan, bisa berkembang menjadi depresi kronis atau penyakit fisik serius — menjadikan perawatan diri sebagai prioritas utama Anda sekarang.",
+      "warnings": [
+        "Kelelahan ekstrem yang tidak membaik meski sudah beristirahat",
+        "Sinisme dan jarak emosional yang terus bertumbuh dari pekerjaan dan kehidupan",
+        "Kelumpuhan kognitif: sulit fokus atau membuat keputusan sederhana",
+        "Gejala fisik: sakit kepala, masalah pencernaan, imunitas melemah"
+      ],
+      "strategies": [
+        "Jadwalkan 30 menit 'tidak melakukan apa pun' di kalender Anda setiap hari",
+        "Tetapkan batasan digital: matikan notifikasi pekerjaan setelah jam kerja",
+        "Latih single-tasking: fokus penuh pada satu hal dalam satu waktu",
+        "Jadwalkan setidaknya satu hobi atau aktivitas menyenangkan per minggu",
+        "Latih diri untuk jujur kepada orang terpercaya: 'Aku sedang kelelahan'"
+      ],
+      "apps": ["white-noise", "pomodoro-timer", "detox-timer"]
+    },
+    "anxiety": {
+      "emoji": "😰",
+      "name": "Kecemasan",
+      "chip": "Tipe khawatir kronis",
+      "subtitle": "Siklus kekhawatiran dan ketegangan yang terus-menerus",
+      "desc": "Anda adalah tipe cemas — pikiran Anda jarang tenang, terus berputar dengan kekhawatiran besar dan kecil. Anda cenderung membayangkan skenario terburuk secara berulang, yang mengganggu tidur dan mempersulit aktivitas sehari-hari. Kecemasan menguras energi dengan menjebak Anda di masa lalu atau masa depan sehingga tidak bisa menikmati saat ini. Ketegangan kronis juga memengaruhi tubuh — detak jantung meningkat, otot tegang, masalah pencernaan yang dapat berkembang menjadi gangguan kecemasan jika diabaikan.",
+      "warnings": [
+        "Ruminasi tak berhenti — pikiran cemas yang berputar terus-menerus",
+        "Insomnia atau tidur buruk yang menyebabkan kelelahan kronis",
+        "Hipersensitivitas terhadap pendapat orang lain dan kecemasan sosial yang memburuk",
+        "Gejala fisik: sakit kepala, kram perut, ketegangan otot terus-menerus"
+      ],
+      "strategies": [
+        "Batasi 'waktu khawatir' menjadi 15 menit sehari; tunda semua kekhawatiran di luar itu",
+        "Praktikkan pernapasan 4-7-8 (hirup 4 dtk · tahan 7 dtk · embuskan 8 dtk) tiga kali sehari",
+        "Tuliskan kekhawatiran Anda dan kelompokkan menjadi 'bisa dikendalikan' dan 'tidak bisa'",
+        "Coba meditasi mindfulness atau relaksasi otot progresif untuk fokus pada saat ini",
+        "Kurangi kafein dan alkohol, serta jaga jadwal tidur yang konsisten"
+      ],
+      "apps": ["white-noise", "detox-timer", "pomodoro-timer"]
+    },
+    "anger": {
+      "emoji": "😤",
+      "name": "Kemarahan",
+      "chip": "Tipe eksplosif",
+      "subtitle": "Stres yang meledak sebagai kemarahan intens",
+      "desc": "Anda adalah tipe marah — ketika stres menumpuk, ia meledak sebagai kemarahan intens yang terkadang luar biasa. Anda sangat peka terhadap ketidakadilan dan sering menahan perasaan hingga akhirnya meledak sekaligus. Kemarahan adalah emosi yang wajar, namun kemarahan tak terkendali merusak hubungan penting dan memengaruhi kehidupan profesional Anda secara serius. Di balik kemarahan sering tersembunyi perasaan lebih dalam — luka, ketakutan, atau ketidakberdayaan — yang layak untuk dijelajahi.",
+      "warnings": [
+        "Kata-kata atau tindakan impulsif yang merusak hubungan dekat",
+        "Rasa bersalah dan kebencian diri yang intens setelah ledakan emosi",
+        "Kerusakan reputasi dan eskalasi konflik di tempat kerja",
+        "Dampak fisik: tekanan darah tinggi dan peningkatan risiko kardiovaskular"
+      ],
+      "strategies": [
+        "Saat marah muncul, segera tinggalkan situasi dan terapkan 'aturan 10 detik'",
+        "Catat jurnal kemarahan untuk mengidentifikasi situasi yang selalu memicu Anda",
+        "Latih relaksasi otot progresif: tegangkan setiap kelompok otot 5 dtk lalu lepaskan",
+        "Ungkapkan perasaan dengan 'pernyataan saya': 'Aku merasa marah ketika...'",
+        "Gunakan olahraga aerobik rutin sebagai pelampiasan sehat untuk energi stres yang menumpuk"
+      ],
+      "apps": ["white-noise", "pomodoro-timer", "detox-timer"]
+    },
+    "avoidance": {
+      "emoji": "😔",
+      "name": "Penghindaran",
+      "chip": "Tipe pelarian",
+      "subtitle": "Melarikan diri dari masalah alih-alih menghadapinya",
+      "desc": "Anda adalah tipe penghindaran — saat stres, naluri Anda adalah mundur, mengabaikan, atau melarikan diri daripada menghadapi. Menemukan pelarian di media sosial, game, atau kesibukan memberikan kelegaan sementara, namun masalah yang tidak terselesaikan menumpuk dan akhirnya kembali sebagai krisis yang lebih besar. Penghindaran memberikan perlindungan emosional jangka pendek, namun jangka panjang mengikis rasa percaya diri dan memperdalam perasaan tidak berdaya. Langkah kecil menghadapi masalah hari ini dapat mencegah keruntuhan besar esok hari.",
+      "warnings": [
+        "Masalah yang tidak diselesaikan menumpuk hingga meledak menjadi krisis",
+        "Ketergantungan yang terus bertumbuh pada media sosial, game, atau makanan sebagai pelarian",
+        "Peluang yang terlewat karena penundaan kronis pada keputusan penting",
+        "Penurunan kepercayaan diri dan ketidakberdayaan terpelajari ('tetap tidak akan berhasil')"
+      ],
+      "strategies": [
+        "'Aturan 5 menit': berkomitmenlah untuk mengerjakan tugas menakutkan selama 5 menit saja — lalu lihat apa yang terjadi",
+        "Pecah masalah yang dihindari menjadi satu tindakan kecil berikutnya dan lakukan hanya itu",
+        "Gunakan aplikasi untuk membatasi media sosial dan game menjadi satu jam sehari",
+        "Berbuka kepada teman terpercaya dan cari solusi bersama",
+        "Bayangkan dengan jelas hasil positif dari memecahkan masalah untuk meningkatkan motivasi"
+      ],
+      "apps": ["detox-timer", "pomodoro-timer", "white-noise"]
+    }
+  },
+  "questions": {
+    "q1": "Saya sudah merasa lelah saat bangun di pagi hari",
+    "q2": "Bahkan setelah bekerja, saya tidak bisa berhenti memikirkan tugas dan tanggung jawab",
+    "q3": "Hal-hal yang dulu saya nikmati kini tidak lagi terasa menyenangkan atau bermakna",
+    "q4": "Saya bertanya-tanya berapa lama lagi saya bisa terus seperti ini",
+    "q5": "Bahkan setelah istirahat yang cukup, energi saya terasa tidak pulih",
+    "q6": "Bahkan hal-hal kecil pun membuat saya khawatir dan tidak bisa keluar dari pikiran",
+    "q7": "Saya terus membayangkan skenario terburuk",
+    "q8": "Saya kesulitan tidur atau sering terbangun di malam hari",
+    "q9": "Saya terlalu khawatir tentang apa yang orang lain pikirkan tentang saya",
+    "q10": "Saya merasa tegang atau cemas tanpa alasan yang jelas",
+    "q11": "Saat stres, saya mudah marah karena hal-hal kecil",
+    "q12": "Saya sulit menoleransi situasi yang tidak adil",
+    "q13": "Saya pernah meledak secara emosional setelah lama menahan perasaan",
+    "q14": "Saat marah, kata-kata kasar atau makian keluar begitu saja",
+    "q15": "Saya bertindak impulsif dengan cara yang kemudian saya sesali",
+    "q16": "Meskipun ada masalah yang harus diselesaikan, saya sengaja mengabaikannya",
+    "q17": "Saat stres, saya tenggelam berlebihan dalam media sosial, game, atau TV",
+    "q18": "Saya terus menunda keputusan penting",
+    "q19": "Saya sengaja membuat diri sibuk agar tidak merasakan emosi saya",
+    "q20": "Melarikan diri dari masalah memberikan kelegaan sementara, namun situasi akhirnya memburuk"
+  },
+  "apps": {
+    "white-noise": {
+      "name": "White Noise",
+      "desc": "Suara ambien untuk tidur dan fokus"
+    },
+    "pomodoro-timer": {
+      "name": "Timer Pomodoro",
+      "desc": "Bekerja efisien tanpa kelelahan"
+    },
+    "detox-timer": {
+      "name": "Timer Detoks Digital",
+      "desc": "Putus kebiasaan pelarian digital"
+    }
+  }
+}

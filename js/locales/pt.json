@@ -1,0 +1,166 @@
+{
+  "app": {
+    "title": "Teste de Tipo de Estresse 🔥 - DopaBrain",
+    "description": "Esgotamento? Ansiedade? Raiva? Evitação? Descubra seu padrão de resposta ao estresse com 20 perguntas.",
+    "loading": "Carregando..."
+  },
+  "intro": {
+    "title": "Teste de Tipo de Estresse",
+    "sub": "Qual é o seu padrão de resposta ao estresse?",
+    "desc": "Esgotamento, ansiedade, raiva, evitação — como você reage quando está sob estresse?",
+    "meta1": "📋 20 perguntas",
+    "meta2": "⏱ ~3 minutos",
+    "meta3": "🔒 Gratuito",
+    "start": "Iniciar o teste",
+    "userCount": "Mais de 32.000 pessoas já fizeram este teste"
+  },
+  "scale": {
+    "never": "Nunca",
+    "sometimes": "Às vezes",
+    "often": "Frequentemente",
+    "always": "Sempre"
+  },
+  "analyzing": {
+    "text": "Analisando seu tipo de estresse...",
+    "step1": "Analisando padrões de resposta...",
+    "step2": "Determinando seu tipo...",
+    "step3": "Preparando estratégias personalizadas..."
+  },
+  "result": {
+    "dominant": "Tipo principal",
+    "scoreBreakdown": "Pontuação por tipo",
+    "warning": "⚠️ Sinais de alerta",
+    "strategy": "💊 Estratégias de enfrentamento",
+    "recommended": "🔗 Apps recomendados",
+    "copyLink": "🔗 Copiar link",
+    "tweet": "🐦 Compartilhar no Twitter",
+    "copied": "Link copiado!",
+    "retry": "↩ Refazer o teste",
+    "back": "Início DopaBrain"
+  },
+  "share": {
+    "text": "Meu tipo de estresse é {type}! Descubra o seu 👇"
+  },
+  "types": {
+    "burnout": {
+      "emoji": "🔥",
+      "name": "Esgotamento",
+      "chip": "Tipo exausto",
+      "subtitle": "Desgastado pelo excesso de trabalho e responsabilidades",
+      "desc": "Você é do tipo esgotamento — alguém que se sobrecarregou por muito tempo sob o peso da responsabilidade e do dever. Mesmo com a energia no limite, sente culpa por descansar, e o que antes amava começou a parecer sem sentido. O esgotamento não é mera fadiga; é um profundo esgotamento dos recursos físicos, emocionais e cognitivos. Sem atenção, pode evoluir para depressão crônica ou doenças físicas graves — portanto, o autocuidado é sua maior prioridade agora.",
+      "warnings": [
+        "Fadiga extrema que não melhora mesmo depois de descansar",
+        "Crescente cinismo e distanciamento emocional do trabalho e da vida",
+        "Paralisia cognitiva: dificuldade de concentrar ou tomar decisões simples",
+        "Sintomas físicos: dores de cabeça, problemas digestivos, imunidade debilitada"
+      ],
+      "strategies": [
+        "Reserve 30 minutos diários de 'não fazer nada' na sua agenda",
+        "Estabeleça limites digitais: desligue as notificações de trabalho após o expediente",
+        "Pratique a monotarefa: concentre-se completamente em uma única coisa por vez",
+        "Agende pelo menos uma atividade prazerosa ou hobbie por semana — sem exceções",
+        "Pratique dizer a alguém de confiança: 'Estou passando por um momento difícil'"
+      ],
+      "apps": ["white-noise", "pomodoro-timer", "detox-timer"]
+    },
+    "anxiety": {
+      "emoji": "😰",
+      "name": "Ansiedade",
+      "chip": "Preocupação crônica",
+      "subtitle": "Um ciclo constante de preocupação e tensão",
+      "desc": "Você é do tipo ansioso — sua mente raramente fica quieta, rolando preocupações grandes e pequenas sem parar. Você tende a imaginar repetidamente os piores cenários, e esses pensamentos perturbam o sono e tornam as atividades cotidianas difíceis. A ansiedade drena energia mantendo você preso no passado ou no futuro e impede de aproveitar o presente. A tensão crônica também afeta o corpo — batimentos acelerados, tensão muscular e problemas digestivos que podem evoluir para transtorno de ansiedade se ignorados.",
+      "warnings": [
+        "Ruminação imparável — pensamentos preocupantes que se repetem em loop",
+        "Insônia ou sono ruim levando à fadiga crônica",
+        "Hipersensibilidade à opinião alheia e ansiedade social agravada",
+        "Sintomas físicos: dores de cabeça, cólicas estomacais, tensão muscular persistente"
+      ],
+      "strategies": [
+        "Limite seu 'tempo de preocupação' a 15 minutos por dia; adie todas as outras preocupações",
+        "Pratique a respiração 4-7-8 (inspire 4 s · segure 7 s · expire 8 s) três vezes ao dia",
+        "Escreva suas preocupações e classifique-as em 'controláveis' e 'incontroláveis'",
+        "Experimente meditação mindfulness ou relaxamento muscular progressivo",
+        "Reduza cafeína e álcool e mantenha um horário de sono consistente"
+      ],
+      "apps": ["white-noise", "detox-timer", "pomodoro-timer"]
+    },
+    "anger": {
+      "emoji": "😤",
+      "name": "Raiva",
+      "chip": "Tipo explosivo",
+      "subtitle": "Estresse que irrompe como raiva intensa",
+      "desc": "Você é do tipo raiva — quando o estresse se acumula, ele explode como emoção intensa e avassaladora. Você é especialmente sensível à injustiça e costuma reprimir os sentimentos até que explodam todos de uma vez. A raiva é uma emoção natural, mas a raiva descontrolada danifica relacionamentos importantes e afeta seriamente a vida profissional. Por trás da raiva frequentemente se escondem sentimentos mais profundos — mágoa, medo ou impotência — que vale a pena explorar.",
+      "warnings": [
+        "Palavras ou atos impulsivos que prejudicam relacionamentos próximos",
+        "Intensa culpa e ódio de si mesmo após uma explosão",
+        "Danos à reputação e escalada de conflitos no trabalho",
+        "Impacto físico: pressão elevada e maior risco cardiovascular"
+      ],
+      "strategies": [
+        "Quando a raiva surgir, afaste-se imediatamente e aplique a 'regra dos 10 segundos'",
+        "Mantenha um diário de raiva para identificar as situações que consistentemente o/a disparam",
+        "Pratique o relaxamento muscular progressivo: tensione cada grupo muscular por 5 s e solte",
+        "Expresse sentimentos com 'mensagens em primeira pessoa': 'Eu fico com raiva quando...'",
+        "Use exercício aeróbico regular como válvula saudável para liberar energia de estresse acumulada"
+      ],
+      "apps": ["white-noise", "pomodoro-timer", "detox-timer"]
+    },
+    "avoidance": {
+      "emoji": "😔",
+      "name": "Evitação",
+      "chip": "Tipo fugitivo",
+      "subtitle": "Fugir dos problemas em vez de enfrentá-los",
+      "desc": "Você é do tipo evitação — diante do estresse, seu instinto é recuar, ignorar ou fugir em vez de confrontar. Encontrar refúgio no scroll, nos jogos ou na agitação dá alívio temporário, mas os problemas não resolvidos se acumulam e voltam como uma crise maior. A evitação oferece proteção emocional de curto prazo, mas a longo prazo corrói a autoconfiança e aprofunda a impotência. Pequenos passos em direção aos problemas hoje podem prevenir um colapso maior amanhã.",
+      "warnings": [
+        "Problemas não resolvidos acumulando-se até eclodirem em crise",
+        "Dependência crescente de redes sociais, jogos ou comida como fuga",
+        "Oportunidades perdidas por procrastinação crônica em decisões importantes",
+        "Queda da autoestima e desamparo aprendido ('não vai funcionar de qualquer jeito')"
+      ],
+      "strategies": [
+        "A 'regra dos 5 minutos': comprometa-se a fazer a tarefa temida por apenas 5 minutos e veja o que acontece",
+        "Divida o problema evitado na única ação mínima seguinte e faça apenas ela",
+        "Use um app para limitar redes sociais e jogos a uma hora por dia",
+        "Abra-se com um amigo de confiança e busquem soluções juntos",
+        "Imagine vívidamente o resultado positivo de resolver o problema para aumentar a motivação"
+      ],
+      "apps": ["detox-timer", "pomodoro-timer", "white-noise"]
+    }
+  },
+  "questions": {
+    "q1": "Já me sinto cansado/a quando acordo de manhã",
+    "q2": "Mesmo após o trabalho, não consigo parar de pensar em tarefas e responsabilidades",
+    "q3": "O que antes eu gostava não parece mais agradável nem significativo",
+    "q4": "Fico me perguntando quanto tempo mais conseguirei continuar assim",
+    "q5": "Mesmo após descanso adequado, não sinto minha energia restaurada",
+    "q6": "Até coisas pequenas me preocupam e não saem da minha cabeça",
+    "q7": "Fico imaginando os piores cenários possíveis",
+    "q8": "Tenho dificuldade para dormir ou acordo frequentemente durante a noite",
+    "q9": "Me preocupo excessivamente com o que os outros pensam de mim",
+    "q10": "Sinto tensão ou ansiedade sem razão aparente",
+    "q11": "Quando estou estressado/a, fico irritado/a facilmente por coisas menores",
+    "q12": "Tenho dificuldade em tolerar situações injustas",
+    "q13": "Já explodi emocionalmente depois de me conter por muito tempo",
+    "q14": "Quando estou com raiva, palavras duras ou insultos escapam",
+    "q15": "Ajo impulsivamente de formas das quais me arrependo depois",
+    "q16": "Mesmo quando há problemas a resolver, deliberadamente os ignoro",
+    "q17": "Quando estou estressado/a, me perco excessivamente em redes sociais, jogos ou TV",
+    "q18": "Fico adiando decisões importantes repetidamente",
+    "q19": "Me mantenho deliberadamente ocupado/a para não sentir minhas emoções",
+    "q20": "Fugir do problema traz alívio momentâneo, mas a situação acaba piorando"
+  },
+  "apps": {
+    "white-noise": {
+      "name": "Ruído Branco",
+      "desc": "Sons ambientais para dormir e focar"
+    },
+    "pomodoro-timer": {
+      "name": "Temporizador Pomodoro",
+      "desc": "Trabalhe com eficiência sem se esgotar"
+    },
+    "detox-timer": {
+      "name": "Temporizador Detox Digital",
+      "desc": "Quebre o hábito de fuga digital"
+    }
+  }
+}
