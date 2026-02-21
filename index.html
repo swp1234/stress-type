@@ -6,13 +6,13 @@
   <meta name="robots" content="max-image-preview:large">
   <title>스트레스 유형 테스트 🔥 - 번아웃? 불안? 분노? 회피? | DopaBrain</title>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3600813755953882" crossorigin="anonymous"></script>
-  <meta name="description" content="번아웃? 불안? 분노? 회피? 20개 질문으로 당신의 스트레스 반응 유형을 알아보고 맞춤 관리법을 찾아보세요.">
-  <meta name="keywords" content="스트레스 유형 테스트, 번아웃 테스트, 불안 테스트, 스트레스 자가진단, 심리테스트, 스트레스 관리">
+  <meta name="description" content="몸이 보내는 스트레스 신호를 읽어보세요. 바디 히트맵 + 8가지 시나리오로 당신의 스트레스 유형을 분석합니다.">
+  <meta name="keywords" content="스트레스 유형 테스트, 바디 히트맵, 스트레스 반응, 심리테스트, 스트레스 자가진단, 번아웃 테스트">
   <meta name="theme-color" content="#ff6b35">
   <link rel="canonical" href="https://dopabrain.com/stress-type/">
 
-  <meta property="og:title" content="스트레스 유형 테스트 🔥 - 번아웃? 불안? 분노? 회피?">
-  <meta property="og:description" content="20개 질문으로 알아보는 나의 스트레스 반응 패턴! 4가지 유형 분석 + 맞춤 관리법 제공">
+  <meta property="og:title" content="스트레스 유형 테스트 🔥 - 몸이 보내는 신호를 읽어보세요">
+  <meta property="og:description" content="바디 히트맵 + 8가지 스트레스 시나리오로 당신의 스트레스 유형을 분석합니다">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://dopabrain.com/stress-type/">
   <meta property="og:image" content="https://dopabrain.com/stress-type/icon-512.png">
@@ -24,8 +24,8 @@
   <meta property="og:locale:alternate" content="zh_CN">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="스트레스 유형 테스트 🔥 - 당신의 유형은?">
-  <meta name="twitter:description" content="번아웃? 불안? 분노? 회피? 20문항 스트레스 유형 심리테스트">
+  <meta name="twitter:title" content="스트레스 유형 테스트 🔥 - 몸이 보내는 신호를 읽어보세요">
+  <meta name="twitter:description" content="바디 히트맵 + 8가지 스트레스 시나리오로 당신의 스트레스 유형을 분석합니다">
   <meta name="twitter:image" content="https://dopabrain.com/stress-type/icon-512.png">
 
   <link rel="alternate" hreflang="ko" href="https://dopabrain.com/stress-type/">
@@ -48,7 +48,7 @@
     "@type": "SoftwareApplication",
     "name": "Stress Type Test",
     "applicationCategory": "HealthApplication",
-    "description": "Identify your stress response pattern with 20 questions. 4 types: Burnout, Anxiety, Anger, Avoidance.",
+    "description": "Interactive body heatmap + stress scenario test. Discover your stress type: Overthinker, Volcano, People-Pleaser, or Walking Dead.",
     "url": "https://dopabrain.com/stress-type/",
     "operatingSystem": "All",
     "author": {"@type": "Organization", "name": "DopaBrain", "url": "https://dopabrain.com/"},
@@ -69,10 +69,10 @@
       --primary: #ff6b35;
       --primary-dark: #e55a25;
       --primary-glow: rgba(255,107,53,0.35);
-      --burnout: #ef4444;
-      --anxiety: #f59e0b;
-      --anger: #8b5cf6;
-      --avoidance: #06b6d4;
+      --overthinker: #6366f1;
+      --volcano: #ef4444;
+      --pleaser: #f59e0b;
+      --walkingdead: #64748b;
       --bg: #0a0a0f;
       --surface: rgba(255,255,255,0.06);
       --surface-hover: rgba(255,255,255,0.1);
@@ -81,7 +81,22 @@
       --text-muted: rgba(255,255,255,0.55);
       --radius: 16px;
       --radius-lg: 24px;
+      --zone-active: rgba(255,80,50,0.6);
+      --zone-glow: rgba(255,80,50,0.4);
     }
+
+    /* Light mode */
+    [data-theme="light"] {
+      --bg: #f5f5f7;
+      --surface: rgba(0,0,0,0.05);
+      --surface-hover: rgba(0,0,0,0.08);
+      --border: rgba(0,0,0,0.12);
+      --text: #1a1a2e;
+      --text-muted: rgba(0,0,0,0.55);
+      --zone-active: rgba(255,80,50,0.5);
+      --zone-glow: rgba(255,80,50,0.3);
+    }
+
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { font-size: 16px; scroll-behavior: smooth; }
     body {
@@ -97,14 +112,28 @@
       inset: 0;
       background:
         radial-gradient(ellipse 80% 50% at 20% 10%, rgba(255,107,53,0.18) 0%, transparent 60%),
-        radial-gradient(ellipse 60% 40% at 80% 80%, rgba(139,92,246,0.12) 0%, transparent 60%);
+        radial-gradient(ellipse 60% 40% at 80% 80%, rgba(99,102,241,0.12) 0%, transparent 60%);
       pointer-events: none;
       z-index: 0;
     }
+    [data-theme="light"] body::before {
+      background:
+        radial-gradient(ellipse 80% 50% at 20% 10%, rgba(255,107,53,0.08) 0%, transparent 60%),
+        radial-gradient(ellipse 60% 40% at 80% 80%, rgba(99,102,241,0.06) 0%, transparent 60%);
+    }
+
+    /* Skip Link */
+    .skip-link {
+      position: absolute; top: -100%; left: 50%; transform: translateX(-50%);
+      background: var(--primary); color: #fff; padding: 12px 24px;
+      border-radius: 0 0 12px 12px; z-index: 10001;
+      text-decoration: none; font-weight: 600; font-size: 14px;
+    }
+    .skip-link:focus { top: 0; }
 
     /* App Loader */
     .app-loader {
-      position: fixed; inset: 0; z-index: 9999;
+      position: fixed; inset: 0; z-index: 10000;
       background: var(--bg);
       display: flex; align-items: center; justify-content: center;
       flex-direction: column; gap: 16px;
@@ -121,10 +150,24 @@
     }
     .loader-text { color: var(--text-muted); font-size: 14px; }
 
-    /* Language Selector */
-    .lang-selector {
+    /* Top Bar: Theme Toggle + Language Selector */
+    .top-bar {
       position: fixed; top: 16px; right: 16px; z-index: 100;
+      display: flex; gap: 8px; align-items: center;
     }
+    .theme-toggle {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--text);
+      width: 44px; height: 44px;
+      border-radius: 12px;
+      cursor: pointer;
+      font-size: 18px;
+      backdrop-filter: blur(10px);
+      transition: background 0.2s;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .theme-toggle:hover { background: var(--surface-hover); }
     .lang-btn {
       background: var(--surface);
       border: 1px solid var(--border);
@@ -135,6 +178,7 @@
       font-size: 14px;
       backdrop-filter: blur(10px);
       transition: background 0.2s;
+      min-height: 44px; min-width: 44px;
     }
     .lang-btn:hover { background: var(--surface-hover); }
     .lang-menu {
@@ -148,12 +192,16 @@
       min-width: 180px;
       box-shadow: 0 20px 60px rgba(0,0,0,0.5);
     }
+    [data-theme="light"] .lang-menu {
+      background: rgba(255,255,255,0.95);
+    }
     .lang-menu.hidden { display: none; }
     .lang-option {
       background: none; border: none; color: var(--text);
-      padding: 8px 12px; border-radius: 8px;
+      padding: 10px 12px; border-radius: 8px;
       cursor: pointer; font-size: 13px;
       text-align: left; transition: background 0.15s;
+      min-height: 44px;
     }
     .lang-option:hover { background: var(--surface-hover); }
     .lang-option.active { color: var(--primary); }
@@ -191,12 +239,12 @@
       font-size: 14px;
       color: var(--text-muted);
       text-align: center;
-      max-width: 400px;
+      max-width: 420px;
       line-height: 1.6;
       margin-bottom: 20px;
     }
     .intro-meta {
-      display: flex; gap: 16px; flex-wrap: wrap; justify-content: center;
+      display: flex; gap: 12px; flex-wrap: wrap; justify-content: center;
       margin-bottom: 24px;
     }
     .intro-meta span {
@@ -225,10 +273,10 @@
     .type-chip .chip-emoji { font-size: 20px; display: block; margin-bottom: 4px; }
     .type-chip .chip-name { font-weight: 600; font-size: 13px; }
     .type-chip .chip-desc { color: var(--text-muted); font-size: 11px; margin-top: 2px; }
-    .type-chip[data-type="burnout"] { border-color: rgba(239,68,68,0.3); }
-    .type-chip[data-type="anxiety"] { border-color: rgba(245,158,11,0.3); }
-    .type-chip[data-type="anger"] { border-color: rgba(139,92,246,0.3); }
-    .type-chip[data-type="avoidance"] { border-color: rgba(6,182,212,0.3); }
+    .type-chip[data-type="overthinker"] { border-color: rgba(99,102,241,0.3); }
+    .type-chip[data-type="volcano"] { border-color: rgba(239,68,68,0.3); }
+    .type-chip[data-type="pleaser"] { border-color: rgba(245,158,11,0.3); }
+    .type-chip[data-type="walkingdead"] { border-color: rgba(100,116,139,0.3); }
 
     .btn-start {
       background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
@@ -249,8 +297,97 @@
     .btn-start:active { transform: translateY(0); }
     .user-count { color: var(--text-muted); font-size: 13px; margin-top: 14px; text-align: center; }
 
-    /* Question Screen */
-    .q-screen-inner {
+    /* Phase 1: Body Heatmap */
+    .body-phase {
+      width: 100%; max-width: 500px;
+      display: flex; flex-direction: column; align-items: center; gap: 20px;
+    }
+    .phase-title {
+      font-size: clamp(18px, 4vw, 24px);
+      font-weight: 700;
+      text-align: center;
+    }
+    .phase-instruction {
+      font-size: 14px;
+      color: var(--text-muted);
+      text-align: center;
+      line-height: 1.5;
+    }
+    .body-svg-wrap {
+      position: relative;
+      width: 260px;
+      max-width: 80vw;
+      margin: 0 auto;
+    }
+    .body-svg-wrap svg {
+      width: 100%;
+      height: auto;
+    }
+    .body-zone {
+      cursor: pointer;
+      fill: rgba(255,255,255,0.04);
+      stroke: var(--border);
+      stroke-width: 1;
+      transition: fill 0.25s, filter 0.25s;
+    }
+    [data-theme="light"] .body-zone {
+      fill: rgba(0,0,0,0.03);
+    }
+    .body-zone:hover {
+      fill: rgba(255,107,53,0.15);
+    }
+    .body-zone.active {
+      fill: var(--zone-active);
+      stroke: rgba(255,80,50,0.8);
+      stroke-width: 1.5;
+      filter: drop-shadow(0 0 8px var(--zone-glow));
+    }
+    .body-zone-label {
+      font-size: 8px;
+      fill: var(--text-muted);
+      pointer-events: none;
+      text-anchor: middle;
+      dominant-baseline: central;
+    }
+    .body-zone.active + .body-zone-label,
+    .zone-label-active {
+      fill: #fff;
+      font-weight: 600;
+    }
+    .zone-count {
+      text-align: center;
+      font-size: 14px;
+      color: var(--text-muted);
+      min-height: 24px;
+    }
+    .zone-count .count-num {
+      color: var(--primary);
+      font-weight: 700;
+    }
+    .btn-next {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+      color: #fff;
+      border: none;
+      padding: 14px 36px;
+      border-radius: 50px;
+      font-size: 16px;
+      font-weight: 700;
+      cursor: pointer;
+      min-height: 50px;
+      min-width: 200px;
+      box-shadow: 0 6px 24px var(--primary-glow);
+      transition: transform 0.2s, opacity 0.3s;
+    }
+    .btn-next:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+    .btn-next:not(:disabled):hover {
+      transform: translateY(-2px);
+    }
+
+    /* Phase 2: Scenario Cards */
+    .scenario-phase {
       width: 100%; max-width: 560px;
       display: flex; flex-direction: column; gap: 24px;
     }
@@ -271,16 +408,7 @@
       border-radius: 3px;
       transition: width 0.4s ease;
     }
-    .type-indicator {
-      display: flex; align-items: center; gap: 8px;
-      font-size: 12px; color: var(--text-muted);
-      padding: 6px 12px;
-      background: var(--surface);
-      border-radius: 20px;
-      width: fit-content;
-    }
-    .type-dot { width: 8px; height: 8px; border-radius: 50%; }
-    .question-card {
+    .scenario-card {
       background: var(--surface);
       border: 1px solid var(--border);
       border-radius: var(--radius-lg);
@@ -288,51 +416,65 @@
       backdrop-filter: blur(16px);
       animation: fadeSlideIn 0.35s ease;
     }
-    .q-number { font-size: 12px; color: var(--text-muted); margin-bottom: 12px; }
-    .q-text {
+    .scenario-number {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .scenario-text {
       font-size: clamp(15px, 3.5vw, 18px);
       font-weight: 600;
       line-height: 1.55;
       margin-bottom: 24px;
     }
-    .scale-btns {
-      display: grid; grid-template-columns: repeat(4, 1fr);
-      gap: 8px;
+    .reaction-btns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
     }
-    .scale-btn {
-      background: rgba(255,255,255,0.05);
+    .reaction-btn {
+      background: rgba(255,255,255,0.04);
       border: 1.5px solid var(--border);
       color: var(--text);
-      padding: 12px 6px;
-      border-radius: 12px;
+      padding: 14px 10px;
+      border-radius: 14px;
       cursor: pointer;
-      font-size: 12px;
+      font-size: 13px;
       font-weight: 500;
       text-align: center;
-      line-height: 1.3;
-      min-height: 60px;
-      display: flex; align-items: center; justify-content: center;
+      min-height: 72px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
       transition: all 0.2s;
     }
-    .scale-btn:hover {
+    [data-theme="light"] .reaction-btn {
+      background: rgba(0,0,0,0.02);
+    }
+    .reaction-btn:hover {
       background: var(--surface-hover);
       border-color: var(--primary);
-      transform: translateY(-1px);
+      transform: translateY(-2px);
     }
-    .scale-btn.selected {
+    .reaction-btn.selected {
       background: var(--primary);
       border-color: var(--primary);
       color: #fff;
       box-shadow: 0 4px 16px var(--primary-glow);
+      transform: scale(1.02);
     }
-    .scale-btn .scale-val {
-      display: block;
-      font-size: 18px;
-      font-weight: 800;
-      margin-bottom: 3px;
-      opacity: 0.5;
+    .reaction-emoji {
+      font-size: 28px;
+      line-height: 1;
     }
-    .scale-btn.selected .scale-val { opacity: 1; }
+    .reaction-label {
+      font-size: 12px;
+      font-weight: 600;
+    }
 
     /* Analyzing Screen */
     .analyzing-icon { font-size: 64px; margin-bottom: 20px; animation: spin-slow 3s linear infinite; }
@@ -366,12 +508,6 @@
       position: relative;
       overflow: hidden;
     }
-    .result-header::before {
-      content: '';
-      position: absolute; inset: 0;
-      opacity: 0.08;
-      pointer-events: none;
-    }
     .result-type-badge {
       display: inline-flex; align-items: center; gap: 8px;
       padding: 8px 20px;
@@ -394,81 +530,107 @@
     .result-desc {
       font-size: 14px;
       line-height: 1.7;
-      color: rgba(255,255,255,0.8);
+      color: var(--text-muted);
       text-align: left;
     }
 
-    /* Score Bars */
-    .scores-card {
+    /* Heatmap Replay */
+    .heatmap-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      backdrop-filter: blur(16px);
+      display: flex; flex-direction: column; align-items: center; gap: 16px;
+    }
+    .heatmap-title {
+      font-size: 14px; font-weight: 700;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+    .heatmap-replay {
+      width: 180px;
+    }
+    .heatmap-replay svg { width: 100%; height: auto; }
+    .heatmap-replay .body-zone { cursor: default; }
+    .heatmap-replay .body-zone.active {
+      fill: var(--zone-active);
+      stroke: rgba(255,80,50,0.8);
+      filter: drop-shadow(0 0 6px var(--zone-glow));
+    }
+    .heatmap-zones-text {
+      font-size: 13px;
+      color: var(--text-muted);
+      text-align: center;
+      line-height: 1.5;
+    }
+
+    /* Response Pattern Bars */
+    .pattern-card {
       background: var(--surface);
       border: 1px solid var(--border);
       border-radius: var(--radius-lg);
       padding: 24px;
       backdrop-filter: blur(16px);
     }
-    .scores-title {
+    .pattern-title {
       font-size: 14px; font-weight: 700;
       color: var(--text-muted);
-      text-transform: uppercase; letter-spacing: 0.08em;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
       margin-bottom: 18px;
     }
-    .score-row { margin-bottom: 14px; }
-    .score-row:last-child { margin-bottom: 0; }
-    .score-label {
+    .pattern-row { margin-bottom: 14px; }
+    .pattern-row:last-child { margin-bottom: 0; }
+    .pattern-label {
       display: flex; justify-content: space-between;
       font-size: 14px; font-weight: 600;
       margin-bottom: 6px;
     }
-    .score-pct { color: var(--text-muted); font-weight: 400; }
-    .score-bar {
+    .pattern-pct { color: var(--text-muted); font-weight: 400; }
+    .pattern-bar {
       height: 10px; background: rgba(255,255,255,0.08);
       border-radius: 5px; overflow: hidden;
     }
-    .score-fill {
+    [data-theme="light"] .pattern-bar {
+      background: rgba(0,0,0,0.08);
+    }
+    .pattern-fill {
       height: 100%; border-radius: 5px;
       transition: width 1s ease;
       width: 0;
     }
 
-    /* Detail Sections */
-    .detail-card {
+    /* Tips Section */
+    .tips-card {
       background: var(--surface);
       border: 1px solid var(--border);
       border-radius: var(--radius-lg);
       padding: 24px;
       backdrop-filter: blur(16px);
     }
-    .detail-heading {
+    .tips-heading {
       font-size: 16px; font-weight: 700;
       margin-bottom: 14px;
       display: flex; align-items: center; gap: 8px;
     }
-    .warning-list, .strategy-list {
+    .tips-list {
       list-style: none;
-      display: flex; flex-direction: column; gap: 10px;
+      display: flex; flex-direction: column; gap: 12px;
     }
-    .warning-list li {
+    .tips-list li {
       display: flex; align-items: flex-start; gap: 10px;
-      font-size: 14px; line-height: 1.5;
-      color: rgba(255,255,255,0.8);
+      font-size: 14px; line-height: 1.6;
+      color: var(--text-muted);
     }
-    .warning-list li::before {
-      content: '⚡';
-      flex-shrink: 0; font-size: 14px;
-      margin-top: 1px;
-    }
-    .strategy-list li {
-      display: flex; align-items: flex-start; gap: 10px;
-      font-size: 14px; line-height: 1.5;
-      color: rgba(255,255,255,0.85);
-    }
-    .strategy-num {
+    .tip-num {
       flex-shrink: 0;
-      width: 22px; height: 22px;
+      width: 24px; height: 24px;
       background: var(--primary);
       border-radius: 50%;
       display: flex; align-items: center; justify-content: center;
-      font-size: 11px; font-weight: 800;
+      font-size: 12px; font-weight: 800;
       color: #fff;
       margin-top: 1px;
     }
@@ -486,6 +648,10 @@
       text-decoration: none;
       color: var(--text);
       transition: all 0.2s;
+      min-height: 54px;
+    }
+    [data-theme="light"] .app-link {
+      background: rgba(0,0,0,0.02);
     }
     .app-link:hover {
       background: var(--surface-hover);
@@ -578,93 +744,211 @@
       to { transform: rotate(360deg); }
     }
 
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+
     @media (max-width: 480px) {
-      .scale-btns { grid-template-columns: repeat(2, 1fr); }
+      .reaction-btns { grid-template-columns: 1fr 1fr; }
       .type-preview { grid-template-columns: 1fr 1fr; }
+      .body-svg-wrap { width: 220px; }
     }
   </style>
 </head>
 <body>
 
+  <!-- Skip Link -->
+  <a href="#main-content" class="skip-link" data-i18n="app.skipLink">Skip to content</a>
+
   <!-- App Loader -->
   <div class="app-loader" id="app-loader">
     <div class="loader-emoji">🔥</div>
     <div class="loader-spinner"></div>
-    <div class="loader-text" data-i18n="app.loading">로딩 중...</div>
+    <div class="loader-text" data-i18n="app.loading">Loading...</div>
   </div>
 
-  <!-- Language Selector -->
-  <div class="lang-selector">
-    <button class="lang-btn" id="lang-toggle">🌐</button>
-    <div class="lang-menu hidden" id="lang-menu">
-      <button class="lang-option" data-lang="ko">🇰🇷 한국어</button>
-      <button class="lang-option" data-lang="en">🇺🇸 English</button>
-      <button class="lang-option" data-lang="ja">🇯🇵 日本語</button>
-      <button class="lang-option" data-lang="es">🇪🇸 Español</button>
-      <button class="lang-option" data-lang="pt">🇧🇷 Português</button>
-      <button class="lang-option" data-lang="zh">🇨🇳 简体中文</button>
-      <button class="lang-option" data-lang="id">🇮🇩 Bahasa Indonesia</button>
-      <button class="lang-option" data-lang="tr">🇹🇷 Türkçe</button>
-      <button class="lang-option" data-lang="de">🇩🇪 Deutsch</button>
-      <button class="lang-option" data-lang="fr">🇫🇷 Français</button>
-      <button class="lang-option" data-lang="hi">🇮🇳 हिन्दी</button>
-      <button class="lang-option" data-lang="ru">🇷🇺 Русский</button>
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+      <span id="theme-icon">☀️</span>
+    </button>
+    <div style="position:relative">
+      <button class="lang-btn" id="lang-toggle">🌐</button>
+      <div class="lang-menu hidden" id="lang-menu">
+        <button class="lang-option" data-lang="ko">🇰🇷 한국어</button>
+        <button class="lang-option" data-lang="en">🇺🇸 English</button>
+        <button class="lang-option" data-lang="ja">🇯🇵 日本語</button>
+        <button class="lang-option" data-lang="es">🇪🇸 Español</button>
+        <button class="lang-option" data-lang="pt">🇧🇷 Português</button>
+        <button class="lang-option" data-lang="zh">🇨🇳 简体中文</button>
+        <button class="lang-option" data-lang="id">🇮🇩 Bahasa Indonesia</button>
+        <button class="lang-option" data-lang="tr">🇹🇷 Türkçe</button>
+        <button class="lang-option" data-lang="de">🇩🇪 Deutsch</button>
+        <button class="lang-option" data-lang="fr">🇫🇷 Français</button>
+        <button class="lang-option" data-lang="hi">🇮🇳 हिन्दी</button>
+        <button class="lang-option" data-lang="ru">🇷🇺 Русский</button>
+      </div>
     </div>
   </div>
+
+  <main id="main-content">
 
   <!-- Intro Screen -->
   <div id="screen-intro" class="screen active">
     <div class="intro-icon">🔥</div>
-    <h1 class="intro-title" data-i18n="intro.title">스트레스 유형 테스트</h1>
-    <p class="intro-sub" data-i18n="intro.sub">당신의 스트레스 반응 패턴은?</p>
-    <p class="intro-desc" data-i18n="intro.desc">번아웃, 불안, 분노, 회피 — 스트레스를 받을 때 당신은 어떻게 반응하나요?</p>
+    <h1 class="intro-title" data-i18n="intro.title">Stress Type Test</h1>
+    <p class="intro-sub" data-i18n="intro.sub">Where does your body hold stress?</p>
+    <p class="intro-desc" data-i18n="intro.desc">Tap your stress zones on a body map, then react to 8 real-life scenarios. Discover your unique stress type!</p>
     <div class="intro-meta">
-      <span data-i18n="intro.meta1">📋 20문항</span>
-      <span data-i18n="intro.meta2">⏱ 약 3분</span>
-      <span data-i18n="intro.meta3">🔒 무료</span>
+      <span data-i18n="intro.meta1">🫀 Body Map</span>
+      <span data-i18n="intro.meta2">🎭 8 Scenarios</span>
+      <span data-i18n="intro.meta3">⏱ ~2 min</span>
+      <span data-i18n="intro.meta4">🔒 Free</span>
     </div>
     <div class="type-preview">
-      <div class="type-chip" data-type="burnout">
-        <span class="chip-emoji">🔥</span>
-        <div class="chip-name" data-i18n="types.burnout.name">번아웃형</div>
-        <div class="chip-desc" data-i18n="types.burnout.chip">지쳐버린 유형</div>
+      <div class="type-chip" data-type="overthinker">
+        <span class="chip-emoji">🌀</span>
+        <div class="chip-name" data-i18n="types.overthinker.name">The Overthinker</div>
+        <div class="chip-desc" data-i18n="types.overthinker.chip">Trapped in thought loops</div>
       </div>
-      <div class="type-chip" data-type="anxiety">
-        <span class="chip-emoji">😰</span>
-        <div class="chip-name" data-i18n="types.anxiety.name">불안형</div>
-        <div class="chip-desc" data-i18n="types.anxiety.chip">걱정이 많은 유형</div>
+      <div class="type-chip" data-type="volcano">
+        <span class="chip-emoji">🌋</span>
+        <div class="chip-name" data-i18n="types.volcano.name">The Volcano</div>
+        <div class="chip-desc" data-i18n="types.volcano.chip">Pressure builds, then erupts</div>
       </div>
-      <div class="type-chip" data-type="anger">
-        <span class="chip-emoji">😤</span>
-        <div class="chip-name" data-i18n="types.anger.name">분노형</div>
-        <div class="chip-desc" data-i18n="types.anger.chip">화로 표출하는 유형</div>
+      <div class="type-chip" data-type="pleaser">
+        <span class="chip-emoji">🎭</span>
+        <div class="chip-name" data-i18n="types.pleaser.name">The People-Pleaser</div>
+        <div class="chip-desc" data-i18n="types.pleaser.chip">Absorbs everyone's stress</div>
       </div>
-      <div class="type-chip" data-type="avoidance">
-        <span class="chip-emoji">😔</span>
-        <div class="chip-name" data-i18n="types.avoidance.name">회피형</div>
-        <div class="chip-desc" data-i18n="types.avoidance.chip">도피하는 유형</div>
+      <div class="type-chip" data-type="walkingdead">
+        <span class="chip-emoji">🧟</span>
+        <div class="chip-name" data-i18n="types.walkingdead.name">The Walking Dead</div>
+        <div class="chip-desc" data-i18n="types.walkingdead.chip">Running on empty</div>
       </div>
     </div>
-    <button class="btn-start" id="btn-start" data-i18n="intro.start">테스트 시작하기</button>
-    <p class="user-count">👥 <span data-i18n="intro.userCount">32,000명이 이미 테스트했어요</span></p>
+    <button class="btn-start" id="btn-start" data-i18n="intro.start">Start the Test</button>
+    <p class="user-count">👥 <span data-i18n="intro.userCount">32,000+ people have taken this test</span></p>
   </div>
 
-  <!-- Question Screen -->
-  <div id="screen-question" class="screen">
-    <div class="q-screen-inner">
+  <!-- Phase 1: Body Heatmap -->
+  <div id="screen-body" class="screen">
+    <div class="body-phase">
+      <h2 class="phase-title" data-i18n="body.title">Where do you feel stress?</h2>
+      <p class="phase-instruction" data-i18n="body.instruction">Tap all the areas where you feel tension, pain, or discomfort when stressed. Select at least 2.</p>
+
+      <div class="body-svg-wrap">
+        <svg viewBox="0 0 200 440" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Human body silhouette with tappable stress zones">
+          <!-- Head -->
+          <ellipse class="body-zone" data-zone="head" cx="100" cy="32" rx="28" ry="30" />
+          <text class="body-zone-label" x="100" y="32" data-zone-label="head">Head</text>
+
+          <!-- Jaw -->
+          <ellipse class="body-zone" data-zone="jaw" cx="100" cy="56" rx="18" ry="8" />
+          <text class="body-zone-label" x="100" y="56" data-zone-label="jaw">Jaw</text>
+
+          <!-- Eyes -->
+          <rect class="body-zone" data-zone="eyes" x="76" y="18" width="48" height="14" rx="7" />
+          <text class="body-zone-label" x="100" y="25" data-zone-label="eyes">Eyes</text>
+
+          <!-- Neck/Shoulders -->
+          <path class="body-zone" data-zone="neck_shoulders" d="M72,62 Q100,72 128,62 L140,80 Q100,88 60,80 Z" />
+          <text class="body-zone-label" x="100" y="74" data-zone-label="neck_shoulders">Neck</text>
+
+          <!-- Chest -->
+          <rect class="body-zone" data-zone="chest" x="68" y="90" width="64" height="50" rx="10" />
+          <text class="body-zone-label" x="100" y="115" data-zone-label="chest">Chest</text>
+
+          <!-- Stomach -->
+          <ellipse class="body-zone" data-zone="stomach" cx="100" cy="168" rx="30" ry="24" />
+          <text class="body-zone-label" x="100" y="168" data-zone-label="stomach">Stomach</text>
+
+          <!-- Upper Back -->
+          <rect class="body-zone" data-zone="upper_back" x="72" y="92" width="56" height="40" rx="8" opacity="0" />
+          <!-- Rendered as overlay label below chest -->
+
+          <!-- Lower Back -->
+          <rect class="body-zone" data-zone="lower_back" x="76" y="192" width="48" height="32" rx="8" />
+          <text class="body-zone-label" x="100" y="208" data-zone-label="lower_back">Lower Back</text>
+
+          <!-- Left Arm -->
+          <path class="body-zone" data-zone="arms" d="M58,88 L40,170 L30,168 L48,84 Z" />
+          <!-- Right Arm -->
+          <path class="body-zone" data-zone="arms" d="M142,88 L160,170 L170,168 L152,84 Z" />
+          <text class="body-zone-label" x="34" y="130" data-zone-label="arms">Arms</text>
+
+          <!-- Left Hand -->
+          <ellipse class="body-zone" data-zone="hands" cx="28" cy="188" rx="12" ry="16" />
+          <!-- Right Hand -->
+          <ellipse class="body-zone" data-zone="hands" cx="172" cy="188" rx="12" ry="16" />
+          <text class="body-zone-label" x="172" y="188" data-zone-label="hands">Hands</text>
+
+          <!-- Hips -->
+          <path class="body-zone" data-zone="hips" d="M70,224 Q100,240 130,224 L128,250 Q100,258 72,250 Z" />
+          <text class="body-zone-label" x="100" y="240" data-zone-label="hips">Hips</text>
+
+          <!-- Left Leg -->
+          <path class="body-zone" data-zone="legs" d="M72,256 L68,370 L58,370 L62,254 Z" />
+          <!-- Right Leg -->
+          <path class="body-zone" data-zone="legs" d="M128,256 L132,370 L142,370 L138,254 Z" />
+          <text class="body-zone-label" x="68" y="320" data-zone-label="legs">Legs</text>
+
+          <!-- Body outline (decorative, behind zones) -->
+        </svg>
+
+        <!-- Upper back toggle button (overlaid since it overlaps chest) -->
+        <button class="body-zone-overlay" id="upper-back-btn"
+                style="position:absolute;top:22%;left:50%;transform:translateX(-50%);
+                       background:var(--surface);border:1px solid var(--border);color:var(--text-muted);
+                       padding:6px 14px;border-radius:20px;font-size:11px;cursor:pointer;
+                       transition:all 0.2s;min-height:32px;white-space:nowrap;z-index:2;"
+                data-zone="upper_back">
+          <span data-zone-label="upper_back" data-i18n="body.zones.upper_back">Upper Back</span>
+        </button>
+      </div>
+
+      <p class="zone-count" id="zone-count"></p>
+      <button class="btn-next" id="btn-body-next" disabled data-i18n="body.next">Next</button>
+    </div>
+  </div>
+
+  <!-- Phase 2: Scenarios -->
+  <div id="screen-scenario" class="screen">
+    <div class="scenario-phase">
       <div class="progress-wrap">
         <div class="progress-top">
-          <span id="progress-text">1 / 20</span>
-          <span id="type-indicator-wrap"></span>
+          <span id="progress-text">1 / 8</span>
+          <span id="phase-label" data-i18n="scenario.phase">Scenario</span>
         </div>
         <div class="progress-bar">
-          <div class="progress-fill" id="progress-fill" style="width:5%"></div>
+          <div class="progress-fill" id="progress-fill" style="width:12.5%"></div>
         </div>
       </div>
-      <div class="question-card" id="question-card">
-        <p class="q-number" id="q-number">Q1</p>
-        <p class="q-text" id="q-text"></p>
-        <div class="scale-btns" id="scale-btns"></div>
+      <div class="scenario-card" id="scenario-card">
+        <p class="scenario-number" id="scenario-number">Scenario 1</p>
+        <p class="scenario-text" id="scenario-text"></p>
+        <div class="reaction-btns" id="reaction-btns">
+          <button class="reaction-btn" data-reaction="fight">
+            <span class="reaction-emoji">🔥</span>
+            <span class="reaction-label" data-i18n="reactions.fight">Fight</span>
+          </button>
+          <button class="reaction-btn" data-reaction="freeze">
+            <span class="reaction-emoji">❄️</span>
+            <span class="reaction-label" data-i18n="reactions.freeze">Freeze</span>
+          </button>
+          <button class="reaction-btn" data-reaction="flight">
+            <span class="reaction-emoji">🏃</span>
+            <span class="reaction-label" data-i18n="reactions.flight">Flight</span>
+          </button>
+          <button class="reaction-btn" data-reaction="collapse">
+            <span class="reaction-emoji">💔</span>
+            <span class="reaction-label" data-i18n="reactions.collapse">Collapse</span>
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -672,7 +956,7 @@
   <!-- Analyzing Screen -->
   <div id="screen-analyzing" class="screen">
     <div class="analyzing-icon">🧠</div>
-    <p class="analyzing-text" id="analyzing-text" data-i18n="analyzing.text">스트레스 유형 분석 중...</p>
+    <p class="analyzing-text" id="analyzing-text" data-i18n="analyzing.text">Analyzing your stress profile...</p>
     <div class="analyzing-bar">
       <div class="analyzing-fill" id="analyzing-fill"></div>
     </div>
@@ -691,76 +975,115 @@
         <p class="result-desc" id="result-desc"></p>
       </div>
 
-      <div class="scores-card">
-        <p class="scores-title" data-i18n="result.scoreBreakdown">유형별 점수</p>
-        <div id="scores-bars"></div>
+      <!-- Heatmap Replay -->
+      <div class="heatmap-card">
+        <p class="heatmap-title" data-i18n="result.heatmapTitle">Your Stress Map</p>
+        <div class="heatmap-replay" id="heatmap-replay"></div>
+        <p class="heatmap-zones-text" id="heatmap-zones-text"></p>
       </div>
 
-      <div class="detail-card" id="warning-card">
-        <p class="detail-heading" data-i18n="result.warning">⚠️ 주의 신호</p>
-        <ul class="warning-list" id="warning-list"></ul>
+      <!-- Response Pattern -->
+      <div class="pattern-card">
+        <p class="pattern-title" data-i18n="result.patternTitle">Response Pattern</p>
+        <div id="pattern-bars"></div>
       </div>
 
-      <div class="detail-card" id="strategy-card">
-        <p class="detail-heading" data-i18n="result.strategy">💊 관리 전략</p>
-        <ol class="strategy-list" id="strategy-list"></ol>
+      <!-- Tips -->
+      <div class="tips-card" id="tips-card">
+        <p class="tips-heading" data-i18n="result.tipsTitle">💡 Stress Relief Tips</p>
+        <ol class="tips-list" id="tips-list"></ol>
       </div>
 
-      <div class="detail-card">
-        <p class="detail-heading" data-i18n="result.recommended">🔗 추천 앱</p>
+      <!-- Recommended Apps -->
+      <div class="tips-card">
+        <p class="tips-heading" data-i18n="result.recommended">🔗 Recommended Apps</p>
         <div class="recommended-apps" id="recommended-apps"></div>
       </div>
 
       <div class="action-btns">
-        <button class="btn-share-link" id="btn-copy" data-i18n="result.copyLink">🔗 링크 복사</button>
-        <p class="copy-toast" id="copy-toast" data-i18n="result.copied">링크가 복사되었습니다!</p>
-        <button class="btn-tweet" id="btn-tweet" data-i18n="result.tweet">🐦 트위터 공유</button>
-        <button class="btn-retry" id="btn-retry" data-i18n="result.retry">↩ 다시 테스트하기</button>
+        <button class="btn-share-link" id="btn-copy" data-i18n="result.copyLink">🔗 Copy Link</button>
+        <p class="copy-toast" id="copy-toast" data-i18n="result.copied">Link copied!</p>
+        <button class="btn-tweet" id="btn-tweet" data-i18n="result.tweet">🐦 Share on Twitter</button>
+        <button class="btn-retry" id="btn-retry" data-i18n="result.retry">↩ Retake the Test</button>
       </div>
 
       <footer class="game-footer">
         <a href="https://dopabrain.com/portal/" class="back-link" data-i18n="result.back">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="m15 18-6-6 6-6"></path></svg>
-          DopaBrain 홈
+          DopaBrain Home
         </a>
       </footer>
     </div>
   </div>
+
+  </main>
 
   <script src="js/i18n.js"></script>
   <script>
   (() => {
     'use strict';
 
-    const QUESTIONS_PER_TYPE = 5;
-    const TOTAL_QUESTIONS = 20;
-    const TYPE_KEYS = ['burnout', 'anxiety', 'anger', 'avoidance'];
+    /* ===== Constants ===== */
+    const TOTAL_SCENARIOS = 8;
+    const TYPE_KEYS = ['overthinker', 'volcano', 'pleaser', 'walkingdead'];
     const TYPE_COLORS = {
-      burnout: '#ef4444',
-      anxiety: '#f59e0b',
-      anger: '#8b5cf6',
-      avoidance: '#06b6d4'
+      overthinker: '#6366f1',
+      volcano: '#ef4444',
+      pleaser: '#f59e0b',
+      walkingdead: '#64748b'
     };
-    const TYPE_BG = {
-      burnout: 'rgba(239,68,68,0.15)',
-      anxiety: 'rgba(245,158,11,0.15)',
-      anger: 'rgba(139,92,246,0.15)',
-      avoidance: 'rgba(6,182,212,0.15)'
+    const REACTION_COLORS = {
+      fight: '#ef4444',
+      freeze: '#6366f1',
+      flight: '#f59e0b',
+      collapse: '#64748b'
     };
+
+    /* Zone -> stress category mapping */
+    const ZONE_CATEGORY = {
+      head: 'mental',
+      jaw: 'mental',
+      eyes: 'mental',
+      neck_shoulders: 'tension',
+      upper_back: 'tension',
+      chest: 'anxiety',
+      stomach: 'anxiety',
+      arms: 'tension',
+      hands: 'mental',
+      lower_back: 'burnout',
+      hips: 'burnout',
+      legs: 'burnout'
+    };
+
+    /*
+     * Scoring matrix:
+     * mental  + freeze/flight  = overthinker
+     * tension + fight          = volcano
+     * anxiety + flight/collapse = pleaser
+     * burnout + collapse/freeze = walkingdead
+     */
+
     const APP_LINKS = {
       'white-noise': { emoji: '🌊', url: 'https://dopabrain.com/white-noise/' },
       'pomodoro-timer': { emoji: '🍅', url: 'https://dopabrain.com/pomodoro-timer/' },
       'detox-timer': { emoji: '📵', url: 'https://dopabrain.com/detox-timer/' }
     };
 
-    let currentQ = 0;
-    let answers = [];
+    const ZONE_IDS = ['head', 'jaw', 'eyes', 'neck_shoulders', 'chest', 'stomach',
+                       'upper_back', 'lower_back', 'arms', 'hands', 'hips', 'legs'];
+
+    /* ===== State ===== */
+    let selectedZones = new Set();
+    let scenarioAnswers = []; // array of 'fight'|'freeze'|'flight'|'collapse'
+    let currentScenario = 0;
     let primaryType = '';
 
+    /* ===== DOM Helpers ===== */
     const $ = id => document.getElementById(id);
     const show = id => {
       document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
       $(id).classList.add('active');
+      window.scrollTo(0, 0);
     };
 
     function t(key) {
@@ -768,72 +1091,199 @@
       return key;
     }
 
-    function buildQuestion(idx) {
-      const card = $('question-card');
-      card.style.animation = 'none';
-      card.offsetHeight;
-      card.style.animation = 'fadeSlideIn 0.35s ease';
+    /* ===== Theme Toggle ===== */
+    function initTheme() {
+      const saved = localStorage.getItem('theme');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const theme = saved || (prefersDark ? 'dark' : 'dark'); // default dark
+      document.documentElement.setAttribute('data-theme', theme);
+      updateThemeIcon(theme);
 
-      const qKey = `questions.q${idx + 1}`;
-      $('q-number').textContent = `Q${idx + 1}`;
-      $('q-text').textContent = t(qKey);
-
-      const pct = Math.round(((idx) / TOTAL_QUESTIONS) * 100);
-      $('progress-fill').style.width = `${Math.max(5, pct)}%`;
-      $('progress-text').textContent = `${idx + 1} / ${TOTAL_QUESTIONS}`;
-
-      const typeIdx = Math.floor(idx / QUESTIONS_PER_TYPE);
-      const typeKey = TYPE_KEYS[typeIdx];
-      $('type-indicator-wrap').innerHTML = `
-        <span style="display:flex;align-items:center;gap:6px;font-size:12px;color:var(--text-muted)">
-          <span style="width:8px;height:8px;border-radius:50%;background:${TYPE_COLORS[typeKey]};display:inline-block"></span>
-          ${t('types.' + typeKey + '.name')}
-        </span>`;
-
-      const scaleKeys = ['never', 'sometimes', 'often', 'always'];
-      const btns = $('scale-btns');
-      btns.innerHTML = '';
-      scaleKeys.forEach((sk, vi) => {
-        const btn = document.createElement('button');
-        btn.className = 'scale-btn';
-        if (answers[idx] === vi) btn.classList.add('selected');
-        btn.innerHTML = `<span class="scale-val">${vi}</span>${t('scale.' + sk)}`;
-        btn.addEventListener('click', () => selectAnswer(idx, vi));
-        btns.appendChild(btn);
+      $('theme-toggle').addEventListener('click', () => {
+        const current = document.documentElement.getAttribute('data-theme');
+        const next = current === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem('theme', next);
+        updateThemeIcon(next);
       });
     }
 
-    function selectAnswer(qIdx, val) {
-      answers[qIdx] = val;
-      document.querySelectorAll('.scale-btn').forEach((btn, i) => {
-        btn.classList.toggle('selected', i === val);
+    function updateThemeIcon(theme) {
+      $('theme-icon').textContent = theme === 'dark' ? '☀️' : '🌙';
+    }
+
+    /* ===== Phase 1: Body Heatmap ===== */
+    function initBodyMap() {
+      // SVG zones
+      document.querySelectorAll('.body-zone[data-zone]').forEach(el => {
+        el.addEventListener('click', () => toggleZone(el.dataset.zone));
+        // Make focusable for accessibility
+        el.setAttribute('tabindex', '0');
+        el.setAttribute('role', 'checkbox');
+        el.setAttribute('aria-checked', 'false');
+        el.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            toggleZone(el.dataset.zone);
+          }
+        });
       });
+
+      // Upper back overlay button
+      const ubBtn = $('upper-back-btn');
+      if (ubBtn) {
+        ubBtn.addEventListener('click', () => toggleZone('upper_back'));
+      }
+
+      updateZoneCount();
+    }
+
+    function toggleZone(zone) {
+      if (selectedZones.has(zone)) {
+        selectedZones.delete(zone);
+      } else {
+        selectedZones.add(zone);
+      }
+
+      // Update all SVG elements for this zone
+      document.querySelectorAll(`.body-zone[data-zone="${zone}"]`).forEach(el => {
+        el.classList.toggle('active', selectedZones.has(zone));
+        el.setAttribute('aria-checked', selectedZones.has(zone) ? 'true' : 'false');
+      });
+
+      // Upper back overlay button
+      const ubBtn = $('upper-back-btn');
+      if (ubBtn && zone === 'upper_back') {
+        if (selectedZones.has(zone)) {
+          ubBtn.style.background = 'var(--zone-active)';
+          ubBtn.style.borderColor = 'rgba(255,80,50,0.8)';
+          ubBtn.style.color = '#fff';
+        } else {
+          ubBtn.style.background = 'var(--surface)';
+          ubBtn.style.borderColor = 'var(--border)';
+          ubBtn.style.color = 'var(--text-muted)';
+        }
+      }
+
+      updateZoneCount();
+    }
+
+    function updateZoneCount() {
+      const count = selectedZones.size;
+      const countEl = $('zone-count');
+      const nextBtn = $('btn-body-next');
+
+      if (count === 0) {
+        countEl.innerHTML = '';
+      } else {
+        const selected = t('body.selected');
+        countEl.innerHTML = `<span class="count-num">${count}</span> ${typeof selected === 'string' ? selected : 'selected'}`;
+      }
+
+      nextBtn.disabled = count < 2;
+    }
+
+    function updateBodyZoneLabels() {
+      ZONE_IDS.forEach(zone => {
+        const labelKey = `body.zones.${zone}`;
+        const label = t(labelKey);
+        if (typeof label === 'string' && label !== labelKey) {
+          document.querySelectorAll(`[data-zone-label="${zone}"]`).forEach(el => {
+            el.textContent = label;
+          });
+        }
+      });
+    }
+
+    /* ===== Phase 2: Scenarios ===== */
+    function buildScenario(idx) {
+      const card = $('scenario-card');
+      card.style.animation = 'none';
+      void card.offsetHeight;
+      card.style.animation = 'fadeSlideIn 0.35s ease';
+
+      const scenarioLabel = t('scenario.label');
+      $('scenario-number').textContent = `${typeof scenarioLabel === 'string' ? scenarioLabel : 'Scenario'} ${idx + 1}`;
+      $('scenario-text').textContent = t(`scenarios.s${idx + 1}`);
+
+      const pct = Math.round(((idx) / TOTAL_SCENARIOS) * 100);
+      $('progress-fill').style.width = `${Math.max(12.5, pct)}%`;
+      $('progress-text').textContent = `${idx + 1} / ${TOTAL_SCENARIOS}`;
+
+      // Update reaction labels
+      ['fight', 'freeze', 'flight', 'collapse'].forEach(r => {
+        const label = t(`reactions.${r}`);
+        document.querySelectorAll(`[data-reaction="${r}"] .reaction-label`).forEach(el => {
+          if (typeof label === 'string') el.textContent = label;
+        });
+      });
+
+      // Clear selected state
+      document.querySelectorAll('.reaction-btn').forEach(btn => {
+        btn.classList.remove('selected');
+      });
+    }
+
+    function selectReaction(reaction) {
+      scenarioAnswers[currentScenario] = reaction;
+      document.querySelectorAll('.reaction-btn').forEach(btn => {
+        btn.classList.toggle('selected', btn.dataset.reaction === reaction);
+      });
+
       setTimeout(() => {
-        if (qIdx < TOTAL_QUESTIONS - 1) {
-          currentQ = qIdx + 1;
-          buildQuestion(currentQ);
+        if (currentScenario < TOTAL_SCENARIOS - 1) {
+          currentScenario++;
+          buildScenario(currentScenario);
         } else {
           showAnalyzing();
         }
-      }, 300);
+      }, 350);
     }
 
-    function calcScores() {
-      const scores = { burnout: 0, anxiety: 0, anger: 0, avoidance: 0 };
-      TYPE_KEYS.forEach((type, ti) => {
-        for (let i = 0; i < QUESTIONS_PER_TYPE; i++) {
-          scores[type] += answers[ti * QUESTIONS_PER_TYPE + i] || 0;
-        }
+    /* ===== Scoring ===== */
+    function calcResults() {
+      /* Body zone scoring */
+      const bodyCats = { mental: 0, tension: 0, anxiety: 0, burnout: 0 };
+      selectedZones.forEach(zone => {
+        const cat = ZONE_CATEGORY[zone];
+        if (cat) bodyCats[cat]++;
       });
-      return scores;
+
+      // Normalize to 0-1
+      const maxBodyScore = Math.max(1, ...Object.values(bodyCats));
+      Object.keys(bodyCats).forEach(k => { bodyCats[k] /= maxBodyScore; });
+
+      /* Scenario reaction scoring */
+      const reactionCounts = { fight: 0, freeze: 0, flight: 0, collapse: 0 };
+      scenarioAnswers.forEach(r => { if (r) reactionCounts[r]++; });
+
+      const totalReactions = scenarioAnswers.filter(Boolean).length || 1;
+      const reactionPcts = {};
+      Object.keys(reactionCounts).forEach(k => {
+        reactionPcts[k] = Math.round((reactionCounts[k] / totalReactions) * 100);
+      });
+
+      /* Combined type scores */
+      const typeScores = {
+        overthinker: (bodyCats.mental * 2 + bodyCats.anxiety * 0.5) * (reactionCounts.freeze + reactionCounts.flight + 0.5) / (totalReactions + 0.5),
+        volcano: (bodyCats.tension * 2 + bodyCats.anxiety * 0.5) * (reactionCounts.fight * 2 + reactionCounts.freeze * 0.3 + 0.5) / (totalReactions + 0.5),
+        pleaser: (bodyCats.anxiety * 2 + bodyCats.mental * 0.5) * (reactionCounts.flight + reactionCounts.collapse + 0.5) / (totalReactions + 0.5),
+        walkingdead: (bodyCats.burnout * 2 + bodyCats.tension * 0.5) * (reactionCounts.collapse + reactionCounts.freeze + 0.5) / (totalReactions + 0.5)
+      };
+
+      primaryType = TYPE_KEYS.reduce((a, b) => typeScores[a] >= typeScores[b] ? a : b);
+
+      return { bodyCats, reactionCounts, reactionPcts, typeScores };
     }
 
+    /* ===== Analyzing Animation ===== */
     function showAnalyzing() {
       show('screen-analyzing');
       const steps = ['analyzing.step1', 'analyzing.step2', 'analyzing.step3'];
       let progress = 0;
       let stepIdx = 0;
       $('analyzing-step').textContent = t(steps[0]);
+
       const interval = setInterval(() => {
         progress += 4;
         $('analyzing-fill').style.width = `${Math.min(progress, 100)}%`;
@@ -848,17 +1298,15 @@
       }, 40);
     }
 
+    /* ===== Result Screen ===== */
     function showResult() {
-      const scores = calcScores();
-      primaryType = TYPE_KEYS.reduce((a, b) => scores[a] >= scores[b] ? a : b);
-      const maxScore = QUESTIONS_PER_TYPE * 3;
-
+      const results = calcResults();
       const color = TYPE_COLORS[primaryType];
-      const bg = TYPE_BG[primaryType];
 
+      // Header
       const header = $('result-header');
-      header.style.borderColor = color.replace(')', ',0.35)').replace('rgb', 'rgba');
-      header.style.background = bg;
+      header.style.borderColor = color + '59'; // 35% opacity hex
+      header.style.background = color + '26'; // 15% opacity hex
 
       $('result-badge').textContent = t('result.dominant');
       $('result-badge').style.color = color;
@@ -870,46 +1318,101 @@
       $('result-subtitle').textContent = t(`types.${primaryType}.subtitle`);
       $('result-desc').textContent = t(`types.${primaryType}.desc`);
 
-      const barsEl = $('scores-bars');
-      barsEl.innerHTML = '';
-      TYPE_KEYS.forEach(type => {
-        const score = scores[type];
-        const pct = Math.round((score / maxScore) * 100);
-        const row = document.createElement('div');
-        row.className = 'score-row';
-        row.innerHTML = `
-          <div class="score-label">
-            <span>${t('types.' + type + '.emoji')} ${t('types.' + type + '.name')}</span>
-            <span class="score-pct">${score}/${maxScore}</span>
-          </div>
-          <div class="score-bar">
-            <div class="score-fill" style="background:${TYPE_COLORS[type]};width:0%" data-pct="${pct}"></div>
-          </div>`;
-        barsEl.appendChild(row);
+      // Heatmap Replay
+      buildHeatmapReplay();
+
+      // Response Pattern Bars
+      buildPatternBars(results.reactionPcts);
+
+      // Tips
+      buildTips();
+
+      // Recommended Apps
+      buildRecommendedApps();
+
+      show('screen-result');
+
+      if (window.gtag) gtag('event', 'stress_type_result', { type: primaryType });
+
+      // Animate bars
+      requestAnimationFrame(() => {
+        setTimeout(() => {
+          document.querySelectorAll('.pattern-fill').forEach(el => {
+            el.style.width = el.dataset.pct + '%';
+          });
+        }, 200);
+      });
+    }
+
+    function buildHeatmapReplay() {
+      const replayEl = $('heatmap-replay');
+      // Clone the SVG
+      const origSvg = document.querySelector('.body-svg-wrap svg');
+      const svgClone = origSvg.cloneNode(true);
+
+      // Reset all zones, then activate selected ones
+      svgClone.querySelectorAll('.body-zone').forEach(el => {
+        el.classList.remove('active');
+        el.removeAttribute('tabindex');
+        el.removeAttribute('role');
+        el.style.cursor = 'default';
       });
 
-      const warnList = $('warning-list');
-      warnList.innerHTML = '';
-      const warnings = t(`types.${primaryType}.warnings`);
-      if (Array.isArray(warnings)) {
-        warnings.forEach(w => {
+      selectedZones.forEach(zone => {
+        svgClone.querySelectorAll(`[data-zone="${zone}"]`).forEach(el => {
+          el.classList.add('active');
+        });
+      });
+
+      replayEl.innerHTML = '';
+      replayEl.appendChild(svgClone);
+
+      // Zones text
+      const zoneNames = [...selectedZones].map(z => {
+        const name = t(`body.zones.${z}`);
+        return typeof name === 'string' ? name : z;
+      });
+      $('heatmap-zones-text').textContent = zoneNames.join(', ');
+    }
+
+    function buildPatternBars(pcts) {
+      const container = $('pattern-bars');
+      container.innerHTML = '';
+
+      const reactions = ['fight', 'freeze', 'flight', 'collapse'];
+      const emojis = { fight: '🔥', freeze: '❄️', flight: '🏃', collapse: '💔' };
+
+      reactions.forEach(r => {
+        const pct = pcts[r] || 0;
+        const row = document.createElement('div');
+        row.className = 'pattern-row';
+        const label = t(`reactions.${r}`);
+        row.innerHTML = `
+          <div class="pattern-label">
+            <span>${emojis[r]} ${typeof label === 'string' ? label : r}</span>
+            <span class="pattern-pct">${pct}%</span>
+          </div>
+          <div class="pattern-bar">
+            <div class="pattern-fill" style="background:${REACTION_COLORS[r]};width:0%" data-pct="${pct}"></div>
+          </div>`;
+        container.appendChild(row);
+      });
+    }
+
+    function buildTips() {
+      const list = $('tips-list');
+      list.innerHTML = '';
+      const tips = t(`types.${primaryType}.tips`);
+      if (Array.isArray(tips)) {
+        tips.forEach((tip, i) => {
           const li = document.createElement('li');
-          li.textContent = w;
-          warnList.appendChild(li);
+          li.innerHTML = `<span class="tip-num">${i + 1}</span><span>${tip}</span>`;
+          list.appendChild(li);
         });
       }
+    }
 
-      const stratList = $('strategy-list');
-      stratList.innerHTML = '';
-      const strategies = t(`types.${primaryType}.strategies`);
-      if (Array.isArray(strategies)) {
-        strategies.forEach((s, i) => {
-          const li = document.createElement('li');
-          li.innerHTML = `<span class="strategy-num">${i + 1}</span><span>${s}</span>`;
-          stratList.appendChild(li);
-        });
-      }
-
+    function buildRecommendedApps() {
       const appsEl = $('recommended-apps');
       appsEl.innerHTML = '';
       const appKeys = t(`types.${primaryType}.apps`);
@@ -932,20 +1435,9 @@
           appsEl.appendChild(a);
         });
       }
-
-      show('screen-result');
-
-      if (window.gtag) gtag('event', 'stress_type_result', { type: primaryType });
-
-      requestAnimationFrame(() => {
-        setTimeout(() => {
-          document.querySelectorAll('.score-fill').forEach(el => {
-            el.style.width = el.dataset.pct + '%';
-          });
-        }, 200);
-      });
     }
 
+    /* ===== Language Selector ===== */
     function initLang() {
       const toggle = $('lang-toggle');
       const menu = $('lang-menu');
@@ -959,16 +1451,16 @@
           const lang = btn.dataset.lang;
           await window.i18n.setLanguage(lang);
           menu.classList.add('hidden');
-          if (currentQ === 0 && document.getElementById('screen-intro').classList.contains('active')) {
-            // re-render intro chips
-          }
-          if (document.getElementById('screen-question').classList.contains('active')) {
-            buildQuestion(currentQ);
+          updateBodyZoneLabels();
+          // Re-render current screen if needed
+          if (document.getElementById('screen-scenario').classList.contains('active')) {
+            buildScenario(currentScenario);
           }
         });
       });
     }
 
+    /* ===== Init ===== */
     async function init() {
       try {
         await window.i18n.loadTranslations(window.i18n.currentLang);
@@ -977,23 +1469,60 @@
         console.warn('i18n init error', e);
       }
 
+      initTheme();
+      updateBodyZoneLabels();
+
       const loader = $('app-loader');
       setTimeout(() => loader.classList.add('hidden'), 500);
 
+      // Start button
       $('btn-start').addEventListener('click', () => {
-        answers = [];
-        currentQ = 0;
-        show('screen-question');
-        buildQuestion(0);
+        selectedZones.clear();
+        scenarioAnswers = [];
+        currentScenario = 0;
+        // Reset body map
+        document.querySelectorAll('.body-zone').forEach(el => {
+          el.classList.remove('active');
+          el.setAttribute && el.setAttribute('aria-checked', 'false');
+        });
+        const ubBtn = $('upper-back-btn');
+        if (ubBtn) {
+          ubBtn.style.background = 'var(--surface)';
+          ubBtn.style.borderColor = 'var(--border)';
+          ubBtn.style.color = 'var(--text-muted)';
+        }
+        updateZoneCount();
+        show('screen-body');
         if (window.gtag) gtag('event', 'stress_test_start');
       });
 
+      // Body map
+      initBodyMap();
+
+      // Body Next button
+      $('btn-body-next').addEventListener('click', () => {
+        if (selectedZones.size < 2) return;
+        show('screen-scenario');
+        buildScenario(0);
+        if (window.gtag) gtag('event', 'stress_body_complete', { zones: [...selectedZones].join(',') });
+      });
+
+      // Scenario reaction buttons
+      document.querySelectorAll('.reaction-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          selectReaction(btn.dataset.reaction);
+        });
+      });
+
+      // Retry
       $('btn-retry').addEventListener('click', () => {
-        answers = [];
-        currentQ = 0;
+        selectedZones.clear();
+        scenarioAnswers = [];
+        currentScenario = 0;
         show('screen-intro');
       });
 
+      // Copy link
       $('btn-copy').addEventListener('click', () => {
         const url = 'https://dopabrain.com/stress-type/';
         navigator.clipboard.writeText(url).then(() => {
@@ -1003,6 +1532,7 @@
         });
       });
 
+      // Tweet
       $('btn-tweet').addEventListener('click', () => {
         const typeName = t(`types.${primaryType}.name`);
         const text = t('share.text').replace('{type}', typeName);

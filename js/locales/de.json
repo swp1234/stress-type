@@ -1,166 +1,18 @@
 {
-  "app": {
-    "title": "Stress-Typ-Test 🔥 - DopaBrain",
-    "description": "Burnout? Angst? Wut? Vermeidung? Finden Sie Ihr Stressreaktionsmuster mit 20 Fragen heraus.",
-    "loading": "Wird geladen..."
-  },
-  "intro": {
-    "title": "Stress-Typ-Test",
-    "sub": "Was ist Ihr Stressreaktionsmuster?",
-    "desc": "Burnout, Angst, Wut, Vermeidung — wie reagieren Sie, wenn Sie unter Stress stehen?",
-    "meta1": "📋 20 Fragen",
-    "meta2": "⏱ ~3 Minuten",
-    "meta3": "🔒 Kostenlos",
-    "start": "Test starten",
-    "userCount": "Über 32.000 Menschen haben diesen Test bereits gemacht"
-  },
-  "scale": {
-    "never": "Nie",
-    "sometimes": "Manchmal",
-    "often": "Oft",
-    "always": "Immer"
-  },
-  "analyzing": {
-    "text": "Ihr Stress-Typ wird analysiert...",
-    "step1": "Antwortmuster werden analysiert...",
-    "step2": "Typ wird ermittelt...",
-    "step3": "Persönliche Strategien werden vorbereitet..."
-  },
-  "result": {
-    "dominant": "Haupttyp",
-    "scoreBreakdown": "Punkte nach Typ",
-    "warning": "⚠️ Warnsignale",
-    "strategy": "💊 Bewältigungsstrategien",
-    "recommended": "🔗 Empfohlene Apps",
-    "copyLink": "🔗 Link kopieren",
-    "tweet": "🐦 Auf Twitter teilen",
-    "copied": "Link kopiert!",
-    "retry": "↩ Test wiederholen",
-    "back": "DopaBrain Startseite"
-  },
-  "share": {
-    "text": "Mein Stress-Typ ist {type}! Finde deinen heraus 👇"
-  },
+  "app": { "title": "Stress-Typ-Test 🔥 - DopaBrain", "description": "Körperkarte + 8 Szenarien zur Analyse Ihres Stresstyps.", "loading": "Wird geladen...", "skipLink": "Zum Inhalt springen" },
+  "intro": { "title": "Stress-Typ-Test", "sub": "Wo speichert Ihr Körper Stress?", "desc": "Tippen Sie auf Ihre Stresszonen auf einer Körperkarte und reagieren Sie auf 8 reale Szenarien. Entdecken Sie Ihren einzigartigen Stresstyp!", "meta1": "🫀 Körperkarte", "meta2": "🎭 8 Szenarien", "meta3": "⏱ ~2 Min", "meta4": "🔒 Kostenlos", "start": "Test starten", "userCount": "Über 32.000 Menschen haben diesen Test gemacht" },
+  "body": { "title": "Wo fühlen Sie Stress?", "instruction": "Tippen Sie auf alle Bereiche, in denen Sie bei Stress Anspannung, Schmerz oder Unbehagen fühlen. Wählen Sie mindestens 2.", "selected": "ausgewählt", "next": "Weiter", "zones": { "head": "Kopf", "jaw": "Kiefer", "eyes": "Augen", "neck_shoulders": "Nacken/Schultern", "chest": "Brust", "stomach": "Magen", "upper_back": "Oberer Rücken", "lower_back": "Unterer Rücken", "arms": "Arme", "hands": "Hände", "hips": "Hüften", "legs": "Beine" } },
+  "scenario": { "phase": "Szenario", "label": "Szenario" },
+  "scenarios": { "s1": "Morgen steht eine wichtige Präsentation an und Sie sind völlig unvorbereitet.", "s2": "Ein enger Freund hört plötzlich ohne Grund auf, auf Ihre Nachrichten zu antworten.", "s3": "Ihr Chef weist vor dem gesamten Team auf Ihren Fehler hin.", "s4": "Ihr Computer stürzt kurz vor einer Deadline ab und Ihre gesamte Arbeit ist verloren.", "s5": "Bei einem Familientreffen vergleichen Verwandte ständig Ihre Lebensentscheidungen mit denen anderer.", "s6": "Ein Kollege präsentiert Ihre Idee als seine eigene und wird dafür gelobt.", "s7": "Sie erhalten eine große, unerwartete Rechnung, die Sie nicht leicht bezahlen können.", "s8": "Sie haben 3 Tage kaum geschlafen und der heutige Zeitplan ist voll gepackt." },
+  "reactions": { "fight": "Kämpfen", "freeze": "Erstarren", "flight": "Fliehen", "collapse": "Zusammenbrechen" },
+  "analyzing": { "text": "Ihr Stressprofil wird analysiert...", "step1": "Körperkartendaten werden gelesen...", "step2": "Reaktionsmuster werden abgeglichen...", "step3": "Persönliche Strategien werden vorbereitet..." },
+  "result": { "dominant": "Haupttyp", "heatmapTitle": "Ihre Stresskarte", "patternTitle": "Reaktionsmuster", "tipsTitle": "💡 Tipps zur Stressbewältigung", "recommended": "🔗 Empfohlene Apps", "copyLink": "🔗 Link kopieren", "tweet": "🐦 Auf Twitter teilen", "copied": "Link kopiert!", "retry": "↩ Test wiederholen", "back": "DopaBrain Startseite" },
+  "share": { "text": "Mein Stresstyp ist {type}! Finde deinen heraus 👇" },
   "types": {
-    "burnout": {
-      "emoji": "🔥",
-      "name": "Burnout",
-      "chip": "Erschöpfter Typ",
-      "subtitle": "Ausgebrannt durch übermäßige Arbeit und Verantwortung",
-      "desc": "Sie sind der Burnout-Typ — jemand, der sich unter dem Gewicht von Verantwortung und Pflicht unablässig angetrieben hat. Selbst wenn Ihre Energie am Limit ist, fühlen Sie sich schuldig, wenn Sie sich ausruhen, und das, was Sie früher liebten, hat begonnen, sinnlos zu erscheinen. Burnout ist nicht bloße Müdigkeit; es ist eine tiefe Erschöpfung physischer, emotionaler und kognitiver Ressourcen. Ohne Gegensteuern kann es sich zu chronischer Depression oder ernsthafter körperlicher Erkrankung entwickeln — weshalb Selbstfürsorge jetzt Ihre höchste Priorität ist.",
-      "warnings": [
-        "Extreme Erschöpfung, die sich auch nach dem Ausruhen nicht bessert",
-        "Wachsender Zynismus und emotionale Distanz gegenüber Arbeit und Leben",
-        "Kognitiver Stillstand: Schwierigkeiten, sich zu konzentrieren oder einfache Entscheidungen zu treffen",
-        "Körperliche Symptome: Kopfschmerzen, Verdauungsprobleme, geschwächtes Immunsystem"
-      ],
-      "strategies": [
-        "Planen Sie täglich 30 Minuten 'nichts tun' in Ihren Kalender ein",
-        "Setzen Sie digitale Grenzen: Schalten Sie Arbeitsbenachrichtigungen nach Feierabend aus",
-        "Üben Sie Single-Tasking: Konzentrieren Sie sich vollständig auf eine Sache zur gleichen Zeit",
-        "Planen Sie wöchentlich mindestens eine angenehme Aktivität oder ein Hobby — das ist nicht verhandelbar",
-        "Üben Sie, einem vertrauten Menschen ehrlich zu sagen: 'Es geht mir gerade nicht gut'"
-      ],
-      "apps": ["white-noise", "pomodoro-timer", "detox-timer"]
-    },
-    "anxiety": {
-      "emoji": "😰",
-      "name": "Angst",
-      "chip": "Chronischer Sorgentyp",
-      "subtitle": "Ein endloser Kreislauf aus Sorgen und Anspannung",
-      "desc": "Sie sind der Angst-Typ — Ihr Geist kommt selten zur Ruhe und dreht sich ständig um große und kleine Sorgen. Sie neigen dazu, immer wieder schlimmste Szenarien zu fantasieren, die Ihren Schlaf stören und alltägliche Aktivitäten erschweren. Angst verbraucht Energie, indem sie Sie in Vergangenheit oder Zukunft gefangen hält und verhindert, die Gegenwart zu genießen. Chronische Anspannung wirkt sich auch auf den Körper aus — Herzrasen, Muskelverspannungen und Verdauungsprobleme können zu einer Angststörung werden, wenn sie ignoriert werden.",
-      "warnings": [
-        "Nicht endende Grübeleien — Sorgengedanken in einer endlosen Schleife",
-        "Schlaflosigkeit oder schlechter Schlaf, der zu chronischer Erschöpfung führt",
-        "Überempfindlichkeit gegenüber Meinungen anderer und verschlimmerte soziale Angst",
-        "Körperliche Symptome: Kopfschmerzen, Magenkrämpfe, anhaltende Muskelverspannungen"
-      ],
-      "strategies": [
-        "Begrenzen Sie Ihre 'Sorgenzeit' auf 15 Minuten täglich; schieben Sie alle anderen Sorgen auf",
-        "Üben Sie täglich dreimal die 4-7-8-Atemtechnik (einatmen 4 Sek. · halten 7 Sek. · ausatmen 8 Sek.)",
-        "Schreiben Sie Ihre Sorgen auf und ordnen Sie sie in 'kontrollierbar' und 'unkontrollierbar'",
-        "Probieren Sie Achtsamkeitsmeditation oder progressive Muskelentspannung aus",
-        "Reduzieren Sie Koffein und Alkohol und halten Sie einen festen Schlafrhythmus ein"
-      ],
-      "apps": ["white-noise", "detox-timer", "pomodoro-timer"]
-    },
-    "anger": {
-      "emoji": "😤",
-      "name": "Wut",
-      "chip": "Explosiver Typ",
-      "subtitle": "Stress, der als intensive Wut ausbricht",
-      "desc": "Sie sind der Wut-Typ — wenn sich Stress ansammelt, explodiert er als intensive, manchmal überwältigende Wut. Sie sind besonders empfindlich gegenüber Ungerechtigkeit und folgen oft dem Muster, Gefühle zu unterdrücken, bis sie auf einmal ausbrechen. Wut ist eine natürliche Emotion, aber unkontrollierte Wut beschädigt wichtige Beziehungen und beeinträchtigt Ihr Berufsleben ernsthaft. Hinter der Wut verbergen sich häufig tiefere Gefühle — Verletzung, Angst oder Hilflosigkeit — die es wert sind, erforscht zu werden.",
-      "warnings": [
-        "Impulsive Worte oder Handlungen, die enge Beziehungen beschädigen",
-        "Intensive Schuldgefühle und Selbsthass nach einem Ausbruch",
-        "Reputationsschaden und eskalierte Konflikte am Arbeitsplatz",
-        "Körperliche Folgen: erhöhter Blutdruck und gesteigertes Herz-Kreislauf-Risiko"
-      ],
-      "strategies": [
-        "Wenn Wut aufsteigt, verlassen Sie sofort die Situation und wenden Sie die '10-Sekunden-Regel' an",
-        "Führen Sie ein Wuttagebuch, um Situationen zu identifizieren, die Sie regelmäßig triggern",
-        "Progressive Muskelentspannung: Jede Muskelgruppe 5 Sekunden anspannen und dann loslassen",
-        "Drücken Sie Gefühle mit 'Ich-Botschaften' aus: 'Ich werde wütend, wenn ...'",
-        "Nutzen Sie regelmäßigen Ausdauersport als gesunden Ventil für angestaute Stressenergie"
-      ],
-      "apps": ["white-noise", "pomodoro-timer", "detox-timer"]
-    },
-    "avoidance": {
-      "emoji": "😔",
-      "name": "Vermeidung",
-      "chip": "Flucht-Typ",
-      "subtitle": "Vor Problemen flüchten statt sie anzugehen",
-      "desc": "Sie sind der Vermeidungs-Typ — wenn Stress auftritt, ist Ihr Instinkt zurückzuweichen, zu ignorieren oder zu flüchten, anstatt sich der Situation zu stellen. Im Scrollen, Spielen oder Beschäftigtsein Zuflucht zu finden bietet vorübergehende Erleichterung, doch ungelöste Probleme häufen sich und kehren als größere Krise zurück. Vermeidung bietet kurzfristigen emotionalen Schutz, untergräbt aber langfristig das Selbstvertrauen und vertieft das Gefühl der Hilflosigkeit. Kleine Schritte auf Probleme zu heute können einen großen Zusammenbruch morgen verhindern.",
-      "warnings": [
-        "Ungelöste Probleme häufen sich, bis sie als Krise ausbrechen",
-        "Wachsende Abhängigkeit von sozialen Medien, Spielen oder Essen als Flucht",
-        "Verpasste Chancen durch chronisches Aufschieben wichtiger Entscheidungen",
-        "Sinkendes Selbstvertrauen und erlernte Hilflosigkeit ('es wird sowieso nicht klappen')"
-      ],
-      "strategies": [
-        "Die '5-Minuten-Regel': Verpflichten Sie sich, eine furchteinflößende Aufgabe nur 5 Minuten lang zu tun — und schauen Sie, was passiert",
-        "Zerlegen Sie das vermiedene Problem in die einzige kleinstmögliche nächste Handlung und tun Sie nur diese",
-        "Nutzen Sie eine App, um soziale Medien und Spiele auf eine Stunde täglich zu beschränken",
-        "Öffnen Sie sich einem vertrauten Freund und suchen Sie gemeinsam Lösungen",
-        "Stellen Sie sich das positive Ergebnis der Problemlösung lebhaft vor, um Ihre Motivation zu steigern"
-      ],
-      "apps": ["detox-timer", "pomodoro-timer", "white-noise"]
-    }
+    "overthinker": { "emoji": "🌀", "name": "Der Überdenker", "chip": "Gefangen in Gedankenschleifen", "subtitle": "Ein Geist, der nie aufhört zu kreisen", "desc": "Sie sind Der Überdenker — Ihr Stress lebt in Ihrem Kopf. Anspannung konzentriert sich auf Kopf, Augen und Kiefer, und unter Druck neigen Sie zum Erstarren oder Fliehen. Sie spielen schlimmste Szenarien in Endlosschleife durch und schieben Handlungen auf, bis alles perfekt erscheint.", "tips": ["Legen Sie ein tägliches 15-minütiges 'Sorgenfenster' fest — verschieben Sie alle Sorgen auf diese Zeit", "Praktizieren Sie 4-7-8-Atmung (einatmen 4s, halten 7s, ausatmen 8s) um den Geist zurückzusetzen", "Schreiben Sie Sorgen auf und ordnen Sie sie in 'kontrollierbar' und 'unkontrollierbar'"], "apps": ["white-noise", "detox-timer", "pomodoro-timer"] },
+    "volcano": { "emoji": "🌋", "name": "Der Vulkan", "chip": "Druck baut sich auf und explodiert", "subtitle": "Stress, der als Wut ausbricht", "desc": "Sie sind Der Vulkan — Anspannung sammelt sich in Nacken, Schultern und Rücken, bis Stress als Wut explodiert. Sie reagieren stark auf Ungerechtigkeit und folgen einem Zyklus des Unterdrückens, bis alles auf einmal ausbricht.", "tips": ["Wenn Wut aufsteigt, verlassen Sie sofort die Situation und zählen Sie langsam bis 10", "Nutzen Sie regelmäßigen Ausdauersport um angestaute Stressenergie freizusetzen", "Führen Sie ein Wuttagebuch um Ihre konstanten Auslöser zu identifizieren"], "apps": ["white-noise", "pomodoro-timer", "detox-timer"] },
+    "pleaser": { "emoji": "🎭", "name": "Der Gefallsüchtige", "chip": "Absorbiert den Stress aller anderen", "subtitle": "Trägt Angst in Brust und Magen", "desc": "Sie sind Der Gefallsüchtige — Stress konzentriert sich auf Brust und Magen, während Sie die Emotionen anderer wie Ihre eigenen absorbieren. Sie können schwer Nein sagen und überanstrengen sich, um allen Erwartungen gerecht zu werden, bis Sie zusammenbrechen.", "tips": ["Üben Sie einmal am Tag 'Nein' zu sagen, angefangen mit kleinen Dingen", "Trennen Sie bewusst die Probleme anderer von Ihren eigenen", "Reservieren Sie täglich mindestens 10 Minuten ausschließlich für sich selbst"], "apps": ["detox-timer", "white-noise", "pomodoro-timer"] },
+    "walkingdead": { "emoji": "🧟", "name": "Der Wandelnde Tote", "chip": "Läuft auf leerem Tank", "subtitle": "Totale Erschöpfung im ganzen Körper", "desc": "Sie sind Der Wandelnde Tote — Müdigkeit und Anspannung haben sich über den gesamten Körper ausgebreitet, vom unteren Rücken bis zu Hüften und Beinen. Ihre Energie ist komplett aufgebraucht; bei Stress brechen Sie zusammen oder schalten völlig ab.", "tips": ["Planen Sie täglich 30 Minuten 'absolut nichts tun' in Ihren Kalender ein", "Setzen Sie strenge digitale Grenzen — schalten Sie alle Arbeitsbenachrichtigungen nach Feierabend aus", "Sagen Sie jemandem, dem Sie vertrauen, ehrlich: 'Es geht mir schlecht' — tragen Sie es nicht allein"], "apps": ["white-noise", "detox-timer", "pomodoro-timer"] }
   },
-  "questions": {
-    "q1": "Ich fühle mich bereits müde, wenn ich morgens aufwache",
-    "q2": "Selbst nach der Arbeit kann ich nicht aufhören, an Aufgaben und Verantwortlichkeiten zu denken",
-    "q3": "Was mir früher Freude bereitet hat, erscheint mir nicht mehr angenehm oder bedeutungsvoll",
-    "q4": "Ich frage mich, wie lange ich noch so weitermachen kann",
-    "q5": "Selbst nach ausreichend Ruhe fühlt sich meine Energie nicht wiederhergestellt an",
-    "q6": "Selbst Kleinigkeiten bereiten mir Sorgen und lassen mich nicht in Ruhe",
-    "q7": "Ich stelle mir immer wieder die schlimmsten Szenarien vor",
-    "q8": "Ich habe Einschlafschwierigkeiten oder wache nachts häufig auf",
-    "q9": "Ich mache mir übermäßig Sorgen darüber, was andere von mir denken",
-    "q10": "Ich fühle mich angespannt oder ängstlich ohne offensichtlichen Grund",
-    "q11": "Wenn ich gestresst bin, werde ich leicht wegen Kleinigkeiten wütend",
-    "q12": "Es fällt mir schwer, unfaire Situationen zu ertragen",
-    "q13": "Ich bin emotional explodiert, nachdem ich mich zu lange zurückgehalten habe",
-    "q14": "Wenn ich wütend bin, rutschen mir harte Worte oder Beleidigungen heraus",
-    "q15": "Ich handle impulsiv auf eine Weise, die ich später bereue",
-    "q16": "Auch wenn es Probleme zu lösen gibt, ignoriere ich sie bewusst",
-    "q17": "Wenn ich gestresst bin, verliere ich mich übermäßig in sozialen Medien, Spielen oder TV",
-    "q18": "Ich schiebe wichtige Entscheidungen ständig auf",
-    "q19": "Ich halte mich absichtlich beschäftigt, um meine Emotionen nicht zu spüren",
-    "q20": "Vor einem Problem zu fliehen bringt vorübergehende Erleichterung, aber die Situation verschlechtert sich letztendlich"
-  },
-  "apps": {
-    "white-noise": {
-      "name": "Weißes Rauschen",
-      "desc": "Umgebungsgeräusche für Schlaf und Konzentration"
-    },
-    "pomodoro-timer": {
-      "name": "Pomodoro-Timer",
-      "desc": "Effizient arbeiten ohne auszubrennen"
-    },
-    "detox-timer": {
-      "name": "Digitaler Detox-Timer",
-      "desc": "Digitale Fluchtgewohnheiten überwinden"
-    }
-  }
+  "apps": { "white-noise": { "name": "Weißes Rauschen", "desc": "Umgebungsgeräusche für Schlaf und Konzentration" }, "pomodoro-timer": { "name": "Pomodoro-Timer", "desc": "Effizient arbeiten ohne auszubrennen" }, "detox-timer": { "name": "Digitaler Detox-Timer", "desc": "Digitale Fluchtgewohnheiten überwinden" } }
 }

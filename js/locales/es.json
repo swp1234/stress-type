@@ -1,166 +1,48 @@
 {
   "app": {
     "title": "Test de Tipo de Estrés 🔥 - DopaBrain",
-    "description": "¿Agotamiento? ¿Ansiedad? ¿Ira? ¿Evitación? Descubre tu patrón de respuesta al estrés con 20 preguntas.",
-    "loading": "Cargando..."
+    "description": "Mapa corporal + 8 escenarios de estrés para analizar tu tipo de estrés.",
+    "loading": "Cargando...",
+    "skipLink": "Saltar al contenido"
   },
   "intro": {
     "title": "Test de Tipo de Estrés",
-    "sub": "¿Cuál es tu patrón de respuesta al estrés?",
-    "desc": "Agotamiento, ansiedad, ira, evitación — ¿cómo reaccionas cuando estás bajo estrés?",
-    "meta1": "📋 20 preguntas",
-    "meta2": "⏱ ~3 minutos",
-    "meta3": "🔒 Gratis",
-    "start": "Comenzar el test",
-    "userCount": "Más de 32.000 personas ya lo han hecho"
+    "sub": "¿Dónde almacena tu cuerpo el estrés?",
+    "desc": "Toca las zonas de estrés en un mapa corporal y reacciona a 8 escenarios reales. ¡Descubre tu tipo de estrés único!",
+    "meta1": "🫀 Mapa Corporal",
+    "meta2": "🎭 8 Escenarios",
+    "meta3": "⏱ ~2 min",
+    "meta4": "🔒 Gratis",
+    "start": "Iniciar el Test",
+    "userCount": "Más de 32,000 personas han hecho este test"
   },
-  "scale": {
-    "never": "Nunca",
-    "sometimes": "A veces",
-    "often": "A menudo",
-    "always": "Siempre"
+  "body": {
+    "title": "¿Dónde sientes el estrés?",
+    "instruction": "Toca todas las áreas donde sientes tensión, dolor o molestia cuando estás estresado/a. Selecciona al menos 2.",
+    "selected": "seleccionadas",
+    "next": "Siguiente",
+    "zones": { "head": "Cabeza", "jaw": "Mandíbula", "eyes": "Ojos", "neck_shoulders": "Cuello/Hombros", "chest": "Pecho", "stomach": "Estómago", "upper_back": "Espalda Alta", "lower_back": "Espalda Baja", "arms": "Brazos", "hands": "Manos", "hips": "Caderas", "legs": "Piernas" }
   },
-  "analyzing": {
-    "text": "Analizando tu tipo de estrés...",
-    "step1": "Analizando patrones de respuesta...",
-    "step2": "Determinando tu tipo...",
-    "step3": "Preparando estrategias personalizadas..."
+  "scenario": { "phase": "Escenario", "label": "Escenario" },
+  "scenarios": {
+    "s1": "Tienes una presentación importante mañana y no estás nada preparado/a.",
+    "s2": "Un amigo cercano deja de responder tus mensajes sin ninguna razón.",
+    "s3": "Tu jefe señala tu error frente a todo el equipo.",
+    "s4": "Tu computadora falla justo antes de una fecha límite y pierdes todo tu trabajo.",
+    "s5": "En una reunión familiar, los parientes comparan constantemente tus decisiones de vida con las de otros.",
+    "s6": "Un compañero presenta tu idea como propia y recibe elogios por ella.",
+    "s7": "Recibes una factura grande e inesperada que no puedes pagar fácilmente.",
+    "s8": "Llevas 3 días casi sin dormir y el horario de hoy está lleno."
   },
-  "result": {
-    "dominant": "Tipo principal",
-    "scoreBreakdown": "Puntuación por tipo",
-    "warning": "⚠️ Señales de advertencia",
-    "strategy": "💊 Estrategias de afrontamiento",
-    "recommended": "🔗 Apps recomendadas",
-    "copyLink": "🔗 Copiar enlace",
-    "tweet": "🐦 Compartir en Twitter",
-    "copied": "¡Enlace copiado!",
-    "retry": "↩ Repetir el test",
-    "back": "Inicio de DopaBrain"
-  },
-  "share": {
-    "text": "Mi tipo de estrés es {type}. ¡Descubre el tuyo! 👇"
-  },
+  "reactions": { "fight": "Luchar", "freeze": "Paralizarse", "flight": "Huir", "collapse": "Derrumbarse" },
+  "analyzing": { "text": "Analizando tu perfil de estrés...", "step1": "Leyendo datos del mapa corporal...", "step2": "Emparejando patrones de respuesta...", "step3": "Preparando estrategias personalizadas..." },
+  "result": { "dominant": "Tipo Principal", "heatmapTitle": "Tu Mapa de Estrés", "patternTitle": "Patrón de Respuesta", "tipsTitle": "💡 Consejos para Aliviar el Estrés", "recommended": "🔗 Apps Recomendadas", "copyLink": "🔗 Copiar Enlace", "tweet": "🐦 Compartir en Twitter", "copied": "¡Enlace copiado!", "retry": "↩ Repetir el Test", "back": "DopaBrain Inicio" },
+  "share": { "text": "¡Mi tipo de estrés es {type}! Descubre el tuyo 👇" },
   "types": {
-    "burnout": {
-      "emoji": "🔥",
-      "name": "Agotamiento",
-      "chip": "Tipo agotado",
-      "subtitle": "Desgastado por el exceso de trabajo y responsabilidades",
-      "desc": "Eres del tipo agotamiento — alguien que se ha exigido sin descanso bajo el peso de la responsabilidad y el deber. Incluso cuando tu energía está al límite, sientes culpa por descansar, y lo que antes amabas ha empezado a parecer sin sentido. El agotamiento no es mera fatiga; es un profundo agotamiento de recursos físicos, emocionales y cognitivos. Sin atención, puede derivar en depresión crónica o enfermedad física grave, por lo que el autocuidado es ahora tu prioridad más alta.",
-      "warnings": [
-        "Fatiga extrema que no mejora ni con el descanso",
-        "Cinismo creciente y distancia emocional del trabajo y la vida",
-        "Parálisis cognitiva: dificultad para concentrarse o tomar decisiones simples",
-        "Síntomas físicos: dolores de cabeza, problemas digestivos, inmunidad debilitada"
-      ],
-      "strategies": [
-        "Reserva 30 minutos diarios de 'no hacer nada' en tu calendario",
-        "Establece límites digitales: desactiva las notificaciones de trabajo al salir",
-        "Practica la monotarea: céntrate completamente en una sola cosa a la vez",
-        "Programa al menos una actividad o hobby placentero a la semana",
-        "Practica decirle a alguien de confianza: 'Estoy pasándolo mal'"
-      ],
-      "apps": ["white-noise", "pomodoro-timer", "detox-timer"]
-    },
-    "anxiety": {
-      "emoji": "😰",
-      "name": "Ansiedad",
-      "chip": "Preocupación crónica",
-      "subtitle": "Un ciclo constante de preocupación y tensión",
-      "desc": "Eres del tipo ansioso — tu mente rara vez está en calma, dando vueltas sin parar a preocupaciones grandes y pequeñas. Tiendes a imaginar repetidamente escenarios catastróficos que interrumpen tu sueño y dificultan las actividades cotidianas. La ansiedad desperdicia energía manteniéndote atrapado en el pasado o el futuro e impide que disfrutes el presente. La tensión crónica también afecta al cuerpo: palpitaciones, tensión muscular y problemas digestivos que, si se ignoran, pueden convertirse en un trastorno de ansiedad.",
-      "warnings": [
-        "Rumiación imparable: pensamientos preocupantes que se repiten en bucle",
-        "Insomnio o sueño deficiente que genera fatiga crónica",
-        "Hipersensibilidad a la opinión ajena y ansiedad social agravada",
-        "Síntomas físicos: cefaleas, calambres estomacales, tensión muscular persistente"
-      ],
-      "strategies": [
-        "Limita tu 'tiempo de preocupación' a 15 minutos diarios; postpone todo lo demás",
-        "Practica la respiración 4-7-8 (inhala 4 s · aguanta 7 s · exhala 8 s) tres veces al día",
-        "Escribe tus preocupaciones y clasifícalas en 'controlables' e 'incontrolables'",
-        "Prueba la meditación de atención plena o la relajación muscular progresiva",
-        "Reduce la cafeína y el alcohol y mantén un horario de sueño constante"
-      ],
-      "apps": ["white-noise", "detox-timer", "pomodoro-timer"]
-    },
-    "anger": {
-      "emoji": "😤",
-      "name": "Ira",
-      "chip": "Tipo explosivo",
-      "subtitle": "El estrés que erupciona como ira intensa",
-      "desc": "Eres del tipo ira — cuando el estrés se acumula, explota en forma de enojo intenso, a veces abrumador. Eres especialmente sensible a la injusticia y sueles reprimir sentimientos hasta que estallan de golpe. La ira es una emoción natural, pero la ira descontrolada daña relaciones importantes y afecta seriamente tu vida profesional. Detrás de la ira a menudo se esconden sentimientos más profundos — heridas, miedo o impotencia — que vale la pena explorar.",
-      "warnings": [
-        "Palabras o actos impulsivos que dañan relaciones cercanas",
-        "Intenso sentimiento de culpa y autodesprecio tras el estallido",
-        "Daño a la reputación y escalada de conflictos en el trabajo",
-        "Impacto físico: presión arterial elevada y mayor riesgo cardiovascular"
-      ],
-      "strategies": [
-        "Cuando sientas ira, aléjate de inmediato y aplica la 'regla de los 10 segundos'",
-        "Lleva un diario de ira para identificar qué situaciones te disparan constantemente",
-        "Practica la relajación muscular progresiva: tensa cada grupo muscular 5 s y suelta",
-        "Expresa tus emociones con 'mensajes en primera persona': 'Me enojo cuando...'",
-        "Utiliza el ejercicio aeróbico regular para liberar de forma saludable la energía del estrés acumulado"
-      ],
-      "apps": ["white-noise", "pomodoro-timer", "detox-timer"]
-    },
-    "avoidance": {
-      "emoji": "😔",
-      "name": "Evitación",
-      "chip": "Tipo escapista",
-      "subtitle": "Huir de los problemas en lugar de afrontarlos",
-      "desc": "Eres del tipo evitación — ante el estrés, tu instinto es retroceder, ignorar o huir en vez de enfrentar. Encontrar refugio en el scroll, los videojuegos o el ajetreo da alivio temporal, pero los problemas sin resolver se acumulan y vuelven como una crisis mayor. La evitación ofrece protección emocional a corto plazo, pero a largo plazo erosiona tu autoconfianza y profundiza la impotencia. Dar pequeños pasos hacia los problemas hoy puede prevenir un gran derrumbe mañana.",
-      "warnings": [
-        "Problemas sin resolver que se acumulan hasta convertirse en una crisis",
-        "Dependencia creciente de las redes sociales, los videojuegos o la comida como escape",
-        "Oportunidades perdidas por procrastinación crónica en decisiones importantes",
-        "Baja autoestima e impotencia aprendida ('de todas formas no funcionará')"
-      ],
-      "strategies": [
-        "La 'regla de los 5 minutos': comprométete a hacer la tarea temida solo 5 minutos y observa qué pasa",
-        "Divide el problema evitado en la única acción mínima siguiente y hazla sola",
-        "Usa una app para limitar redes sociales y videojuegos a una hora diaria",
-        "Ábrete a un amigo de confianza y buscad soluciones juntos",
-        "Imagina vívidamente el resultado positivo de resolver el problema para aumentar tu motivación"
-      ],
-      "apps": ["detox-timer", "pomodoro-timer", "white-noise"]
-    }
+    "overthinker": { "emoji": "🌀", "name": "El Pensador Excesivo", "chip": "Atrapado en bucles de pensamiento", "subtitle": "Una mente que nunca deja de girar", "desc": "Eres El Pensador Excesivo: tu estrés vive en tu cabeza. La tensión se concentra en la cabeza, los ojos y la mandíbula, y ante la presión tiendes a paralizarte o huir. Reproduces los peores escenarios en bucle y postergas la acción hasta que todo parezca perfecto. Este tipo es propenso a la parálisis por análisis; la clave es salir de tu cabeza y mover tu cuerpo.", "tips": ["Establece una 'ventana de preocupación' diaria de 15 minutos — posterga toda preocupación fuera de ella", "Practica la respiración 4-7-8 (inhala 4s, retén 7s, exhala 8s) para resetear tu mente", "Escribe tus preocupaciones y clasifícalas en 'controlables' e 'incontrolables'"], "apps": ["white-noise", "detox-timer", "pomodoro-timer"] },
+    "volcano": { "emoji": "🌋", "name": "El Volcán", "chip": "La presión se acumula y luego erupciona", "subtitle": "El estrés que explota como ira", "desc": "Eres El Volcán: la tensión se acumula en tu cuello, hombros y espalda hasta que el estrés erupciona como ira. Reaccionas fuertemente ante la injusticia y sigues un ciclo de reprimir emociones hasta que estallan. La ira en sí es natural, pero los estallidos descontrolados pueden dañar relaciones y salud. La clave es encontrar salidas saludables antes de que la presión sea insoportable.", "tips": ["Cuando sientas ira, aléjate inmediatamente y cuenta hasta 10 lentamente", "Usa ejercicio aeróbico regular para liberar la energía de estrés acumulada", "Lleva un diario de ira para identificar tus desencadenantes constantes"], "apps": ["white-noise", "pomodoro-timer", "detox-timer"] },
+    "pleaser": { "emoji": "🎭", "name": "El Complaciente", "chip": "Absorbe el estrés de todos", "subtitle": "Carga la ansiedad en el pecho y el estómago", "desc": "Eres El Complaciente: el estrés se concentra en tu pecho y estómago mientras absorbes las emociones de los demás como propias. Te cuesta decir que no y te esfuerzas demasiado por cumplir las expectativas de todos hasta que te derrumbas. Ante el conflicto, huyes o te sacrificas. Construir límites saludables y priorizar tus propias necesidades es lo más importante.", "tips": ["Practica decir 'no' una vez al día, empezando por cosas pequeñas", "Separa conscientemente los problemas de los demás de los tuyos", "Reserva al menos 10 minutos diarios exclusivamente para ti"], "apps": ["detox-timer", "white-noise", "pomodoro-timer"] },
+    "walkingdead": { "emoji": "🧟", "name": "El Muerto Viviente", "chip": "Funcionando en vacío", "subtitle": "Agotamiento total en todo el cuerpo", "desc": "Eres El Muerto Viviente: la fatiga y la tensión se han extendido por todo tu cuerpo, desde la espalda baja hasta las caderas y piernas. Tu energía está completamente agotada; ante el estrés, te derrumbas o te desconectas por completo. El descanso no te recarga y lo que antes disfrutabas ya no tiene sentido. Sin atención, esto puede evolucionar a depresión crónica — el autocuidado debe ser tu máxima prioridad ahora.", "tips": ["Programa 30 minutos diarios de 'no hacer absolutamente nada' en tu calendario", "Establece límites digitales estrictos — apaga todas las notificaciones de trabajo después del horario", "Dile a alguien de confianza honestamente: 'Estoy mal' — no lo cargues solo/a"], "apps": ["white-noise", "detox-timer", "pomodoro-timer"] }
   },
-  "questions": {
-    "q1": "Ya me siento cansado/a cuando me despierto por la mañana",
-    "q2": "Incluso después del trabajo, no puedo dejar de pensar en tareas y responsabilidades",
-    "q3": "Lo que antes disfrutaba ya no me parece agradable ni significativo",
-    "q4": "Me pregunto cuánto tiempo más podré seguir así",
-    "q5": "Incluso después de descansar lo suficiente, mi energía no se siente repuesta",
-    "q6": "Incluso las cosas pequeñas me preocupan y no me dejan en paz",
-    "q7": "Sigo imaginando los peores escenarios posibles",
-    "q8": "Me cuesta dormirme o me despierto frecuentemente durante la noche",
-    "q9": "Me preocupa en exceso lo que los demás piensen de mí",
-    "q10": "Me siento tenso/a o ansioso/a sin razón aparente",
-    "q11": "Cuando estoy estresado/a, me enfado fácilmente por cosas menores",
-    "q12": "Me resulta difícil tolerar situaciones injustas",
-    "q13": "He estallado emocionalmente después de contenerme demasiado tiempo",
-    "q14": "Cuando me enojo, se me escapan palabras duras o insultos",
-    "q15": "Actúo impulsivamente de formas de las que luego me arrepiento",
-    "q16": "Aunque tenga problemas que resolver, los ignoro deliberadamente",
-    "q17": "Cuando estoy estresado/a, me pierdo en exceso en redes sociales, videojuegos o televisión",
-    "q18": "Sigo postergando decisiones importantes",
-    "q19": "Me mantengo deliberadamente ocupado/a para no sentir mis emociones",
-    "q20": "Escapar del problema me da alivio momentáneo, pero la situación acaba empeorando"
-  },
-  "apps": {
-    "white-noise": {
-      "name": "Ruido Blanco",
-      "desc": "Sonidos ambientales para dormir y concentrarse"
-    },
-    "pomodoro-timer": {
-      "name": "Temporizador Pomodoro",
-      "desc": "Trabaja de forma eficiente sin agotarte"
-    },
-    "detox-timer": {
-      "name": "Temporizador Detox Digital",
-      "desc": "Rompe el hábito de escapar hacia lo digital"
-    }
-  }
+  "apps": { "white-noise": { "name": "Ruido Blanco", "desc": "Sonidos ambientales para dormir y concentrarse" }, "pomodoro-timer": { "name": "Temporizador Pomodoro", "desc": "Trabaja eficientemente sin agotarte" }, "detox-timer": { "name": "Temporizador Detox Digital", "desc": "Rompe los hábitos de escape digital" } }
 }
