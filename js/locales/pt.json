@@ -1,18 +1,172 @@
 {
-  "app": { "title": "Teste de Tipo de Estresse 🔥 - DopaBrain", "description": "Mapa corporal + 8 cenários de estresse para analisar seu tipo de estresse.", "loading": "Carregando...", "skipLink": "Pular para o conteúdo" },
-  "intro": { "title": "Teste de Tipo de Estresse", "sub": "Onde seu corpo armazena o estresse?", "desc": "Toque nas zonas de estresse no mapa corporal e reaja a 8 cenários reais. Descubra seu tipo de estresse único!", "meta1": "🫀 Mapa Corporal", "meta2": "🎭 8 Cenários", "meta3": "⏱ ~2 min", "meta4": "🔒 Grátis", "start": "Iniciar o Teste", "userCount": "Mais de 32.000 pessoas fizeram este teste" },
-  "body": { "title": "Onde você sente o estresse?", "instruction": "Toque em todas as áreas onde sente tensão, dor ou desconforto quando está estressado(a). Selecione pelo menos 2.", "selected": "selecionadas", "next": "Próximo", "zones": { "head": "Cabeça", "jaw": "Mandíbula", "eyes": "Olhos", "neck_shoulders": "Pescoço/Ombros", "chest": "Peito", "stomach": "Estômago", "upper_back": "Costas Superior", "lower_back": "Lombar", "arms": "Braços", "hands": "Mãos", "hips": "Quadris", "legs": "Pernas" } },
-  "scenario": { "phase": "Cenário", "label": "Cenário" },
-  "scenarios": { "s1": "Você tem uma apresentação importante amanhã e não está nada preparado(a).", "s2": "Um amigo próximo para de responder suas mensagens sem nenhum motivo.", "s3": "Seu chefe aponta seu erro na frente de toda a equipe.", "s4": "Seu computador trava antes do prazo e todo seu trabalho é perdido.", "s5": "Em um encontro familiar, parentes comparam constantemente suas escolhas com as dos outros.", "s6": "Um colega apresenta sua ideia como se fosse dele e recebe elogios.", "s7": "Você recebe uma conta grande e inesperada que não pode pagar facilmente.", "s8": "Você mal dormiu nos últimos 3 dias e hoje a agenda está lotada." },
-  "reactions": { "fight": "Lutar", "freeze": "Congelar", "flight": "Fugir", "collapse": "Desabar" },
-  "analyzing": { "text": "Analisando seu perfil de estresse...", "step1": "Lendo dados do mapa corporal...", "step2": "Combinando padrões de resposta...", "step3": "Preparando estratégias personalizadas..." },
-  "result": { "dominant": "Tipo Principal", "heatmapTitle": "Seu Mapa de Estresse", "patternTitle": "Padrão de Resposta", "tipsTitle": "💡 Dicas para Aliviar o Estresse", "recommended": "🔗 Apps Recomendados", "copyLink": "🔗 Copiar Link", "tweet": "🐦 Compartilhar no Twitter", "copied": "Link copiado!", "retry": "↩ Refazer o Teste", "back": "DopaBrain Início" },
-  "share": { "text": "Meu tipo de estresse é {type}! Descubra o seu 👇" },
-  "types": {
-    "overthinker": { "emoji": "🌀", "name": "O Pensador Excessivo", "chip": "Preso em loops de pensamento", "subtitle": "Uma mente que nunca para de girar", "desc": "Você é O Pensador Excessivo — seu estresse mora na sua cabeça. A tensão se concentra na cabeça, olhos e mandíbula, e sob pressão você tende a congelar ou fugir. Você repete os piores cenários em loop e adia a ação até que tudo pareça perfeito. Este tipo é propenso à paralisia por análise; a chave é sair da sua cabeça e mover seu corpo.", "tips": ["Defina uma 'janela de preocupação' diária de 15 minutos — adie todas as preocupações fora dela", "Pratique a respiração 4-7-8 (inspire 4s, segure 7s, expire 8s) para resetar sua mente", "Escreva suas preocupações e classifique-as em 'controláveis' e 'incontroláveis'"], "apps": ["white-noise", "detox-timer", "pomodoro-timer"] },
-    "volcano": { "emoji": "🌋", "name": "O Vulcão", "chip": "A pressão acumula e depois explode", "subtitle": "O estresse que explode como raiva", "desc": "Você é O Vulcão — a tensão se acumula no pescoço, ombros e costas até que o estresse explode como raiva. Você reage fortemente à injustiça e segue um ciclo de reprimir emoções até que explodem. A raiva em si é natural, mas explosões descontroladas podem prejudicar relacionamentos e saúde. A chave é encontrar saídas saudáveis antes que a pressão se torne insuportável.", "tips": ["Quando sentir raiva, afaste-se imediatamente e conte até 10 lentamente", "Use exercícios aeróbicos regulares para liberar a energia de estresse acumulada", "Mantenha um diário de raiva para identificar seus gatilhos constantes"], "apps": ["white-noise", "pomodoro-timer", "detox-timer"] },
-    "pleaser": { "emoji": "🎭", "name": "O Agradador", "chip": "Absorve o estresse de todos", "subtitle": "Carrega ansiedade no peito e no estômago", "desc": "Você é O Agradador — o estresse se concentra no peito e estômago enquanto absorve as emoções dos outros como se fossem suas. Tem dificuldade em dizer não e se esforça demais para atender às expectativas de todos até desabar. Diante de conflitos, foge ou se sacrifica. Construir limites saudáveis e priorizar suas próprias necessidades é o mais importante.", "tips": ["Pratique dizer 'não' uma vez ao dia, começando com coisas pequenas", "Separe conscientemente os problemas dos outros dos seus", "Reserve pelo menos 10 minutos diários exclusivamente para você"], "apps": ["detox-timer", "white-noise", "pomodoro-timer"] },
-    "walkingdead": { "emoji": "🧟", "name": "O Morto-Vivo", "chip": "Funcionando no vazio", "subtitle": "Exaustão total em todo o corpo", "desc": "Você é O Morto-Vivo — a fadiga e a tensão se espalharam por todo o corpo, da lombar aos quadris e pernas. Sua energia está completamente esgotada; diante do estresse, você desaba ou se desliga completamente. O descanso não recarrega e o que antes dava prazer perdeu o sentido. Sem atenção, isso pode evoluir para depressão crônica — o autocuidado deve ser sua prioridade máxima agora.", "tips": ["Agende 30 minutos diários de 'não fazer absolutamente nada' no seu calendário", "Estabeleça limites digitais rígidos — desligue todas as notificações de trabalho fora do expediente", "Diga a alguém de confiança honestamente: 'Estou mal' — não carregue sozinho(a)"], "apps": ["white-noise", "detox-timer", "pomodoro-timer"] }
+  "app": {
+    "title": "Teste de Tipo de Estresse 🔥 - DopaBrain",
+    "description": "Mapa corporal + 8 cenários de estresse para analisar seu tipo de estresse.",
+    "loading": "Carregando...",
+    "skipLink": "Pular para o conteúdo"
   },
-  "apps": { "white-noise": { "name": "Ruído Branco", "desc": "Sons ambientais para dormir e focar" }, "pomodoro-timer": { "name": "Timer Pomodoro", "desc": "Trabalhe eficientemente sem se esgotar" }, "detox-timer": { "name": "Timer Detox Digital", "desc": "Quebre hábitos de fuga digital" } }
+  "intro": {
+    "title": "Teste de Tipo de Estresse",
+    "sub": "Onde seu corpo armazena o estresse?",
+    "desc": "Toque nas zonas de estresse no mapa corporal e reaja a 8 cenários reais. Descubra seu tipo de estresse único!",
+    "meta1": "🫀 Mapa Corporal",
+    "meta2": "🎭 8 Cenários",
+    "meta3": "⏱ ~2 min",
+    "meta4": "🔒 Grátis",
+    "start": "Iniciar o Teste",
+    "userCount": "Mais de 32.000 pessoas fizeram este teste"
+  },
+  "body": {
+    "title": "Onde você sente o estresse?",
+    "instruction": "Toque em todas as áreas onde sente tensão, dor ou desconforto quando está estressado(a). Selecione pelo menos 2.",
+    "selected": "selecionadas",
+    "next": "Próximo",
+    "zones": {
+      "head": "Cabeça",
+      "jaw": "Mandíbula",
+      "eyes": "Olhos",
+      "neck_shoulders": "Pescoço/Ombros",
+      "chest": "Peito",
+      "stomach": "Estômago",
+      "upper_back": "Costas Superior",
+      "lower_back": "Lombar",
+      "arms": "Braços",
+      "hands": "Mãos",
+      "hips": "Quadris",
+      "legs": "Pernas"
+    }
+  },
+  "scenario": {
+    "phase": "Cenário",
+    "label": "Cenário"
+  },
+  "scenarios": {
+    "s1": "Você tem uma apresentação importante amanhã e não está nada preparado(a).",
+    "s2": "Um amigo próximo para de responder suas mensagens sem nenhum motivo.",
+    "s3": "Seu chefe aponta seu erro na frente de toda a equipe.",
+    "s4": "Seu computador trava antes do prazo e todo seu trabalho é perdido.",
+    "s5": "Em um encontro familiar, parentes comparam constantemente suas escolhas com as dos outros.",
+    "s6": "Um colega apresenta sua ideia como se fosse dele e recebe elogios.",
+    "s7": "Você recebe uma conta grande e inesperada que não pode pagar facilmente.",
+    "s8": "Você mal dormiu nos últimos 3 dias e hoje a agenda está lotada."
+  },
+  "reactions": {
+    "fight": "Lutar",
+    "freeze": "Congelar",
+    "flight": "Fugir",
+    "collapse": "Desabar"
+  },
+  "analyzing": {
+    "text": "Analisando seu perfil de estresse...",
+    "step1": "Lendo dados do mapa corporal...",
+    "step2": "Combinando padrões de resposta...",
+    "step3": "Preparando estratégias personalizadas..."
+  },
+  "result": {
+    "dominant": "Tipo Principal",
+    "heatmapTitle": "Seu Mapa de Estresse",
+    "patternTitle": "Padrão de Resposta",
+    "tipsTitle": "💡 Dicas para Aliviar o Estresse",
+    "recommended": "🔗 Apps Recomendados",
+    "copyLink": "🔗 Copiar Link",
+    "tweet": "🐦 Compartilhar no Twitter",
+    "copied": "Link copiado!",
+    "retry": "↩ Refazer o Teste",
+    "back": "DopaBrain Início",
+    "moreTests": "Explore mais testes",
+    "percentileStat": "Apenas <strong>{percent}%</strong> dos participantes compartilham seu tipo de estresse"
+  },
+  "share": {
+    "text": "Meu tipo de estresse é {type}! Descubra o seu 👇"
+  },
+  "types": {
+    "overthinker": {
+      "emoji": "🌀",
+      "name": "O Pensador Excessivo",
+      "chip": "Preso em loops de pensamento",
+      "subtitle": "Uma mente que nunca para de girar",
+      "desc": "Você é O Pensador Excessivo — seu estresse mora na sua cabeça. A tensão se concentra na cabeça, olhos e mandíbula, e sob pressão você tende a congelar ou fugir. Você repete os piores cenários em loop e adia a ação até que tudo pareça perfeito. Este tipo é propenso à paralisia por análise; a chave é sair da sua cabeça e mover seu corpo.",
+      "tips": [
+        "Defina uma 'janela de preocupação' diária de 15 minutos — adie todas as preocupações fora dela",
+        "Pratique a respiração 4-7-8 (inspire 4s, segure 7s, expire 8s) para resetar sua mente",
+        "Escreva suas preocupações e classifique-as em 'controláveis' e 'incontroláveis'"
+      ],
+      "apps": [
+        "white-noise",
+        "detox-timer",
+        "pomodoro-timer"
+      ]
+    },
+    "volcano": {
+      "emoji": "🌋",
+      "name": "O Vulcão",
+      "chip": "A pressão acumula e depois explode",
+      "subtitle": "O estresse que explode como raiva",
+      "desc": "Você é O Vulcão — a tensão se acumula no pescoço, ombros e costas até que o estresse explode como raiva. Você reage fortemente à injustiça e segue um ciclo de reprimir emoções até que explodem. A raiva em si é natural, mas explosões descontroladas podem prejudicar relacionamentos e saúde. A chave é encontrar saídas saudáveis antes que a pressão se torne insuportável.",
+      "tips": [
+        "Quando sentir raiva, afaste-se imediatamente e conte até 10 lentamente",
+        "Use exercícios aeróbicos regulares para liberar a energia de estresse acumulada",
+        "Mantenha um diário de raiva para identificar seus gatilhos constantes"
+      ],
+      "apps": [
+        "white-noise",
+        "pomodoro-timer",
+        "detox-timer"
+      ]
+    },
+    "pleaser": {
+      "emoji": "🎭",
+      "name": "O Agradador",
+      "chip": "Absorve o estresse de todos",
+      "subtitle": "Carrega ansiedade no peito e no estômago",
+      "desc": "Você é O Agradador — o estresse se concentra no peito e estômago enquanto absorve as emoções dos outros como se fossem suas. Tem dificuldade em dizer não e se esforça demais para atender às expectativas de todos até desabar. Diante de conflitos, foge ou se sacrifica. Construir limites saudáveis e priorizar suas próprias necessidades é o mais importante.",
+      "tips": [
+        "Pratique dizer 'não' uma vez ao dia, começando com coisas pequenas",
+        "Separe conscientemente os problemas dos outros dos seus",
+        "Reserve pelo menos 10 minutos diários exclusivamente para você"
+      ],
+      "apps": [
+        "detox-timer",
+        "white-noise",
+        "pomodoro-timer"
+      ]
+    },
+    "walkingdead": {
+      "emoji": "🧟",
+      "name": "O Morto-Vivo",
+      "chip": "Funcionando no vazio",
+      "subtitle": "Exaustão total em todo o corpo",
+      "desc": "Você é O Morto-Vivo — a fadiga e a tensão se espalharam por todo o corpo, da lombar aos quadris e pernas. Sua energia está completamente esgotada; diante do estresse, você desaba ou se desliga completamente. O descanso não recarrega e o que antes dava prazer perdeu o sentido. Sem atenção, isso pode evoluir para depressão crônica — o autocuidado deve ser sua prioridade máxima agora.",
+      "tips": [
+        "Agende 30 minutos diários de 'não fazer absolutamente nada' no seu calendário",
+        "Estabeleça limites digitais rígidos — desligue todas as notificações de trabalho fora do expediente",
+        "Diga a alguém de confiança honestamente: 'Estou mal' — não carregue sozinho(a)"
+      ],
+      "apps": [
+        "white-noise",
+        "detox-timer",
+        "pomodoro-timer"
+      ]
+    }
+  },
+  "apps": {
+    "white-noise": {
+      "name": "Ruído Branco",
+      "desc": "Sons ambientais para dormir e focar"
+    },
+    "pomodoro-timer": {
+      "name": "Timer Pomodoro",
+      "desc": "Trabalhe eficientemente sem se esgotar"
+    },
+    "detox-timer": {
+      "name": "Timer Detox Digital",
+      "desc": "Quebre hábitos de fuga digital"
+    }
+  },
+  "related": {
+    "stressCheck": "Verificação de estresse",
+    "hspTest": "Teste HSP",
+    "emotionTemp": "Temperatura emocional",
+    "socialBattery": "Bateria social"
+  }
 }

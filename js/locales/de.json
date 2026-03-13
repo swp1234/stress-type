@@ -1,18 +1,172 @@
 {
-  "app": { "title": "Stress-Typ-Test 🔥 - DopaBrain", "description": "Körperkarte + 8 Szenarien zur Analyse Ihres Stresstyps.", "loading": "Wird geladen...", "skipLink": "Zum Inhalt springen" },
-  "intro": { "title": "Stress-Typ-Test", "sub": "Wo speichert Ihr Körper Stress?", "desc": "Tippen Sie auf Ihre Stresszonen auf einer Körperkarte und reagieren Sie auf 8 reale Szenarien. Entdecken Sie Ihren einzigartigen Stresstyp!", "meta1": "🫀 Körperkarte", "meta2": "🎭 8 Szenarien", "meta3": "⏱ ~2 Min", "meta4": "🔒 Kostenlos", "start": "Test starten", "userCount": "Über 32.000 Menschen haben diesen Test gemacht" },
-  "body": { "title": "Wo fühlen Sie Stress?", "instruction": "Tippen Sie auf alle Bereiche, in denen Sie bei Stress Anspannung, Schmerz oder Unbehagen fühlen. Wählen Sie mindestens 2.", "selected": "ausgewählt", "next": "Weiter", "zones": { "head": "Kopf", "jaw": "Kiefer", "eyes": "Augen", "neck_shoulders": "Nacken/Schultern", "chest": "Brust", "stomach": "Magen", "upper_back": "Oberer Rücken", "lower_back": "Unterer Rücken", "arms": "Arme", "hands": "Hände", "hips": "Hüften", "legs": "Beine" } },
-  "scenario": { "phase": "Szenario", "label": "Szenario" },
-  "scenarios": { "s1": "Morgen steht eine wichtige Präsentation an und Sie sind völlig unvorbereitet.", "s2": "Ein enger Freund hört plötzlich ohne Grund auf, auf Ihre Nachrichten zu antworten.", "s3": "Ihr Chef weist vor dem gesamten Team auf Ihren Fehler hin.", "s4": "Ihr Computer stürzt kurz vor einer Deadline ab und Ihre gesamte Arbeit ist verloren.", "s5": "Bei einem Familientreffen vergleichen Verwandte ständig Ihre Lebensentscheidungen mit denen anderer.", "s6": "Ein Kollege präsentiert Ihre Idee als seine eigene und wird dafür gelobt.", "s7": "Sie erhalten eine große, unerwartete Rechnung, die Sie nicht leicht bezahlen können.", "s8": "Sie haben 3 Tage kaum geschlafen und der heutige Zeitplan ist voll gepackt." },
-  "reactions": { "fight": "Kämpfen", "freeze": "Erstarren", "flight": "Fliehen", "collapse": "Zusammenbrechen" },
-  "analyzing": { "text": "Ihr Stressprofil wird analysiert...", "step1": "Körperkartendaten werden gelesen...", "step2": "Reaktionsmuster werden abgeglichen...", "step3": "Persönliche Strategien werden vorbereitet..." },
-  "result": { "dominant": "Haupttyp", "heatmapTitle": "Ihre Stresskarte", "patternTitle": "Reaktionsmuster", "tipsTitle": "💡 Tipps zur Stressbewältigung", "recommended": "🔗 Empfohlene Apps", "copyLink": "🔗 Link kopieren", "tweet": "🐦 Auf Twitter teilen", "copied": "Link kopiert!", "retry": "↩ Test wiederholen", "back": "DopaBrain Startseite" },
-  "share": { "text": "Mein Stresstyp ist {type}! Finde deinen heraus 👇" },
-  "types": {
-    "overthinker": { "emoji": "🌀", "name": "Der Überdenker", "chip": "Gefangen in Gedankenschleifen", "subtitle": "Ein Geist, der nie aufhört zu kreisen", "desc": "Sie sind Der Überdenker — Ihr Stress lebt in Ihrem Kopf. Anspannung konzentriert sich auf Kopf, Augen und Kiefer, und unter Druck neigen Sie zum Erstarren oder Fliehen. Sie spielen schlimmste Szenarien in Endlosschleife durch und schieben Handlungen auf, bis alles perfekt erscheint.", "tips": ["Legen Sie ein tägliches 15-minütiges 'Sorgenfenster' fest — verschieben Sie alle Sorgen auf diese Zeit", "Praktizieren Sie 4-7-8-Atmung (einatmen 4s, halten 7s, ausatmen 8s) um den Geist zurückzusetzen", "Schreiben Sie Sorgen auf und ordnen Sie sie in 'kontrollierbar' und 'unkontrollierbar'"], "apps": ["white-noise", "detox-timer", "pomodoro-timer"] },
-    "volcano": { "emoji": "🌋", "name": "Der Vulkan", "chip": "Druck baut sich auf und explodiert", "subtitle": "Stress, der als Wut ausbricht", "desc": "Sie sind Der Vulkan — Anspannung sammelt sich in Nacken, Schultern und Rücken, bis Stress als Wut explodiert. Sie reagieren stark auf Ungerechtigkeit und folgen einem Zyklus des Unterdrückens, bis alles auf einmal ausbricht.", "tips": ["Wenn Wut aufsteigt, verlassen Sie sofort die Situation und zählen Sie langsam bis 10", "Nutzen Sie regelmäßigen Ausdauersport um angestaute Stressenergie freizusetzen", "Führen Sie ein Wuttagebuch um Ihre konstanten Auslöser zu identifizieren"], "apps": ["white-noise", "pomodoro-timer", "detox-timer"] },
-    "pleaser": { "emoji": "🎭", "name": "Der Gefallsüchtige", "chip": "Absorbiert den Stress aller anderen", "subtitle": "Trägt Angst in Brust und Magen", "desc": "Sie sind Der Gefallsüchtige — Stress konzentriert sich auf Brust und Magen, während Sie die Emotionen anderer wie Ihre eigenen absorbieren. Sie können schwer Nein sagen und überanstrengen sich, um allen Erwartungen gerecht zu werden, bis Sie zusammenbrechen.", "tips": ["Üben Sie einmal am Tag 'Nein' zu sagen, angefangen mit kleinen Dingen", "Trennen Sie bewusst die Probleme anderer von Ihren eigenen", "Reservieren Sie täglich mindestens 10 Minuten ausschließlich für sich selbst"], "apps": ["detox-timer", "white-noise", "pomodoro-timer"] },
-    "walkingdead": { "emoji": "🧟", "name": "Der Wandelnde Tote", "chip": "Läuft auf leerem Tank", "subtitle": "Totale Erschöpfung im ganzen Körper", "desc": "Sie sind Der Wandelnde Tote — Müdigkeit und Anspannung haben sich über den gesamten Körper ausgebreitet, vom unteren Rücken bis zu Hüften und Beinen. Ihre Energie ist komplett aufgebraucht; bei Stress brechen Sie zusammen oder schalten völlig ab.", "tips": ["Planen Sie täglich 30 Minuten 'absolut nichts tun' in Ihren Kalender ein", "Setzen Sie strenge digitale Grenzen — schalten Sie alle Arbeitsbenachrichtigungen nach Feierabend aus", "Sagen Sie jemandem, dem Sie vertrauen, ehrlich: 'Es geht mir schlecht' — tragen Sie es nicht allein"], "apps": ["white-noise", "detox-timer", "pomodoro-timer"] }
+  "app": {
+    "title": "Stress-Typ-Test 🔥 - DopaBrain",
+    "description": "Körperkarte + 8 Szenarien zur Analyse Ihres Stresstyps.",
+    "loading": "Wird geladen...",
+    "skipLink": "Zum Inhalt springen"
   },
-  "apps": { "white-noise": { "name": "Weißes Rauschen", "desc": "Umgebungsgeräusche für Schlaf und Konzentration" }, "pomodoro-timer": { "name": "Pomodoro-Timer", "desc": "Effizient arbeiten ohne auszubrennen" }, "detox-timer": { "name": "Digitaler Detox-Timer", "desc": "Digitale Fluchtgewohnheiten überwinden" } }
+  "intro": {
+    "title": "Stress-Typ-Test",
+    "sub": "Wo speichert Ihr Körper Stress?",
+    "desc": "Tippen Sie auf Ihre Stresszonen auf einer Körperkarte und reagieren Sie auf 8 reale Szenarien. Entdecken Sie Ihren einzigartigen Stresstyp!",
+    "meta1": "🫀 Körperkarte",
+    "meta2": "🎭 8 Szenarien",
+    "meta3": "⏱ ~2 Min",
+    "meta4": "🔒 Kostenlos",
+    "start": "Test starten",
+    "userCount": "Über 32.000 Menschen haben diesen Test gemacht"
+  },
+  "body": {
+    "title": "Wo fühlen Sie Stress?",
+    "instruction": "Tippen Sie auf alle Bereiche, in denen Sie bei Stress Anspannung, Schmerz oder Unbehagen fühlen. Wählen Sie mindestens 2.",
+    "selected": "ausgewählt",
+    "next": "Weiter",
+    "zones": {
+      "head": "Kopf",
+      "jaw": "Kiefer",
+      "eyes": "Augen",
+      "neck_shoulders": "Nacken/Schultern",
+      "chest": "Brust",
+      "stomach": "Magen",
+      "upper_back": "Oberer Rücken",
+      "lower_back": "Unterer Rücken",
+      "arms": "Arme",
+      "hands": "Hände",
+      "hips": "Hüften",
+      "legs": "Beine"
+    }
+  },
+  "scenario": {
+    "phase": "Szenario",
+    "label": "Szenario"
+  },
+  "scenarios": {
+    "s1": "Morgen steht eine wichtige Präsentation an und Sie sind völlig unvorbereitet.",
+    "s2": "Ein enger Freund hört plötzlich ohne Grund auf, auf Ihre Nachrichten zu antworten.",
+    "s3": "Ihr Chef weist vor dem gesamten Team auf Ihren Fehler hin.",
+    "s4": "Ihr Computer stürzt kurz vor einer Deadline ab und Ihre gesamte Arbeit ist verloren.",
+    "s5": "Bei einem Familientreffen vergleichen Verwandte ständig Ihre Lebensentscheidungen mit denen anderer.",
+    "s6": "Ein Kollege präsentiert Ihre Idee als seine eigene und wird dafür gelobt.",
+    "s7": "Sie erhalten eine große, unerwartete Rechnung, die Sie nicht leicht bezahlen können.",
+    "s8": "Sie haben 3 Tage kaum geschlafen und der heutige Zeitplan ist voll gepackt."
+  },
+  "reactions": {
+    "fight": "Kämpfen",
+    "freeze": "Erstarren",
+    "flight": "Fliehen",
+    "collapse": "Zusammenbrechen"
+  },
+  "analyzing": {
+    "text": "Ihr Stressprofil wird analysiert...",
+    "step1": "Körperkartendaten werden gelesen...",
+    "step2": "Reaktionsmuster werden abgeglichen...",
+    "step3": "Persönliche Strategien werden vorbereitet..."
+  },
+  "result": {
+    "dominant": "Haupttyp",
+    "heatmapTitle": "Ihre Stresskarte",
+    "patternTitle": "Reaktionsmuster",
+    "tipsTitle": "💡 Tipps zur Stressbewältigung",
+    "recommended": "🔗 Empfohlene Apps",
+    "copyLink": "🔗 Link kopieren",
+    "tweet": "🐦 Auf Twitter teilen",
+    "copied": "Link kopiert!",
+    "retry": "↩ Test wiederholen",
+    "back": "DopaBrain Startseite",
+    "moreTests": "Weitere Tests entdecken",
+    "percentileStat": "Nur <strong>{percent}%</strong> der Teilnehmer teilen deinen Stresstyp"
+  },
+  "share": {
+    "text": "Mein Stresstyp ist {type}! Finde deinen heraus 👇"
+  },
+  "types": {
+    "overthinker": {
+      "emoji": "🌀",
+      "name": "Der Überdenker",
+      "chip": "Gefangen in Gedankenschleifen",
+      "subtitle": "Ein Geist, der nie aufhört zu kreisen",
+      "desc": "Sie sind Der Überdenker — Ihr Stress lebt in Ihrem Kopf. Anspannung konzentriert sich auf Kopf, Augen und Kiefer, und unter Druck neigen Sie zum Erstarren oder Fliehen. Sie spielen schlimmste Szenarien in Endlosschleife durch und schieben Handlungen auf, bis alles perfekt erscheint.",
+      "tips": [
+        "Legen Sie ein tägliches 15-minütiges 'Sorgenfenster' fest — verschieben Sie alle Sorgen auf diese Zeit",
+        "Praktizieren Sie 4-7-8-Atmung (einatmen 4s, halten 7s, ausatmen 8s) um den Geist zurückzusetzen",
+        "Schreiben Sie Sorgen auf und ordnen Sie sie in 'kontrollierbar' und 'unkontrollierbar'"
+      ],
+      "apps": [
+        "white-noise",
+        "detox-timer",
+        "pomodoro-timer"
+      ]
+    },
+    "volcano": {
+      "emoji": "🌋",
+      "name": "Der Vulkan",
+      "chip": "Druck baut sich auf und explodiert",
+      "subtitle": "Stress, der als Wut ausbricht",
+      "desc": "Sie sind Der Vulkan — Anspannung sammelt sich in Nacken, Schultern und Rücken, bis Stress als Wut explodiert. Sie reagieren stark auf Ungerechtigkeit und folgen einem Zyklus des Unterdrückens, bis alles auf einmal ausbricht.",
+      "tips": [
+        "Wenn Wut aufsteigt, verlassen Sie sofort die Situation und zählen Sie langsam bis 10",
+        "Nutzen Sie regelmäßigen Ausdauersport um angestaute Stressenergie freizusetzen",
+        "Führen Sie ein Wuttagebuch um Ihre konstanten Auslöser zu identifizieren"
+      ],
+      "apps": [
+        "white-noise",
+        "pomodoro-timer",
+        "detox-timer"
+      ]
+    },
+    "pleaser": {
+      "emoji": "🎭",
+      "name": "Der Gefallsüchtige",
+      "chip": "Absorbiert den Stress aller anderen",
+      "subtitle": "Trägt Angst in Brust und Magen",
+      "desc": "Sie sind Der Gefallsüchtige — Stress konzentriert sich auf Brust und Magen, während Sie die Emotionen anderer wie Ihre eigenen absorbieren. Sie können schwer Nein sagen und überanstrengen sich, um allen Erwartungen gerecht zu werden, bis Sie zusammenbrechen.",
+      "tips": [
+        "Üben Sie einmal am Tag 'Nein' zu sagen, angefangen mit kleinen Dingen",
+        "Trennen Sie bewusst die Probleme anderer von Ihren eigenen",
+        "Reservieren Sie täglich mindestens 10 Minuten ausschließlich für sich selbst"
+      ],
+      "apps": [
+        "detox-timer",
+        "white-noise",
+        "pomodoro-timer"
+      ]
+    },
+    "walkingdead": {
+      "emoji": "🧟",
+      "name": "Der Wandelnde Tote",
+      "chip": "Läuft auf leerem Tank",
+      "subtitle": "Totale Erschöpfung im ganzen Körper",
+      "desc": "Sie sind Der Wandelnde Tote — Müdigkeit und Anspannung haben sich über den gesamten Körper ausgebreitet, vom unteren Rücken bis zu Hüften und Beinen. Ihre Energie ist komplett aufgebraucht; bei Stress brechen Sie zusammen oder schalten völlig ab.",
+      "tips": [
+        "Planen Sie täglich 30 Minuten 'absolut nichts tun' in Ihren Kalender ein",
+        "Setzen Sie strenge digitale Grenzen — schalten Sie alle Arbeitsbenachrichtigungen nach Feierabend aus",
+        "Sagen Sie jemandem, dem Sie vertrauen, ehrlich: 'Es geht mir schlecht' — tragen Sie es nicht allein"
+      ],
+      "apps": [
+        "white-noise",
+        "detox-timer",
+        "pomodoro-timer"
+      ]
+    }
+  },
+  "apps": {
+    "white-noise": {
+      "name": "Weißes Rauschen",
+      "desc": "Umgebungsgeräusche für Schlaf und Konzentration"
+    },
+    "pomodoro-timer": {
+      "name": "Pomodoro-Timer",
+      "desc": "Effizient arbeiten ohne auszubrennen"
+    },
+    "detox-timer": {
+      "name": "Digitaler Detox-Timer",
+      "desc": "Digitale Fluchtgewohnheiten überwinden"
+    }
+  },
+  "related": {
+    "stressCheck": "Stresscheck",
+    "hspTest": "HSP-Test",
+    "emotionTemp": "Emotionstemperatur",
+    "socialBattery": "Soziale Batterie"
+  }
 }

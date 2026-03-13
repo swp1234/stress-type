@@ -72,7 +72,9 @@
     "tweet": "🐦 트위터 공유",
     "copied": "링크가 복사되었습니다!",
     "retry": "↩ 다시 테스트하기",
-    "back": "DopaBrain 홈"
+    "back": "DopaBrain 홈",
+    "moreTests": "더 많은 테스트 탐색",
+    "percentileStat": "참가자의 <strong>{percent}%</strong>만이 당신과 같은 스트레스 유형입니다"
   },
   "share": {
     "text": "나의 스트레스 유형은 {type}! 당신은 어떤 유형인지 테스트해보세요 👇"
@@ -89,7 +91,11 @@
         "4-7-8 호흡법(4초 흡입, 7초 참기, 8초 내뱉기)으로 머릿속을 비우세요",
         "걱정을 종이에 적고 '통제 가능'과 '통제 불가능'으로 분류하세요"
       ],
-      "apps": ["white-noise", "detox-timer", "pomodoro-timer"]
+      "apps": [
+        "white-noise",
+        "detox-timer",
+        "pomodoro-timer"
+      ]
     },
     "volcano": {
       "emoji": "🌋",
@@ -102,7 +108,11 @@
         "규칙적인 유산소 운동으로 누적된 스트레스 에너지를 해소하세요",
         "분노 일지를 쓰며 어떤 상황에서 화가 나는지 패턴을 파악하세요"
       ],
-      "apps": ["white-noise", "pomodoro-timer", "detox-timer"]
+      "apps": [
+        "white-noise",
+        "pomodoro-timer",
+        "detox-timer"
+      ]
     },
     "pleaser": {
       "emoji": "🎭",
@@ -115,7 +125,11 @@
         "타인의 문제와 내 문제를 분리하는 '감정 경계선'을 의식하세요",
         "매일 10분 자신만을 위한 시간을 반드시 확보하세요"
       ],
-      "apps": ["detox-timer", "white-noise", "pomodoro-timer"]
+      "apps": [
+        "detox-timer",
+        "white-noise",
+        "pomodoro-timer"
+      ]
     },
     "walkingdead": {
       "emoji": "🧟",
@@ -128,7 +142,11 @@
         "퇴근 후 업무 알림을 끄는 디지털 경계를 엄격히 지키세요",
         "신뢰할 수 있는 사람에게 솔직하게 '힘들다'고 말하는 연습을 하세요"
       ],
-      "apps": ["white-noise", "detox-timer", "pomodoro-timer"]
+      "apps": [
+        "white-noise",
+        "detox-timer",
+        "pomodoro-timer"
+      ]
     }
   },
   "apps": {
@@ -144,5 +162,11 @@
       "name": "디지털 디톡스 타이머",
       "desc": "디지털 도피 습관 해소"
     }
+  },
+  "related": {
+    "stressCheck": "스트레스 체크",
+    "hspTest": "HSP 테스트",
+    "emotionTemp": "감정 온도",
+    "socialBattery": "소셜 배터리"
   }
 }

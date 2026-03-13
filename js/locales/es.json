@@ -21,9 +21,25 @@
     "instruction": "Toca todas las áreas donde sientes tensión, dolor o molestia cuando estás estresado/a. Selecciona al menos 2.",
     "selected": "seleccionadas",
     "next": "Siguiente",
-    "zones": { "head": "Cabeza", "jaw": "Mandíbula", "eyes": "Ojos", "neck_shoulders": "Cuello/Hombros", "chest": "Pecho", "stomach": "Estómago", "upper_back": "Espalda Alta", "lower_back": "Espalda Baja", "arms": "Brazos", "hands": "Manos", "hips": "Caderas", "legs": "Piernas" }
+    "zones": {
+      "head": "Cabeza",
+      "jaw": "Mandíbula",
+      "eyes": "Ojos",
+      "neck_shoulders": "Cuello/Hombros",
+      "chest": "Pecho",
+      "stomach": "Estómago",
+      "upper_back": "Espalda Alta",
+      "lower_back": "Espalda Baja",
+      "arms": "Brazos",
+      "hands": "Manos",
+      "hips": "Caderas",
+      "legs": "Piernas"
+    }
   },
-  "scenario": { "phase": "Escenario", "label": "Escenario" },
+  "scenario": {
+    "phase": "Escenario",
+    "label": "Escenario"
+  },
   "scenarios": {
     "s1": "Tienes una presentación importante mañana y no estás nada preparado/a.",
     "s2": "Un amigo cercano deja de responder tus mensajes sin ninguna razón.",
@@ -34,15 +50,123 @@
     "s7": "Recibes una factura grande e inesperada que no puedes pagar fácilmente.",
     "s8": "Llevas 3 días casi sin dormir y el horario de hoy está lleno."
   },
-  "reactions": { "fight": "Luchar", "freeze": "Paralizarse", "flight": "Huir", "collapse": "Derrumbarse" },
-  "analyzing": { "text": "Analizando tu perfil de estrés...", "step1": "Leyendo datos del mapa corporal...", "step2": "Emparejando patrones de respuesta...", "step3": "Preparando estrategias personalizadas..." },
-  "result": { "dominant": "Tipo Principal", "heatmapTitle": "Tu Mapa de Estrés", "patternTitle": "Patrón de Respuesta", "tipsTitle": "💡 Consejos para Aliviar el Estrés", "recommended": "🔗 Apps Recomendadas", "copyLink": "🔗 Copiar Enlace", "tweet": "🐦 Compartir en Twitter", "copied": "¡Enlace copiado!", "retry": "↩ Repetir el Test", "back": "DopaBrain Inicio" },
-  "share": { "text": "¡Mi tipo de estrés es {type}! Descubre el tuyo 👇" },
-  "types": {
-    "overthinker": { "emoji": "🌀", "name": "El Pensador Excesivo", "chip": "Atrapado en bucles de pensamiento", "subtitle": "Una mente que nunca deja de girar", "desc": "Eres El Pensador Excesivo: tu estrés vive en tu cabeza. La tensión se concentra en la cabeza, los ojos y la mandíbula, y ante la presión tiendes a paralizarte o huir. Reproduces los peores escenarios en bucle y postergas la acción hasta que todo parezca perfecto. Este tipo es propenso a la parálisis por análisis; la clave es salir de tu cabeza y mover tu cuerpo.", "tips": ["Establece una 'ventana de preocupación' diaria de 15 minutos — posterga toda preocupación fuera de ella", "Practica la respiración 4-7-8 (inhala 4s, retén 7s, exhala 8s) para resetear tu mente", "Escribe tus preocupaciones y clasifícalas en 'controlables' e 'incontrolables'"], "apps": ["white-noise", "detox-timer", "pomodoro-timer"] },
-    "volcano": { "emoji": "🌋", "name": "El Volcán", "chip": "La presión se acumula y luego erupciona", "subtitle": "El estrés que explota como ira", "desc": "Eres El Volcán: la tensión se acumula en tu cuello, hombros y espalda hasta que el estrés erupciona como ira. Reaccionas fuertemente ante la injusticia y sigues un ciclo de reprimir emociones hasta que estallan. La ira en sí es natural, pero los estallidos descontrolados pueden dañar relaciones y salud. La clave es encontrar salidas saludables antes de que la presión sea insoportable.", "tips": ["Cuando sientas ira, aléjate inmediatamente y cuenta hasta 10 lentamente", "Usa ejercicio aeróbico regular para liberar la energía de estrés acumulada", "Lleva un diario de ira para identificar tus desencadenantes constantes"], "apps": ["white-noise", "pomodoro-timer", "detox-timer"] },
-    "pleaser": { "emoji": "🎭", "name": "El Complaciente", "chip": "Absorbe el estrés de todos", "subtitle": "Carga la ansiedad en el pecho y el estómago", "desc": "Eres El Complaciente: el estrés se concentra en tu pecho y estómago mientras absorbes las emociones de los demás como propias. Te cuesta decir que no y te esfuerzas demasiado por cumplir las expectativas de todos hasta que te derrumbas. Ante el conflicto, huyes o te sacrificas. Construir límites saludables y priorizar tus propias necesidades es lo más importante.", "tips": ["Practica decir 'no' una vez al día, empezando por cosas pequeñas", "Separa conscientemente los problemas de los demás de los tuyos", "Reserva al menos 10 minutos diarios exclusivamente para ti"], "apps": ["detox-timer", "white-noise", "pomodoro-timer"] },
-    "walkingdead": { "emoji": "🧟", "name": "El Muerto Viviente", "chip": "Funcionando en vacío", "subtitle": "Agotamiento total en todo el cuerpo", "desc": "Eres El Muerto Viviente: la fatiga y la tensión se han extendido por todo tu cuerpo, desde la espalda baja hasta las caderas y piernas. Tu energía está completamente agotada; ante el estrés, te derrumbas o te desconectas por completo. El descanso no te recarga y lo que antes disfrutabas ya no tiene sentido. Sin atención, esto puede evolucionar a depresión crónica — el autocuidado debe ser tu máxima prioridad ahora.", "tips": ["Programa 30 minutos diarios de 'no hacer absolutamente nada' en tu calendario", "Establece límites digitales estrictos — apaga todas las notificaciones de trabajo después del horario", "Dile a alguien de confianza honestamente: 'Estoy mal' — no lo cargues solo/a"], "apps": ["white-noise", "detox-timer", "pomodoro-timer"] }
+  "reactions": {
+    "fight": "Luchar",
+    "freeze": "Paralizarse",
+    "flight": "Huir",
+    "collapse": "Derrumbarse"
   },
-  "apps": { "white-noise": { "name": "Ruido Blanco", "desc": "Sonidos ambientales para dormir y concentrarse" }, "pomodoro-timer": { "name": "Temporizador Pomodoro", "desc": "Trabaja eficientemente sin agotarte" }, "detox-timer": { "name": "Temporizador Detox Digital", "desc": "Rompe los hábitos de escape digital" } }
+  "analyzing": {
+    "text": "Analizando tu perfil de estrés...",
+    "step1": "Leyendo datos del mapa corporal...",
+    "step2": "Emparejando patrones de respuesta...",
+    "step3": "Preparando estrategias personalizadas..."
+  },
+  "result": {
+    "dominant": "Tipo Principal",
+    "heatmapTitle": "Tu Mapa de Estrés",
+    "patternTitle": "Patrón de Respuesta",
+    "tipsTitle": "💡 Consejos para Aliviar el Estrés",
+    "recommended": "🔗 Apps Recomendadas",
+    "copyLink": "🔗 Copiar Enlace",
+    "tweet": "🐦 Compartir en Twitter",
+    "copied": "¡Enlace copiado!",
+    "retry": "↩ Repetir el Test",
+    "back": "DopaBrain Inicio",
+    "moreTests": "Explora más tests",
+    "percentileStat": "Solo el <strong>{percent}%</strong> de los participantes comparte tu tipo de estrés"
+  },
+  "share": {
+    "text": "¡Mi tipo de estrés es {type}! Descubre el tuyo 👇"
+  },
+  "types": {
+    "overthinker": {
+      "emoji": "🌀",
+      "name": "El Pensador Excesivo",
+      "chip": "Atrapado en bucles de pensamiento",
+      "subtitle": "Una mente que nunca deja de girar",
+      "desc": "Eres El Pensador Excesivo: tu estrés vive en tu cabeza. La tensión se concentra en la cabeza, los ojos y la mandíbula, y ante la presión tiendes a paralizarte o huir. Reproduces los peores escenarios en bucle y postergas la acción hasta que todo parezca perfecto. Este tipo es propenso a la parálisis por análisis; la clave es salir de tu cabeza y mover tu cuerpo.",
+      "tips": [
+        "Establece una 'ventana de preocupación' diaria de 15 minutos — posterga toda preocupación fuera de ella",
+        "Practica la respiración 4-7-8 (inhala 4s, retén 7s, exhala 8s) para resetear tu mente",
+        "Escribe tus preocupaciones y clasifícalas en 'controlables' e 'incontrolables'"
+      ],
+      "apps": [
+        "white-noise",
+        "detox-timer",
+        "pomodoro-timer"
+      ]
+    },
+    "volcano": {
+      "emoji": "🌋",
+      "name": "El Volcán",
+      "chip": "La presión se acumula y luego erupciona",
+      "subtitle": "El estrés que explota como ira",
+      "desc": "Eres El Volcán: la tensión se acumula en tu cuello, hombros y espalda hasta que el estrés erupciona como ira. Reaccionas fuertemente ante la injusticia y sigues un ciclo de reprimir emociones hasta que estallan. La ira en sí es natural, pero los estallidos descontrolados pueden dañar relaciones y salud. La clave es encontrar salidas saludables antes de que la presión sea insoportable.",
+      "tips": [
+        "Cuando sientas ira, aléjate inmediatamente y cuenta hasta 10 lentamente",
+        "Usa ejercicio aeróbico regular para liberar la energía de estrés acumulada",
+        "Lleva un diario de ira para identificar tus desencadenantes constantes"
+      ],
+      "apps": [
+        "white-noise",
+        "pomodoro-timer",
+        "detox-timer"
+      ]
+    },
+    "pleaser": {
+      "emoji": "🎭",
+      "name": "El Complaciente",
+      "chip": "Absorbe el estrés de todos",
+      "subtitle": "Carga la ansiedad en el pecho y el estómago",
+      "desc": "Eres El Complaciente: el estrés se concentra en tu pecho y estómago mientras absorbes las emociones de los demás como propias. Te cuesta decir que no y te esfuerzas demasiado por cumplir las expectativas de todos hasta que te derrumbas. Ante el conflicto, huyes o te sacrificas. Construir límites saludables y priorizar tus propias necesidades es lo más importante.",
+      "tips": [
+        "Practica decir 'no' una vez al día, empezando por cosas pequeñas",
+        "Separa conscientemente los problemas de los demás de los tuyos",
+        "Reserva al menos 10 minutos diarios exclusivamente para ti"
+      ],
+      "apps": [
+        "detox-timer",
+        "white-noise",
+        "pomodoro-timer"
+      ]
+    },
+    "walkingdead": {
+      "emoji": "🧟",
+      "name": "El Muerto Viviente",
+      "chip": "Funcionando en vacío",
+      "subtitle": "Agotamiento total en todo el cuerpo",
+      "desc": "Eres El Muerto Viviente: la fatiga y la tensión se han extendido por todo tu cuerpo, desde la espalda baja hasta las caderas y piernas. Tu energía está completamente agotada; ante el estrés, te derrumbas o te desconectas por completo. El descanso no te recarga y lo que antes disfrutabas ya no tiene sentido. Sin atención, esto puede evolucionar a depresión crónica — el autocuidado debe ser tu máxima prioridad ahora.",
+      "tips": [
+        "Programa 30 minutos diarios de 'no hacer absolutamente nada' en tu calendario",
+        "Establece límites digitales estrictos — apaga todas las notificaciones de trabajo después del horario",
+        "Dile a alguien de confianza honestamente: 'Estoy mal' — no lo cargues solo/a"
+      ],
+      "apps": [
+        "white-noise",
+        "detox-timer",
+        "pomodoro-timer"
+      ]
+    }
+  },
+  "apps": {
+    "white-noise": {
+      "name": "Ruido Blanco",
+      "desc": "Sonidos ambientales para dormir y concentrarse"
+    },
+    "pomodoro-timer": {
+      "name": "Temporizador Pomodoro",
+      "desc": "Trabaja eficientemente sin agotarte"
+    },
+    "detox-timer": {
+      "name": "Temporizador Detox Digital",
+      "desc": "Rompe los hábitos de escape digital"
+    }
+  },
+  "related": {
+    "stressCheck": "Control de estrés",
+    "hspTest": "Test HSP",
+    "emotionTemp": "Temperatura emocional",
+    "socialBattery": "Batería social"
+  }
 }

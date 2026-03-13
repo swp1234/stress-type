@@ -758,6 +758,76 @@
       }
     }
 
+    /* Percentile Stat */
+    .percentile-stat {
+      text-align: center;
+      font-size: 15px;
+      color: var(--text-muted);
+      padding: 16px 20px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      backdrop-filter: blur(10px);
+      line-height: 1.6;
+    }
+    .percentile-stat strong {
+      color: var(--primary);
+      font-size: 18px;
+    }
+
+    /* Related Tests */
+    .related-tests {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      backdrop-filter: blur(16px);
+    }
+    .related-tests h3 {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      text-align: center;
+    }
+    .related-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+    .related-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 18px 10px;
+      background: rgba(255,255,255,0.04);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius);
+      text-decoration: none;
+      color: var(--text);
+      transition: all 0.25s ease;
+      min-height: 90px;
+    }
+    [data-theme="light"] .related-card {
+      background: rgba(0,0,0,0.02);
+    }
+    .related-card:hover {
+      border-color: var(--card-color, var(--primary));
+      background: color-mix(in srgb, var(--card-color, var(--primary)) 12%, transparent);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    }
+    .related-emoji {
+      font-size: 32px;
+      line-height: 1;
+    }
+    .related-name {
+      font-size: 13px;
+      font-weight: 600;
+      text-align: center;
+    }
+
     @media (max-width: 480px) {
       .reaction-btns { grid-template-columns: 1fr 1fr; }
       .type-preview { grid-template-columns: 1fr 1fr; }
@@ -1004,6 +1074,30 @@
       <div class="tips-card">
         <p class="tips-heading" data-i18n="result.recommended">🔗 Recommended Apps</p>
         <div class="recommended-apps" id="recommended-apps"></div>
+      </div>
+
+      <p class="percentile-stat" id="percentile-stat"></p>
+
+      <div class="related-tests">
+        <h3 data-i18n="result.moreTests">Explore More Tests</h3>
+        <div class="related-grid">
+          <a href="/stress-check/" class="related-card" style="--card-color: #3498db">
+            <span class="related-emoji">💆</span>
+            <span class="related-name" data-i18n="related.stressCheck">Stress Check</span>
+          </a>
+          <a href="/hsp-test/" class="related-card" style="--card-color: #9b59b6">
+            <span class="related-emoji">🦋</span>
+            <span class="related-name" data-i18n="related.hspTest">HSP Test</span>
+          </a>
+          <a href="/emotion-temp/" class="related-card" style="--card-color: #e74c3c">
+            <span class="related-emoji">🌡️</span>
+            <span class="related-name" data-i18n="related.emotionTemp">Emotion Temperature</span>
+          </a>
+          <a href="/social-battery/" class="related-card" style="--card-color: #2ecc71">
+            <span class="related-emoji">🔋</span>
+            <span class="related-name" data-i18n="related.socialBattery">Social Battery</span>
+          </a>
+        </div>
       </div>
 
       <div class="action-btns">
@@ -1335,6 +1429,16 @@
 
       // Recommended Apps
       buildRecommendedApps();
+
+      // Percentile stat
+      const percentiles = { overthinker: 28, volcano: 19, pleaser: 34, walkingdead: 19 };
+      const pctValue = percentiles[primaryType] || 25;
+      const pctTemplate = t('result.percentileStat');
+      if (typeof pctTemplate === 'string' && pctTemplate !== 'result.percentileStat') {
+        $('percentile-stat').innerHTML = pctTemplate.replace('{percent}', pctValue);
+      } else {
+        $('percentile-stat').innerHTML = `Only <strong>${pctValue}%</strong> of participants share your stress type`;
+      }
 
       show('screen-result');
 

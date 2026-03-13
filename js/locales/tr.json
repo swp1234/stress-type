@@ -1,18 +1,172 @@
 {
-  "app": { "title": "Stres Tipi Testi 🔥 - DopaBrain", "description": "Vücut haritası + 8 senaryo ile stres tipinizi analiz edin.", "loading": "Yükleniyor...", "skipLink": "İçeriğe geç" },
-  "intro": { "title": "Stres Tipi Testi", "sub": "Vücudunuz stresi nerede biriktiriyor?", "desc": "Vücut haritasında stres bölgelerinize dokunun, ardından 8 gerçek senaryoya tepki verin. Benzersiz stres tipinizi keşfedin!", "meta1": "🫀 Vücut Haritası", "meta2": "🎭 8 Senaryo", "meta3": "⏱ ~2 dk", "meta4": "🔒 Ücretsiz", "start": "Teste Başla", "userCount": "32.000'den fazla kişi bu testi tamamladı" },
-  "body": { "title": "Stresi nerede hissediyorsunuz?", "instruction": "Stres altındayken gerginlik, ağrı veya rahatsızlık hissettiğiniz tüm bölgelere dokunun. En az 2 seçin.", "selected": "seçildi", "next": "İleri", "zones": { "head": "Baş", "jaw": "Çene", "eyes": "Gözler", "neck_shoulders": "Boyun/Omuzlar", "chest": "Göğüs", "stomach": "Mide", "upper_back": "Üst Sırt", "lower_back": "Bel", "arms": "Kollar", "hands": "Eller", "hips": "Kalça", "legs": "Bacaklar" } },
-  "scenario": { "phase": "Senaryo", "label": "Senaryo" },
-  "scenarios": { "s1": "Yarın önemli bir sunum var ve hiç hazır değilsiniz.", "s2": "Yakın bir arkadaş sebepsiz yere mesajlarınıza yanıt vermeyi bıraktı.", "s3": "Patronunuz tüm ekibin önünde hatanızı belirtiyor.", "s4": "Teslim tarihinden hemen önce bilgisayar çöküyor ve tüm çalışmanız kayboluyor.", "s5": "Aile toplantısında akrabalar hayat tercihlerinizi sürekli başkalarıyla kıyaslıyor.", "s6": "İş arkadaşı fikrinizi kendisininmiş gibi sunuyor ve övgü alıyor.", "s7": "Beklenmedik büyük bir fatura alıyorsunuz.", "s8": "3 gündür neredeyse uyumadınız ve bugünün programı dolu." },
-  "reactions": { "fight": "Savaş", "freeze": "Don", "flight": "Kaç", "collapse": "Çök" },
-  "analyzing": { "text": "Stres profiliniz analiz ediliyor...", "step1": "Vücut haritası verileri okunuyor...", "step2": "Tepki kalıpları eşleştiriliyor...", "step3": "Kişisel stratejiler hazırlanıyor..." },
-  "result": { "dominant": "Ana Tip", "heatmapTitle": "Stres Haritanız", "patternTitle": "Tepki Kalıbı", "tipsTitle": "💡 Stres Giderme İpuçları", "recommended": "🔗 Önerilen Uygulamalar", "copyLink": "🔗 Bağlantıyı Kopyala", "tweet": "🐦 Twitter'da Paylaş", "copied": "Bağlantı kopyalandı!", "retry": "↩ Testi Tekrarla", "back": "DopaBrain Ana Sayfa" },
-  "share": { "text": "Stres tipim {type}! Seninkini de öğren 👇" },
-  "types": {
-    "overthinker": { "emoji": "🌀", "name": "Aşırı Düşünen", "chip": "Düşünce döngüsüne sıkışmış", "subtitle": "Asla durmayan bir zihin", "desc": "Aşırı Düşünen tipsiniz — stresiniz kafanızda yaşıyor. Gerginlik baş, göz ve çenede yoğunlaşıyor, baskı altında donma veya kaçma eğilimindesiniz. En kötü senaryoları döngü halinde tekrarlıyor ve her şey mükemmel olana kadar eylemi erteliyorsunuz.", "tips": ["Günlük 15 dakikalık bir 'endişe penceresi' belirleyin — diğer tüm endişeleri erteleyin", "Zihninizi sıfırlamak için 4-7-8 nefes tekniğini uygulayın (4sn al, 7sn tut, 8sn ver)", "Endişelerinizi yazıp 'kontrol edilebilir' ve 'edilemez' olarak ayırın"], "apps": ["white-noise", "detox-timer", "pomodoro-timer"] },
-    "volcano": { "emoji": "🌋", "name": "Yanardağ", "chip": "Basınç birikir, sonra patlar", "subtitle": "Öfke olarak patlayan stres", "desc": "Yanardağ tipsiniz — gerginlik boyun, omuz ve sırtta birikir ve stres öfke olarak patlar. Adaletsizliğe güçlü tepki verirsiniz ve duyguları bastırıp bir anda patlatma döngüsünü tekrarlarsınız.", "tips": ["Öfke yükseldiğinde hemen ortamdan ayrılın ve yavaşça 10'a kadar sayın", "Biriken stres enerjisini serbest bırakmak için düzenli aerobik egzersiz yapın", "Hangi durumların sizi tetiklediğini bulmak için öfke günlüğü tutun"], "apps": ["white-noise", "pomodoro-timer", "detox-timer"] },
-    "pleaser": { "emoji": "🎭", "name": "Hoşa Giden", "chip": "Herkesin stresini emer", "subtitle": "Kaygıyı göğüs ve mide bölgesinde taşır", "desc": "Hoşa Giden tipsiniz — stres göğüs ve midede yoğunlaşırken başkalarının duygularını kendinizinmiş gibi emersiniz. Hayır demekte zorlanır ve herkesin beklentilerini karşılamak için kendinizi zorlarsınız.", "tips": ["Günde bir kez 'hayır' demeyi pratik edin, küçük şeylerden başlayın", "Başkalarının sorunlarını bilinçli olarak kendi sorunlarınızdan ayırın", "Her gün en az 10 dakikayı yalnızca kendinize ayırın"], "apps": ["detox-timer", "white-noise", "pomodoro-timer"] },
-    "walkingdead": { "emoji": "🧟", "name": "Yürüyen Ölü", "chip": "Boş tankla çalışıyor", "subtitle": "Tüm vücutta toplam tükenme", "desc": "Yürüyen Ölü tipsiniz — yorgunluk ve gerginlik tüm vücuda yayılmış durumda, belden kalçaya ve bacaklara kadar. Enerjiniz tamamen tükenmiş; stresle karşılaştığınızda ya çöküyorsunuz ya da tamamen kapanıyorsunuz.", "tips": ["Takviminize her gün 30 dakika 'kesinlikle hiçbir şey yapmama' zamanı ekleyin", "Katı dijital sınırlar koyun — mesai sonrası tüm iş bildirimlerini kapatın", "Güvendiğiniz birine dürüstçe söyleyin: 'Zor zamanlar geçiriyorum' — yalnız taşımayın"], "apps": ["white-noise", "detox-timer", "pomodoro-timer"] }
+  "app": {
+    "title": "Stres Tipi Testi 🔥 - DopaBrain",
+    "description": "Vücut haritası + 8 senaryo ile stres tipinizi analiz edin.",
+    "loading": "Yükleniyor...",
+    "skipLink": "İçeriğe geç"
   },
-  "apps": { "white-noise": { "name": "Beyaz Gürültü", "desc": "Uyku ve odaklanma için ortam sesleri" }, "pomodoro-timer": { "name": "Pomodoro Zamanlayıcısı", "desc": "Tükenmeden verimli çalışın" }, "detox-timer": { "name": "Dijital Detoks Zamanlayıcısı", "desc": "Dijital kaçış alışkanlığından kurtulun" } }
+  "intro": {
+    "title": "Stres Tipi Testi",
+    "sub": "Vücudunuz stresi nerede biriktiriyor?",
+    "desc": "Vücut haritasında stres bölgelerinize dokunun, ardından 8 gerçek senaryoya tepki verin. Benzersiz stres tipinizi keşfedin!",
+    "meta1": "🫀 Vücut Haritası",
+    "meta2": "🎭 8 Senaryo",
+    "meta3": "⏱ ~2 dk",
+    "meta4": "🔒 Ücretsiz",
+    "start": "Teste Başla",
+    "userCount": "32.000'den fazla kişi bu testi tamamladı"
+  },
+  "body": {
+    "title": "Stresi nerede hissediyorsunuz?",
+    "instruction": "Stres altındayken gerginlik, ağrı veya rahatsızlık hissettiğiniz tüm bölgelere dokunun. En az 2 seçin.",
+    "selected": "seçildi",
+    "next": "İleri",
+    "zones": {
+      "head": "Baş",
+      "jaw": "Çene",
+      "eyes": "Gözler",
+      "neck_shoulders": "Boyun/Omuzlar",
+      "chest": "Göğüs",
+      "stomach": "Mide",
+      "upper_back": "Üst Sırt",
+      "lower_back": "Bel",
+      "arms": "Kollar",
+      "hands": "Eller",
+      "hips": "Kalça",
+      "legs": "Bacaklar"
+    }
+  },
+  "scenario": {
+    "phase": "Senaryo",
+    "label": "Senaryo"
+  },
+  "scenarios": {
+    "s1": "Yarın önemli bir sunum var ve hiç hazır değilsiniz.",
+    "s2": "Yakın bir arkadaş sebepsiz yere mesajlarınıza yanıt vermeyi bıraktı.",
+    "s3": "Patronunuz tüm ekibin önünde hatanızı belirtiyor.",
+    "s4": "Teslim tarihinden hemen önce bilgisayar çöküyor ve tüm çalışmanız kayboluyor.",
+    "s5": "Aile toplantısında akrabalar hayat tercihlerinizi sürekli başkalarıyla kıyaslıyor.",
+    "s6": "İş arkadaşı fikrinizi kendisininmiş gibi sunuyor ve övgü alıyor.",
+    "s7": "Beklenmedik büyük bir fatura alıyorsunuz.",
+    "s8": "3 gündür neredeyse uyumadınız ve bugünün programı dolu."
+  },
+  "reactions": {
+    "fight": "Savaş",
+    "freeze": "Don",
+    "flight": "Kaç",
+    "collapse": "Çök"
+  },
+  "analyzing": {
+    "text": "Stres profiliniz analiz ediliyor...",
+    "step1": "Vücut haritası verileri okunuyor...",
+    "step2": "Tepki kalıpları eşleştiriliyor...",
+    "step3": "Kişisel stratejiler hazırlanıyor..."
+  },
+  "result": {
+    "dominant": "Ana Tip",
+    "heatmapTitle": "Stres Haritanız",
+    "patternTitle": "Tepki Kalıbı",
+    "tipsTitle": "💡 Stres Giderme İpuçları",
+    "recommended": "🔗 Önerilen Uygulamalar",
+    "copyLink": "🔗 Bağlantıyı Kopyala",
+    "tweet": "🐦 Twitter'da Paylaş",
+    "copied": "Bağlantı kopyalandı!",
+    "retry": "↩ Testi Tekrarla",
+    "back": "DopaBrain Ana Sayfa",
+    "moreTests": "Daha Fazla Test Keşfet",
+    "percentileStat": "Katılımcıların yalnızca <strong>{percent}%</strong>i sizinle aynı stres tipine sahip"
+  },
+  "share": {
+    "text": "Stres tipim {type}! Seninkini de öğren 👇"
+  },
+  "types": {
+    "overthinker": {
+      "emoji": "🌀",
+      "name": "Aşırı Düşünen",
+      "chip": "Düşünce döngüsüne sıkışmış",
+      "subtitle": "Asla durmayan bir zihin",
+      "desc": "Aşırı Düşünen tipsiniz — stresiniz kafanızda yaşıyor. Gerginlik baş, göz ve çenede yoğunlaşıyor, baskı altında donma veya kaçma eğilimindesiniz. En kötü senaryoları döngü halinde tekrarlıyor ve her şey mükemmel olana kadar eylemi erteliyorsunuz.",
+      "tips": [
+        "Günlük 15 dakikalık bir 'endişe penceresi' belirleyin — diğer tüm endişeleri erteleyin",
+        "Zihninizi sıfırlamak için 4-7-8 nefes tekniğini uygulayın (4sn al, 7sn tut, 8sn ver)",
+        "Endişelerinizi yazıp 'kontrol edilebilir' ve 'edilemez' olarak ayırın"
+      ],
+      "apps": [
+        "white-noise",
+        "detox-timer",
+        "pomodoro-timer"
+      ]
+    },
+    "volcano": {
+      "emoji": "🌋",
+      "name": "Yanardağ",
+      "chip": "Basınç birikir, sonra patlar",
+      "subtitle": "Öfke olarak patlayan stres",
+      "desc": "Yanardağ tipsiniz — gerginlik boyun, omuz ve sırtta birikir ve stres öfke olarak patlar. Adaletsizliğe güçlü tepki verirsiniz ve duyguları bastırıp bir anda patlatma döngüsünü tekrarlarsınız.",
+      "tips": [
+        "Öfke yükseldiğinde hemen ortamdan ayrılın ve yavaşça 10'a kadar sayın",
+        "Biriken stres enerjisini serbest bırakmak için düzenli aerobik egzersiz yapın",
+        "Hangi durumların sizi tetiklediğini bulmak için öfke günlüğü tutun"
+      ],
+      "apps": [
+        "white-noise",
+        "pomodoro-timer",
+        "detox-timer"
+      ]
+    },
+    "pleaser": {
+      "emoji": "🎭",
+      "name": "Hoşa Giden",
+      "chip": "Herkesin stresini emer",
+      "subtitle": "Kaygıyı göğüs ve mide bölgesinde taşır",
+      "desc": "Hoşa Giden tipsiniz — stres göğüs ve midede yoğunlaşırken başkalarının duygularını kendinizinmiş gibi emersiniz. Hayır demekte zorlanır ve herkesin beklentilerini karşılamak için kendinizi zorlarsınız.",
+      "tips": [
+        "Günde bir kez 'hayır' demeyi pratik edin, küçük şeylerden başlayın",
+        "Başkalarının sorunlarını bilinçli olarak kendi sorunlarınızdan ayırın",
+        "Her gün en az 10 dakikayı yalnızca kendinize ayırın"
+      ],
+      "apps": [
+        "detox-timer",
+        "white-noise",
+        "pomodoro-timer"
+      ]
+    },
+    "walkingdead": {
+      "emoji": "🧟",
+      "name": "Yürüyen Ölü",
+      "chip": "Boş tankla çalışıyor",
+      "subtitle": "Tüm vücutta toplam tükenme",
+      "desc": "Yürüyen Ölü tipsiniz — yorgunluk ve gerginlik tüm vücuda yayılmış durumda, belden kalçaya ve bacaklara kadar. Enerjiniz tamamen tükenmiş; stresle karşılaştığınızda ya çöküyorsunuz ya da tamamen kapanıyorsunuz.",
+      "tips": [
+        "Takviminize her gün 30 dakika 'kesinlikle hiçbir şey yapmama' zamanı ekleyin",
+        "Katı dijital sınırlar koyun — mesai sonrası tüm iş bildirimlerini kapatın",
+        "Güvendiğiniz birine dürüstçe söyleyin: 'Zor zamanlar geçiriyorum' — yalnız taşımayın"
+      ],
+      "apps": [
+        "white-noise",
+        "detox-timer",
+        "pomodoro-timer"
+      ]
+    }
+  },
+  "apps": {
+    "white-noise": {
+      "name": "Beyaz Gürültü",
+      "desc": "Uyku ve odaklanma için ortam sesleri"
+    },
+    "pomodoro-timer": {
+      "name": "Pomodoro Zamanlayıcısı",
+      "desc": "Tükenmeden verimli çalışın"
+    },
+    "detox-timer": {
+      "name": "Dijital Detoks Zamanlayıcısı",
+      "desc": "Dijital kaçış alışkanlığından kurtulun"
+    }
+  },
+  "related": {
+    "stressCheck": "Stres Kontrolü",
+    "hspTest": "HSP Testi",
+    "emotionTemp": "Duygu Sıcaklığı",
+    "socialBattery": "Sosyal Batarya"
+  }
 }

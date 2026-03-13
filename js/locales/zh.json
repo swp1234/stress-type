@@ -72,7 +72,9 @@
     "tweet": "🐦 分享到Twitter",
     "copied": "链接已复制！",
     "retry": "↩ 重新测试",
-    "back": "DopaBrain 首页"
+    "back": "DopaBrain 首页",
+    "moreTests": "探索更多测试",
+    "percentileStat": "仅有<strong>{percent}%</strong>的参与者与你属于同一压力类型"
   },
   "share": {
     "text": "我的压力类型是{type}！快来测测你的 👇"
@@ -85,11 +87,15 @@
       "subtitle": "大脑永不停歇的类型",
       "desc": "你是过度思考型——压力集中在头部、眼睛和下巴，面对压力时容易僵住或逃避。你反复想象最坏的情况，在一切完美之前迟迟不肯行动。这种类型容易陷入分析瘫痪，关键是走出头脑、动起身体。",
       "tips": [
-        "每天设定15分钟的"担忧时间"，其余时间推迟所有担忧",
+        "每天设定15分钟的'担忧时间'，其余时间推迟所有担忧",
         "练习4-7-8呼吸法（吸4秒、屏7秒、呼8秒）来重置大脑",
-        "把担忧写在纸上，分为"可控"和"不可控"两类"
+        "把担忧写在纸上，分为'可控'和'不可控'两类"
       ],
-      "apps": ["white-noise", "detox-timer", "pomodoro-timer"]
+      "apps": [
+        "white-noise",
+        "detox-timer",
+        "pomodoro-timer"
+      ]
     },
     "volcano": {
       "emoji": "🌋",
@@ -102,7 +108,11 @@
         "通过定期有氧运动释放累积的压力能量",
         "写愤怒日记，识别你持续的触发因素"
       ],
-      "apps": ["white-noise", "pomodoro-timer", "detox-timer"]
+      "apps": [
+        "white-noise",
+        "pomodoro-timer",
+        "detox-timer"
+      ]
     },
     "pleaser": {
       "emoji": "🎭",
@@ -111,11 +121,15 @@
       "subtitle": "在胸部和腹部承载焦虑",
       "desc": "你是讨好型——压力集中在胸部和胃部，你把别人的情绪当作自己的来吸收。你很难说不，为了满足所有人的期望而过度勉强自己，最终崩溃。面对冲突时逃跑或自我牺牲的模式反复出现。建立健康的边界、优先照顾自己的需求是最重要的。",
       "tips": [
-        "每天练习说一次"不"，从小事开始",
+        "每天练习说一次'不'，从小事开始",
         "有意识地将别人的问题与自己的问题分开",
         "每天至少留出10分钟专属于自己的时间"
       ],
-      "apps": ["detox-timer", "white-noise", "pomodoro-timer"]
+      "apps": [
+        "detox-timer",
+        "white-noise",
+        "pomodoro-timer"
+      ]
     },
     "walkingdead": {
       "emoji": "🧟",
@@ -124,11 +138,15 @@
       "subtitle": "全身疲惫到麻木的类型",
       "desc": "你是行尸走肉型——疲劳和紧张已蔓延到全身，从腰部到臀部和腿部。你的能量已完全耗尽，面对压力时要么崩溃要么完全停机。休息也无法恢复，曾经喜欢的事情也变得毫无意义。如果不加以重视，可能发展为慢性抑郁或严重疾病——自我关爱必须成为你现在的首要任务。",
       "tips": [
-        "每天在日历上预留30分钟"什么都不做"的时间",
+        "每天在日历上预留30分钟'什么都不做'的时间",
         "设定严格的数字边界——下班后关闭所有工作通知",
-        "对信任的人坦诚地说"我很累"——不要独自承受"
+        "对信任的人坦诚地说'我很累'——不要独自承受"
       ],
-      "apps": ["white-noise", "detox-timer", "pomodoro-timer"]
+      "apps": [
+        "white-noise",
+        "detox-timer",
+        "pomodoro-timer"
+      ]
     }
   },
   "apps": {
@@ -144,5 +162,11 @@
       "name": "数字排毒计时器",
       "desc": "戒掉数字逃避习惯"
     }
+  },
+  "related": {
+    "stressCheck": "压力检测",
+    "hspTest": "HSP测试",
+    "emotionTemp": "情绪温度",
+    "socialBattery": "社交电量"
   }
 }

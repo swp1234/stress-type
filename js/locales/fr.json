@@ -1,18 +1,172 @@
 {
-  "app": { "title": "Test de Type de Stress 🔥 - DopaBrain", "description": "Carte corporelle + 8 scénarios pour analyser votre type de stress.", "loading": "Chargement...", "skipLink": "Aller au contenu" },
-  "intro": { "title": "Test de Type de Stress", "sub": "Où votre corps stocke-t-il le stress ?", "desc": "Touchez vos zones de stress sur une carte corporelle, puis réagissez à 8 scénarios réels. Découvrez votre type de stress unique !", "meta1": "🫀 Carte Corporelle", "meta2": "🎭 8 Scénarios", "meta3": "⏱ ~2 min", "meta4": "🔒 Gratuit", "start": "Commencer le Test", "userCount": "Plus de 32 000 personnes ont passé ce test" },
-  "body": { "title": "Où ressentez-vous le stress ?", "instruction": "Touchez toutes les zones où vous ressentez de la tension, de la douleur ou de l'inconfort en situation de stress. Sélectionnez au moins 2.", "selected": "sélectionnées", "next": "Suivant", "zones": { "head": "Tête", "jaw": "Mâchoire", "eyes": "Yeux", "neck_shoulders": "Cou/Épaules", "chest": "Poitrine", "stomach": "Estomac", "upper_back": "Haut du dos", "lower_back": "Bas du dos", "arms": "Bras", "hands": "Mains", "hips": "Hanches", "legs": "Jambes" } },
-  "scenario": { "phase": "Scénario", "label": "Scénario" },
-  "scenarios": { "s1": "Vous avez une présentation importante demain et vous n'êtes absolument pas préparé(e).", "s2": "Un ami proche cesse soudainement de répondre à vos messages sans raison.", "s3": "Votre patron pointe votre erreur devant toute l'équipe.", "s4": "Votre ordinateur plante juste avant une échéance et tout votre travail est perdu.", "s5": "Lors d'une réunion familiale, les proches comparent constamment vos choix de vie à ceux des autres.", "s6": "Un collègue présente votre idée comme la sienne et en reçoit les éloges.", "s7": "Vous recevez une grosse facture inattendue que vous ne pouvez pas facilement payer.", "s8": "Vous avez à peine dormi depuis 3 jours et l'emploi du temps d'aujourd'hui est chargé." },
-  "reactions": { "fight": "Combattre", "freeze": "Figer", "flight": "Fuir", "collapse": "S'effondrer" },
-  "analyzing": { "text": "Analyse de votre profil de stress...", "step1": "Lecture des données de la carte corporelle...", "step2": "Correspondance des schémas de réponse...", "step3": "Préparation des stratégies personnalisées..." },
-  "result": { "dominant": "Type Principal", "heatmapTitle": "Votre Carte de Stress", "patternTitle": "Schéma de Réponse", "tipsTitle": "💡 Conseils Anti-Stress", "recommended": "🔗 Applications Recommandées", "copyLink": "🔗 Copier le Lien", "tweet": "🐦 Partager sur Twitter", "copied": "Lien copié !", "retry": "↩ Refaire le Test", "back": "Accueil DopaBrain" },
-  "share": { "text": "Mon type de stress est {type} ! Découvre le tien 👇" },
-  "types": {
-    "overthinker": { "emoji": "🌀", "name": "Le Penseur Excessif", "chip": "Piégé dans des boucles de pensée", "subtitle": "Un esprit qui ne s'arrête jamais de tourner", "desc": "Vous êtes Le Penseur Excessif — votre stress vit dans votre tête. La tension se concentre sur la tête, les yeux et la mâchoire, et sous pression vous avez tendance à vous figer ou à fuir. Vous rejouez les pires scénarios en boucle et repoussez l'action jusqu'à ce que tout soit parfait.", "tips": ["Définissez une 'fenêtre d'inquiétude' quotidienne de 15 minutes — reportez toute inquiétude en dehors", "Pratiquez la respiration 4-7-8 (inspirez 4s, retenez 7s, expirez 8s) pour réinitialiser votre esprit", "Écrivez vos inquiétudes et classez-les en 'contrôlables' et 'incontrôlables'"], "apps": ["white-noise", "detox-timer", "pomodoro-timer"] },
-    "volcano": { "emoji": "🌋", "name": "Le Volcan", "chip": "La pression s'accumule puis explose", "subtitle": "Le stress qui explose en colère", "desc": "Vous êtes Le Volcan — la tension s'accumule dans le cou, les épaules et le dos jusqu'à ce que le stress explose en colère. Vous réagissez fortement à l'injustice et suivez un cycle de répression des émotions jusqu'à ce qu'elles explosent.", "tips": ["Quand la colère monte, éloignez-vous immédiatement et comptez lentement jusqu'à 10", "Utilisez l'exercice aérobique régulier pour libérer l'énergie de stress accumulée", "Tenez un journal de colère pour identifier vos déclencheurs constants"], "apps": ["white-noise", "pomodoro-timer", "detox-timer"] },
-    "pleaser": { "emoji": "🎭", "name": "Le Conciliant", "chip": "Absorbe le stress de tout le monde", "subtitle": "Porte l'anxiété dans la poitrine et l'estomac", "desc": "Vous êtes Le Conciliant — le stress se concentre dans la poitrine et l'estomac tandis que vous absorbez les émotions des autres comme les vôtres. Vous avez du mal à dire non et vous vous surmenez pour répondre aux attentes de tous jusqu'à vous effondrer.", "tips": ["Pratiquez dire 'non' une fois par jour, en commençant par de petites choses", "Séparez consciemment les problèmes des autres des vôtres", "Réservez chaque jour au moins 10 minutes exclusivement pour vous"], "apps": ["detox-timer", "white-noise", "pomodoro-timer"] },
-    "walkingdead": { "emoji": "🧟", "name": "Le Mort-Vivant", "chip": "Fonctionne à vide", "subtitle": "Épuisement total dans tout le corps", "desc": "Vous êtes Le Mort-Vivant — la fatigue et la tension se sont répandues dans tout votre corps, du bas du dos aux hanches et aux jambes. Votre énergie est complètement épuisée ; face au stress, vous vous effondrez ou vous vous déconnectez complètement.", "tips": ["Planifiez 30 minutes quotidiennes de 'ne rien faire du tout' dans votre agenda", "Fixez des limites numériques strictes — éteignez toutes les notifications professionnelles après le travail", "Dites honnêtement à quelqu'un de confiance : 'Je suis en difficulté' — ne portez pas ce fardeau seul(e)"], "apps": ["white-noise", "detox-timer", "pomodoro-timer"] }
+  "app": {
+    "title": "Test de Type de Stress 🔥 - DopaBrain",
+    "description": "Carte corporelle + 8 scénarios pour analyser votre type de stress.",
+    "loading": "Chargement...",
+    "skipLink": "Aller au contenu"
   },
-  "apps": { "white-noise": { "name": "Bruit Blanc", "desc": "Sons ambiants pour dormir et se concentrer" }, "pomodoro-timer": { "name": "Minuteur Pomodoro", "desc": "Travaillez efficacement sans vous épuiser" }, "detox-timer": { "name": "Minuteur Détox Numérique", "desc": "Brisez l'habitude de fuite numérique" } }
+  "intro": {
+    "title": "Test de Type de Stress",
+    "sub": "Où votre corps stocke-t-il le stress ?",
+    "desc": "Touchez vos zones de stress sur une carte corporelle, puis réagissez à 8 scénarios réels. Découvrez votre type de stress unique !",
+    "meta1": "🫀 Carte Corporelle",
+    "meta2": "🎭 8 Scénarios",
+    "meta3": "⏱ ~2 min",
+    "meta4": "🔒 Gratuit",
+    "start": "Commencer le Test",
+    "userCount": "Plus de 32 000 personnes ont passé ce test"
+  },
+  "body": {
+    "title": "Où ressentez-vous le stress ?",
+    "instruction": "Touchez toutes les zones où vous ressentez de la tension, de la douleur ou de l'inconfort en situation de stress. Sélectionnez au moins 2.",
+    "selected": "sélectionnées",
+    "next": "Suivant",
+    "zones": {
+      "head": "Tête",
+      "jaw": "Mâchoire",
+      "eyes": "Yeux",
+      "neck_shoulders": "Cou/Épaules",
+      "chest": "Poitrine",
+      "stomach": "Estomac",
+      "upper_back": "Haut du dos",
+      "lower_back": "Bas du dos",
+      "arms": "Bras",
+      "hands": "Mains",
+      "hips": "Hanches",
+      "legs": "Jambes"
+    }
+  },
+  "scenario": {
+    "phase": "Scénario",
+    "label": "Scénario"
+  },
+  "scenarios": {
+    "s1": "Vous avez une présentation importante demain et vous n'êtes absolument pas préparé(e).",
+    "s2": "Un ami proche cesse soudainement de répondre à vos messages sans raison.",
+    "s3": "Votre patron pointe votre erreur devant toute l'équipe.",
+    "s4": "Votre ordinateur plante juste avant une échéance et tout votre travail est perdu.",
+    "s5": "Lors d'une réunion familiale, les proches comparent constamment vos choix de vie à ceux des autres.",
+    "s6": "Un collègue présente votre idée comme la sienne et en reçoit les éloges.",
+    "s7": "Vous recevez une grosse facture inattendue que vous ne pouvez pas facilement payer.",
+    "s8": "Vous avez à peine dormi depuis 3 jours et l'emploi du temps d'aujourd'hui est chargé."
+  },
+  "reactions": {
+    "fight": "Combattre",
+    "freeze": "Figer",
+    "flight": "Fuir",
+    "collapse": "S'effondrer"
+  },
+  "analyzing": {
+    "text": "Analyse de votre profil de stress...",
+    "step1": "Lecture des données de la carte corporelle...",
+    "step2": "Correspondance des schémas de réponse...",
+    "step3": "Préparation des stratégies personnalisées..."
+  },
+  "result": {
+    "dominant": "Type Principal",
+    "heatmapTitle": "Votre Carte de Stress",
+    "patternTitle": "Schéma de Réponse",
+    "tipsTitle": "💡 Conseils Anti-Stress",
+    "recommended": "🔗 Applications Recommandées",
+    "copyLink": "🔗 Copier le Lien",
+    "tweet": "🐦 Partager sur Twitter",
+    "copied": "Lien copié !",
+    "retry": "↩ Refaire le Test",
+    "back": "Accueil DopaBrain",
+    "moreTests": "Découvrir plus de tests",
+    "percentileStat": "Seulement <strong>{percent}%</strong> des participants partagent votre type de stress"
+  },
+  "share": {
+    "text": "Mon type de stress est {type} ! Découvre le tien 👇"
+  },
+  "types": {
+    "overthinker": {
+      "emoji": "🌀",
+      "name": "Le Penseur Excessif",
+      "chip": "Piégé dans des boucles de pensée",
+      "subtitle": "Un esprit qui ne s'arrête jamais de tourner",
+      "desc": "Vous êtes Le Penseur Excessif — votre stress vit dans votre tête. La tension se concentre sur la tête, les yeux et la mâchoire, et sous pression vous avez tendance à vous figer ou à fuir. Vous rejouez les pires scénarios en boucle et repoussez l'action jusqu'à ce que tout soit parfait.",
+      "tips": [
+        "Définissez une 'fenêtre d'inquiétude' quotidienne de 15 minutes — reportez toute inquiétude en dehors",
+        "Pratiquez la respiration 4-7-8 (inspirez 4s, retenez 7s, expirez 8s) pour réinitialiser votre esprit",
+        "Écrivez vos inquiétudes et classez-les en 'contrôlables' et 'incontrôlables'"
+      ],
+      "apps": [
+        "white-noise",
+        "detox-timer",
+        "pomodoro-timer"
+      ]
+    },
+    "volcano": {
+      "emoji": "🌋",
+      "name": "Le Volcan",
+      "chip": "La pression s'accumule puis explose",
+      "subtitle": "Le stress qui explose en colère",
+      "desc": "Vous êtes Le Volcan — la tension s'accumule dans le cou, les épaules et le dos jusqu'à ce que le stress explose en colère. Vous réagissez fortement à l'injustice et suivez un cycle de répression des émotions jusqu'à ce qu'elles explosent.",
+      "tips": [
+        "Quand la colère monte, éloignez-vous immédiatement et comptez lentement jusqu'à 10",
+        "Utilisez l'exercice aérobique régulier pour libérer l'énergie de stress accumulée",
+        "Tenez un journal de colère pour identifier vos déclencheurs constants"
+      ],
+      "apps": [
+        "white-noise",
+        "pomodoro-timer",
+        "detox-timer"
+      ]
+    },
+    "pleaser": {
+      "emoji": "🎭",
+      "name": "Le Conciliant",
+      "chip": "Absorbe le stress de tout le monde",
+      "subtitle": "Porte l'anxiété dans la poitrine et l'estomac",
+      "desc": "Vous êtes Le Conciliant — le stress se concentre dans la poitrine et l'estomac tandis que vous absorbez les émotions des autres comme les vôtres. Vous avez du mal à dire non et vous vous surmenez pour répondre aux attentes de tous jusqu'à vous effondrer.",
+      "tips": [
+        "Pratiquez dire 'non' une fois par jour, en commençant par de petites choses",
+        "Séparez consciemment les problèmes des autres des vôtres",
+        "Réservez chaque jour au moins 10 minutes exclusivement pour vous"
+      ],
+      "apps": [
+        "detox-timer",
+        "white-noise",
+        "pomodoro-timer"
+      ]
+    },
+    "walkingdead": {
+      "emoji": "🧟",
+      "name": "Le Mort-Vivant",
+      "chip": "Fonctionne à vide",
+      "subtitle": "Épuisement total dans tout le corps",
+      "desc": "Vous êtes Le Mort-Vivant — la fatigue et la tension se sont répandues dans tout votre corps, du bas du dos aux hanches et aux jambes. Votre énergie est complètement épuisée ; face au stress, vous vous effondrez ou vous vous déconnectez complètement.",
+      "tips": [
+        "Planifiez 30 minutes quotidiennes de 'ne rien faire du tout' dans votre agenda",
+        "Fixez des limites numériques strictes — éteignez toutes les notifications professionnelles après le travail",
+        "Dites honnêtement à quelqu'un de confiance : 'Je suis en difficulté' — ne portez pas ce fardeau seul(e)"
+      ],
+      "apps": [
+        "white-noise",
+        "detox-timer",
+        "pomodoro-timer"
+      ]
+    }
+  },
+  "apps": {
+    "white-noise": {
+      "name": "Bruit Blanc",
+      "desc": "Sons ambiants pour dormir et se concentrer"
+    },
+    "pomodoro-timer": {
+      "name": "Minuteur Pomodoro",
+      "desc": "Travaillez efficacement sans vous épuiser"
+    },
+    "detox-timer": {
+      "name": "Minuteur Détox Numérique",
+      "desc": "Brisez l'habitude de fuite numérique"
+    }
+  },
+  "related": {
+    "stressCheck": "Bilan de stress",
+    "hspTest": "Test HSP",
+    "emotionTemp": "Température émotionnelle",
+    "socialBattery": "Batterie sociale"
+  }
 }

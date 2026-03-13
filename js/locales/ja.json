@@ -72,7 +72,9 @@
     "tweet": "🐦 Twitterで共有",
     "copied": "リンクがコピーされました！",
     "retry": "↩ もう一度テスト",
-    "back": "DopaBrain ホーム"
+    "back": "DopaBrain ホーム",
+    "moreTests": "もっとテストを探す",
+    "percentileStat": "参加者の<strong>{percent}%</strong>だけがあなたと同じストレスタイプです"
   },
   "share": {
     "text": "私のストレスタイプは{type}！あなたもチェックしてみて 👇"
@@ -89,7 +91,11 @@
         "4-7-8呼吸法（4秒吸う・7秒止める・8秒吐く）で頭をリセットしましょう",
         "心配事を紙に書き出し、「コントロール可能」と「不可能」に分類しましょう"
       ],
-      "apps": ["white-noise", "detox-timer", "pomodoro-timer"]
+      "apps": [
+        "white-noise",
+        "detox-timer",
+        "pomodoro-timer"
+      ]
     },
     "volcano": {
       "emoji": "🌋",
@@ -102,7 +108,11 @@
         "定期的な有酸素運動で溜まったストレスエネルギーを発散しましょう",
         "怒り日記をつけて、どんな状況で怒るのかパターンを把握しましょう"
       ],
-      "apps": ["white-noise", "pomodoro-timer", "detox-timer"]
+      "apps": [
+        "white-noise",
+        "pomodoro-timer",
+        "detox-timer"
+      ]
     },
     "pleaser": {
       "emoji": "🎭",
@@ -115,7 +125,11 @@
         "他人の問題と自分の問題を分ける「感情の境界線」を意識しましょう",
         "毎日10分、自分だけのための時間を必ず確保しましょう"
       ],
-      "apps": ["detox-timer", "white-noise", "pomodoro-timer"]
+      "apps": [
+        "detox-timer",
+        "white-noise",
+        "pomodoro-timer"
+      ]
     },
     "walkingdead": {
       "emoji": "🧟",
@@ -128,7 +142,11 @@
         "退勤後は仕事の通知をすべてオフにするデジタル境界を厳守しましょう",
         "信頼できる人に「つらい」と正直に伝える練習をしましょう"
       ],
-      "apps": ["white-noise", "detox-timer", "pomodoro-timer"]
+      "apps": [
+        "white-noise",
+        "detox-timer",
+        "pomodoro-timer"
+      ]
     }
   },
   "apps": {
@@ -144,5 +162,11 @@
       "name": "デジタルデトックスタイマー",
       "desc": "デジタル逃避習慣を断つ"
     }
+  },
+  "related": {
+    "stressCheck": "ストレスチェック",
+    "hspTest": "HSPテスト",
+    "emotionTemp": "感情温度",
+    "socialBattery": "ソーシャルバッテリー"
   }
 }
