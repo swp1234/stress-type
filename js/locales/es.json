@@ -167,6 +167,7 @@
     "stressCheck": "Control de estrés",
     "hspTest": "Test HSP",
     "emotionTemp": "Temperatura emocional",
-    "socialBattery": "Batería social"
+    "socialBattery": "Batería social",
+    "burnoutTest": "Test de Burnout"
   }
 }

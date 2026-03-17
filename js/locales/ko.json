@@ -167,6 +167,7 @@
     "stressCheck": "스트레스 체크",
     "hspTest": "HSP 테스트",
     "emotionTemp": "감정 온도",
-    "socialBattery": "소셜 배터리"
+    "socialBattery": "소셜 배터리",
+    "burnoutTest": "번아웃 테스트"
   }
 }

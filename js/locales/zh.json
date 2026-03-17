@@ -167,6 +167,7 @@
     "stressCheck": "压力检测",
     "hspTest": "HSP测试",
     "emotionTemp": "情绪温度",
-    "socialBattery": "社交电量"
+    "socialBattery": "社交电量",
+    "burnoutTest": "职业倦怠测试"
   }
 }
