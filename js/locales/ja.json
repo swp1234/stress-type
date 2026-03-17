@@ -169,6 +169,7 @@
     "emotionTemp": "感情温度",
     "socialBattery": "ソーシャルバッテリー",
     "burnoutTest": "バーンアウトテスト",
-    "stressResponse": "ストレス反応"
+    "stressResponse": "ストレス反応",
+    "anxietyType": "不安タイプ"
   }
 }

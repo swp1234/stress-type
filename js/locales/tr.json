@@ -169,6 +169,7 @@
     "emotionTemp": "Duygu Sıcaklığı",
     "socialBattery": "Sosyal Batarya",
     "burnoutTest": "Tükenmişlik Testi",
-    "stressResponse": "Stres Tepkisi"
+    "stressResponse": "Stres Tepkisi",
+    "anxietyType": "Kaygı Tipi"
   }
 }

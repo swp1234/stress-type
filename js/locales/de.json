@@ -169,6 +169,7 @@
     "emotionTemp": "Emotionstemperatur",
     "socialBattery": "Soziale Batterie",
     "burnoutTest": "Burnout-Test",
-    "stressResponse": "Stressreaktion"
+    "stressResponse": "Stressreaktion",
+    "anxietyType": "Angsttyp"
   }
 }
