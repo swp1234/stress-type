@@ -168,6 +168,7 @@
     "hspTest": "HSP测试",
     "emotionTemp": "情绪温度",
     "socialBattery": "社交电量",
-    "burnoutTest": "职业倦怠测试"
+    "burnoutTest": "职业倦怠测试",
+    "stressResponse": "压力反应"
   }
 }

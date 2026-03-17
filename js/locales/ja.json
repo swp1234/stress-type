@@ -168,6 +168,7 @@
     "hspTest": "HSPテスト",
     "emotionTemp": "感情温度",
     "socialBattery": "ソーシャルバッテリー",
-    "burnoutTest": "バーンアウトテスト"
+    "burnoutTest": "バーンアウトテスト",
+    "stressResponse": "ストレス反応"
   }
 }

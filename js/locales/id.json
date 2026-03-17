@@ -168,6 +168,7 @@
     "hspTest": "Tes HSP",
     "emotionTemp": "Suhu Emosi",
     "socialBattery": "Baterai Sosial",
-    "burnoutTest": "Tes Burnout"
+    "burnoutTest": "Tes Burnout",
+    "stressResponse": "Respons Stres"
   }
 }
