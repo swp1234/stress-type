@@ -170,6 +170,12 @@
     "socialBattery": "소셜 배터리",
     "burnoutTest": "번아웃 테스트",
     "stressResponse": "스트레스 반응",
-    "anxietyType": "불안 유형"
+    "anxietyType": "불안 유형",
+    "attachmentStyle": "애착 유형 테스트",
+    "shadowWork": "섀도우 워크 퀴즈",
+    "futureSelf": "10년 후의 나",
+    "emotionalAge": "감정 나이 테스트",
+    "workStyle": "업무 스타일 테스트",
+    "animalPersonality": "나의 동물 성격"
   }
 }

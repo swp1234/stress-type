@@ -170,6 +170,12 @@
     "socialBattery": "सोशल बैटरी",
     "burnoutTest": "बर्नआउट टेस्ट",
     "stressResponse": "तनाव प्रतिक्रिया",
-    "anxietyType": "चिंता प्रकार"
+    "anxietyType": "चिंता प्रकार",
+    "attachmentStyle": "अटैचमेंट स्टाइल",
+    "shadowWork": "शैडो वर्क क्विज़",
+    "futureSelf": "भविष्य का मैं",
+    "emotionalAge": "इमोशनल एज टेस्ट",
+    "workStyle": "वर्क स्टाइल टेस्ट",
+    "animalPersonality": "पशु व्यक्तित्व"
   }
 }

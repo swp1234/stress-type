@@ -170,6 +170,12 @@
     "socialBattery": "Social Battery",
     "burnoutTest": "Burnout Test",
     "stressResponse": "Stress Response",
-    "anxietyType": "Anxiety Type"
+    "anxietyType": "Anxiety Type",
+    "attachmentStyle": "Attachment Style",
+    "shadowWork": "Shadow Work",
+    "futureSelf": "Future Self",
+    "emotionalAge": "Emotional Age",
+    "workStyle": "Work Style",
+    "animalPersonality": "Animal Personality"
   }
 }

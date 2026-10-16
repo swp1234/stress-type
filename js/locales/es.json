@@ -170,6 +170,12 @@
     "socialBattery": "Batería social",
     "burnoutTest": "Test de Burnout",
     "stressResponse": "Respuesta al Estrés",
-    "anxietyType": "Tipo de Ansiedad"
+    "anxietyType": "Tipo de Ansiedad",
+    "attachmentStyle": "Estilo de Apego",
+    "shadowWork": "Trabajo de Sombra",
+    "futureSelf": "Yo del Futuro",
+    "emotionalAge": "Edad Emocional",
+    "workStyle": "Estilo de Trabajo",
+    "animalPersonality": "Animal Interior"
   }
 }

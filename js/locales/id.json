@@ -170,6 +170,12 @@
     "socialBattery": "Baterai Sosial",
     "burnoutTest": "Tes Burnout",
     "stressResponse": "Respons Stres",
-    "anxietyType": "Tipe Kecemasan"
+    "anxietyType": "Tipe Kecemasan",
+    "attachmentStyle": "Gaya Kelekatan",
+    "shadowWork": "Shadow Work",
+    "futureSelf": "Diri Masa Depan",
+    "emotionalAge": "Usia Emosional",
+    "workStyle": "Gaya Kerja",
+    "animalPersonality": "Kepribadian Hewan"
   }
 }

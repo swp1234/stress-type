@@ -170,6 +170,12 @@
     "socialBattery": "Sosyal Batarya",
     "burnoutTest": "Tükenmişlik Testi",
     "stressResponse": "Stres Tepkisi",
-    "anxietyType": "Kaygı Tipi"
+    "anxietyType": "Kaygı Tipi",
+    "attachmentStyle": "Bağlanma Stili",
+    "shadowWork": "Gölge Çalışması",
+    "futureSelf": "Gelecekteki Ben",
+    "emotionalAge": "Duygusal Yaş Testi",
+    "workStyle": "Çalışma Stili",
+    "animalPersonality": "Hayvan Kişiliği"
   }
 }

@@ -170,6 +170,12 @@
     "socialBattery": "ソーシャルバッテリー",
     "burnoutTest": "バーンアウトテスト",
     "stressResponse": "ストレス反応",
-    "anxietyType": "不安タイプ"
+    "anxietyType": "不安タイプ",
+    "attachmentStyle": "愛着スタイル診断",
+    "shadowWork": "シャドウワーク診断",
+    "futureSelf": "10年後の自分",
+    "emotionalAge": "精神・感情年齢診断",
+    "workStyle": "仕事スタイル診断",
+    "animalPersonality": "動物性格診断"
   }
 }

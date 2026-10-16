@@ -170,6 +170,12 @@
     "socialBattery": "社交电量",
     "burnoutTest": "职业倦怠测试",
     "stressResponse": "压力反应",
-    "anxietyType": "焦虑类型"
+    "anxietyType": "焦虑类型",
+    "attachmentStyle": "依恋风格测试",
+    "shadowWork": "阴影工作测验",
+    "futureSelf": "未来的自己",
+    "emotionalAge": "心理情感年龄",
+    "workStyle": "工作风格测试",
+    "animalPersonality": "动物性格测试"
   }
 }
