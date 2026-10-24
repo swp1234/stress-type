@@ -7,7 +7,7 @@
   <title>Stress Type Test - Free Burnout Quiz | DopaBrain</title>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3600813755953882" crossorigin="anonymous"></script>
   <meta name="description" content="Discover your stress type with an interactive body heatmap and 8 real-life scenarios. Are you an Overthinker, Volcano, or People-Pleaser? Try free!">
-    <meta name="dateModified" content="2026-06-19">
+    <meta name="dateModified" content="2026-10-24">
   <meta name="keywords" content="스트레스 유형 테스트, 바디 히트맵, 스트레스 반응, 심리테스트, 스트레스 자가진단, 번아웃 테스트">
   <meta name="theme-color" content="#ff6b35">
   <link rel="canonical" href="https://dopabrain.com/stress-type/">
@@ -50,67 +50,17 @@
     "@type": "SoftwareApplication",
     "name": "Stress Type Test",
     "applicationCategory": "HealthApplication",
-    "description": "Interactive body heatmap + stress scenario test. Discover your stress type: Overthinker, Volcano, People-Pleaser, or Walking Dead.",
+    "description": "Interactive body heatmap and stress scenario test. Discover your stress response pattern: Overthinker, Volcano, People-Pleaser, or Walking Dead.",
     "url": "https://dopabrain.com/stress-type/",
     "operatingSystem": "All",
     "author": {"@type": "Organization", "name": "DopaBrain", "url": "https://dopabrain.com/"},
     "inLanguage": ["ko","en","zh","hi","ru","ja","es","pt","id","tr","de","fr"],
     "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"},
-    "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.8", "ratingCount": "1240", "bestRating": "5"}
-  ,
     "publisher": {
         "@type": "Organization",
         "name": "DopaBrain",
         "url": "https://dopabrain.com/"
     }
-}
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "What is the Stress Type Test?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "The Stress Type Test uses an interactive body heatmap and 8 real-life stress scenarios to identify your dominant stress response pattern. Results classify you as an Overthinker, Volcano, People-Pleaser, or Walking Dead type."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Is the Stress Type Test free?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, the Stress Type Test is completely free. No registration, no payment — just start the test and get your personalized stress type result with coping recommendations."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What stress types can I get?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "There are 4 main stress types: Overthinker (excessive worry and mental fatigue), Volcano (explosive emotional reactions), People-Pleaser (stress from prioritizing others), and Walking Dead (emotional numbness and burnout)."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How does the body heatmap work?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "The body heatmap is an interactive silhouette where you tap the areas where you physically feel stress — head, neck, chest, stomach, etc. This data combines with your scenario answers to determine your stress type."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Is this a medical diagnosis tool?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "No, this is an entertainment and self-awareness tool, not a clinical diagnostic instrument. If you are experiencing severe stress or burnout, please consult a qualified healthcare professional or mental health expert."
-        }
-      }
-    ]
   }
   </script>
   <script type="application/ld+json">
@@ -130,7 +80,6 @@
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-J8GSWM40TV"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-J8GSWM40TV');</script>
-<script>setTimeout(function(){if(typeof gtag!=='undefined')gtag('event','page_engage',{event_category:'stress_type',engagement_time_msec:5000})},5000);</script>
 
   <style>
     :root {
@@ -1139,8 +1088,6 @@
         <div class="recommended-apps" id="recommended-apps"></div>
       </div>
 
-      <p class="percentile-stat" id="percentile-stat"></p>
-
       <div class="related-tests">
         <h3 data-i18n="result.moreTests">Explore More Tests</h3>
         <div class="related-grid">
@@ -1508,16 +1455,6 @@
 
       // Recommended Apps
       buildRecommendedApps();
-
-      // Percentile stat
-      const percentiles = { overthinker: 28, volcano: 19, pleaser: 34, walkingdead: 19 };
-      const pctValue = percentiles[primaryType] || 25;
-      const pctTemplate = t('result.percentileStat');
-      if (typeof pctTemplate === 'string' && pctTemplate !== 'result.percentileStat') {
-        $('percentile-stat').innerHTML = pctTemplate.replace('{percent}', pctValue);
-      } else {
-        $('percentile-stat').innerHTML = `Only <strong>${pctValue}%</strong> of participants share your stress type`;
-      }
 
       show('screen-result');
 
