@@ -7,7 +7,7 @@
   <title>Stress Type Test - Free Burnout Quiz | DopaBrain</title>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3600813755953882" crossorigin="anonymous"></script>
   <meta name="description" content="Discover your stress type with an interactive body heatmap and 8 real-life scenarios. Are you an Overthinker, Volcano, or People-Pleaser? Try free!">
-    <meta name="dateModified" content="2026-10-24">
+    <meta name="dateModified" content="2026-10-29">
   <meta name="keywords" content="스트레스 유형 테스트, 바디 히트맵, 스트레스 반응, 심리테스트, 스트레스 자가진단, 번아웃 테스트">
   <meta name="theme-color" content="#ff6b35">
   <link rel="canonical" href="https://dopabrain.com/stress-type/">
@@ -1103,9 +1103,9 @@
             <span class="related-emoji">🔗</span>
             <span class="related-name" data-i18n="related.attachmentStyle">Attachment Style</span>
           </a>
-          <a href="/shadow-work/" class="related-card" style="--card-color: #2ecc71">
-            <span class="related-emoji">🌑</span>
-            <span class="related-name" data-i18n="related.shadowWork">Shadow Work</span>
+          <a href="/burnout-test/" class="related-card" style="--card-color: #f97316">
+            <span class="related-emoji">&#128293;</span>
+            <span class="related-name" data-i18n="related.burnoutTest">Burnout Test</span>
           </a>
           <a href="/future-self/" class="related-card" style="--card-color: #f59e0b">
             <span class="related-emoji">⏳</span>
@@ -1576,6 +1576,7 @@
         btn.addEventListener('click', async () => {
           const lang = btn.dataset.lang;
           await window.i18n.setLanguage(lang);
+          preserveLanguageLinks();
           menu.classList.add('hidden');
           updateBodyZoneLabels();
           // Re-render current screen if needed
@@ -1587,13 +1588,31 @@
     }
 
     /* ===== Init ===== */
+
+    function preserveLanguageLinks() {
+      const currentLang = (window.i18n && window.i18n.currentLang) || (new URLSearchParams(window.location.search).get('lang')) || 'ko';
+      const links = document.querySelectorAll('.related-card, .related-grid a, section a[href^="/"]');
+      const base = (window.location.origin && window.location.origin !== 'null') ? window.location.origin : 'https://dopabrain.com';
+      links.forEach(link => {
+        const href = link.getAttribute('href');
+        if (!href || href.startsWith('http') || href.startsWith('#')) return;
+        try {
+          const url = new URL(href, base);
+          url.searchParams.set('lang', currentLang);
+          link.setAttribute('href', url.pathname + url.search);
+        } catch(e) {}
+      });
+    }
+
     async function init() {
       try {
         await window.i18n.loadTranslations(window.i18n.currentLang);
         window.i18n.updateUI();
+        preserveLanguageLinks();
       } catch (e) {
         console.warn('i18n init error', e);
       }
+      preserveLanguageLinks();
 
       initTheme();
       updateBodyZoneLabels();
@@ -1692,7 +1711,7 @@
       <a href="/future-self/" style="display:inline-flex;align-items:center;min-height:44px;padding:8px 14px;background:rgba(255,255,255,0.08);border-radius:8px;text-decoration:none;color:inherit;font-size:13px;box-sizing:border-box;">⏳ Future Self</a>
       <a href="/hsp-test/" style="display:inline-flex;align-items:center;min-height:44px;padding:8px 14px;background:rgba(255,255,255,0.08);border-radius:8px;text-decoration:none;color:inherit;font-size:13px;box-sizing:border-box;">🌸 HSP Test</a>
       <a href="/attachment-style/" style="display:inline-flex;align-items:center;min-height:44px;padding:8px 14px;background:rgba(255,255,255,0.08);border-radius:8px;text-decoration:none;color:inherit;font-size:13px;box-sizing:border-box;">🔗 Attachment Style</a>
-      <a href="/shadow-work/" style="display:inline-flex;align-items:center;min-height:44px;padding:8px 14px;background:rgba(255,255,255,0.08);border-radius:8px;text-decoration:none;color:inherit;font-size:13px;box-sizing:border-box;">🌑 Shadow Work</a>
+      <a href="/burnout-test/" style="display:inline-flex;align-items:center;min-height:44px;padding:8px 14px;background:rgba(255,255,255,0.08);border-radius:8px;text-decoration:none;color:inherit;font-size:13px;box-sizing:border-box;">&#128293; Burnout Test</a>
     </div>
   </section>
 
