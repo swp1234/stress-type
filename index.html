@@ -729,7 +729,10 @@
       padding: 20px 0 10px;
     }
     .back-link {
-      display: inline-flex; align-items: center; gap: 6px;
+      display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+      min-height: 44px; min-width: 44px;
+      padding: 8px 16px;
+      box-sizing: border-box;
       color: var(--text-muted); text-decoration: none;
       font-size: 13px; transition: color 0.2s;
     }
@@ -1457,6 +1460,7 @@
       buildRecommendedApps();
 
       show('screen-result');
+      preserveLanguageLinks();
 
       if (window.gtag) gtag('event', 'stress_type_result', { type: primaryType });
 
@@ -1542,15 +1546,21 @@
       const appsEl = $('recommended-apps');
       appsEl.innerHTML = '';
       const appKeys = t(`types.${primaryType}.apps`);
+      const currentLang = (window.i18n && window.i18n.currentLang) || (new URLSearchParams(window.location.search).get('lang')) || 'ko';
       if (Array.isArray(appKeys)) {
         appKeys.forEach(appKey => {
           const info = APP_LINKS[appKey];
           if (!info) return;
           const a = document.createElement('a');
           a.className = 'app-link';
-          a.href = info.url;
-          a.target = '_blank';
-          a.rel = 'noopener';
+          try {
+            const u = new URL(info.url, window.location.origin);
+            u.searchParams.set('lang', currentLang);
+            u.searchParams.set('source', 'stress_type_recommendation');
+            a.href = u.pathname + u.search;
+          } catch(e) {
+            a.href = info.url;
+          }
           a.innerHTML = `
             <span class="app-link-emoji">${info.emoji}</span>
             <span class="app-link-info">
@@ -1558,6 +1568,16 @@
               <span class="app-link-desc">${t('apps.' + appKey + '.desc')}</span>
             </span>
             <span class="app-link-arrow">›</span>`;
+          a.addEventListener('click', () => {
+            if (typeof gtag === 'function') {
+              gtag('event', 'content_cta_click', {
+                cta_surface: 'stress_type_recommended_app',
+                destination: a.getAttribute('href'),
+                source: 'stress_type_result',
+                lang: currentLang
+              });
+            }
+          });
           appsEl.appendChild(a);
         });
       }
@@ -1591,7 +1611,7 @@
 
     function preserveLanguageLinks() {
       const currentLang = (window.i18n && window.i18n.currentLang) || (new URLSearchParams(window.location.search).get('lang')) || 'ko';
-      const links = document.querySelectorAll('.related-card, .related-grid a, section a[href^="/"]');
+      const links = document.querySelectorAll('.related-card, .related-grid a, section.related-games a');
       const base = (window.location.origin && window.location.origin !== 'null') ? window.location.origin : 'https://dopabrain.com';
       links.forEach(link => {
         const href = link.getAttribute('href');
@@ -1599,8 +1619,23 @@
         try {
           const url = new URL(href, base);
           url.searchParams.set('lang', currentLang);
+          url.searchParams.set('source', 'stress_type_result');
           link.setAttribute('href', url.pathname + url.search);
         } catch(e) {}
+
+        if (!link.dataset.trackedCta) {
+          link.dataset.trackedCta = 'true';
+          link.addEventListener('click', () => {
+            if (typeof gtag === 'function') {
+              gtag('event', 'content_cta_click', {
+                cta_surface: 'stress_type_related',
+                destination: link.getAttribute('href'),
+                source: 'stress_type_result',
+                lang: currentLang
+              });
+            }
+          });
+        }
       });
     }
 
