@@ -176,5 +176,30 @@
     "emotionalAge": "Âge Émotionnel",
     "workStyle": "Style de Travail",
     "animalPersonality": "Animal Totem"
+  },
+  "about": {
+    "summaryTitle": "Guide des Profils de Stress : Carte Corporelle & FAQ",
+    "scienceDesc": "Face à une pression, l'axe HPA sécrète du cortisol et de l'adrénaline, provoquant des tensions somatiques dans la tête, les épaules, la poitrine et le ventre.",
+    "boundary": "Avertissement médical : Cet outil d'auto-évaluation somatique ne constitue pas un diagnostic clinique médical.",
+    "phenotypesHeading": "Quatre Phénotypes Majeurs de Réaction",
+    "typeOverthinker": "Le Ruminateur :",
+    "descOverthinker": "Spirales d'analyse mentale, céphalées de tension et insomnies.",
+    "typeVolcano": "Le Volcan :",
+    "descVolcano": "Montée d'adrénaline, rythme cardiaque accéléré et accès de colère soudains.",
+    "typePleaser": "L'Hyper-Adapté :",
+    "descPleaser": "Réaction de conciliation (fawn), effaçant ses besoins pour maintenir la paix extérieure.",
+    "typeHermit": "L'Ermite :",
+    "descHermit": "Réaction de figement (freeze), retrait social et anesthésie émotionnelle.",
+    "faqTitle": "Foire Aux Questions (FAQ)",
+    "faq1Q": "Q: Comment fonctionne la carte thermique corporelle ?",
+    "faq1A": "A: Elle relie les zones physiques de crispation aux profils de stimulation du système nerveux autonome.",
+    "faq2Q": "Q: Qu'est-ce que le modèle 4F ?",
+    "faq2A": "A: Les quatre réponses instinctives de survie : combat (fight), fuite (flight), figement (freeze) et soumission (fawn).",
+    "faq3Q": "Q: En quoi cela prévient-il le burn-out ?",
+    "faq3A": "A: Identifier ses signaux faibles permet de poser des limites avant que la charge allostatique ne devienne critique.",
+    "faq4Q": "Q: Mes réponses sont-elles enregistrées ?",
+    "faq4A": "A: Non, jamais. Toutes les données sont traitées exclusivement en local dans votre navigateur.",
+    "reviewDate": "Revue Éditoriale : Novembre 2026",
+    "reviewTeam": "Équipe Physiologie du Stress DopaBrain"
   }
 }

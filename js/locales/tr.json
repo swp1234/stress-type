@@ -176,5 +176,30 @@
     "emotionalAge": "Duygusal Yaş Testi",
     "workStyle": "Çalışma Stili",
     "animalPersonality": "Hayvan Kişiliği"
+  },
+  "about": {
+    "summaryTitle": "Stres Tipleri Rehberi: Beden Isı Haritası & SSS",
+    "scienceDesc": "Baskı anında HPA aksı kortizol ve adrenalin salgılar. Beden baş, boyun, göğüs ve karın bölgelerinde somatik gerilim tepkileri verir.",
+    "boundary": "Klinik Not: Bu değerlendirme bedensel stres sinyallerini fark etmeye yönelik eğitici bir araçtır, tıbbi tanı değildir.",
+    "phenotypesHeading": "Dört Temel Stres Fenotipi",
+    "typeOverthinker": "Aşırı Düşünen:",
+    "descOverthinker": "Zihinsel geviş getirme, gerilim tipi baş ağrısı ve uyku problemleri.",
+    "typeVolcano": "Yanardağ Tipi:",
+    "descVolcano": "Savaş tepkisi, hızlı nabız ve ani öfke patlamaları.",
+    "typePleaser": "Herkesi Memnun Eden:",
+    "descPleaser": "Boyun eğme (fawn) tepkisi, çatışmadan kaçıp kendi sınırlarını feda etme.",
+    "typeHermit": "İnzivaya Çekilen:",
+    "descHermit": "Donakalma (freeze) tepkisi, sosyal izolasyon ve duygusal hissizlik.",
+    "faqTitle": "Sıkça Sorulan Sorular (SSS)",
+    "faq1Q": "Q: Beden ısı haritası nasıl çalışır?",
+    "faq1A": "A: Fiziksel gerilim noktalarınızı otonom sinir sistemi uyarılma kalıplarıyla eşleştirir.",
+    "faq2Q": "Q: 4F stres tepki modeli nedir?",
+    "faq2A": "A: Tehdit anında ortaya çıkan evrimsel savunma mekanizmalarıdır: Savaş, Kaç, Don, Boyun Eğ.",
+    "faq3Q": "Q: Stres tipini bilmek tükenmişliği önler mi?",
+    "faq3A": "A: Evet. Erken bedensel sinyalleri fark etmek, allostatik yükün kronikleşmesini önler.",
+    "faq4Q": "Q: Sağlık verilerim sunucuya iletiliyor mu?",
+    "faq4A": "A: Kesinlikle hayır. Tüm hesaplamalar tamamen tarayıcınızda yerel olarak gerçekleşir.",
+    "reviewDate": "Editöryal İnceleme: Kasım 2026",
+    "reviewTeam": "DopaBrain Stres Fizyolojisi Ekibi"
   }
 }

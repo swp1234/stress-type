@@ -176,5 +176,30 @@
     "emotionalAge": "Emotionales Alter",
     "workStyle": "Arbeitsstil-Test",
     "animalPersonality": "Tier-Persönlichkeit"
+  },
+  "about": {
+    "summaryTitle": "Stress-Typen-Leitfaden: Somatische Map, Physiologie & FAQ",
+    "scienceDesc": "Unter Belastung schüttet die HPA-Achse Cortisol und Adrenalin aus. Der Körper reagiert somatisch in Kopf, Nacken, Brust und Magen.",
+    "boundary": "Klinischer Hinweis: Dieser Test dient der somatischen Achtsamkeit und ersetzt keine fachärztliche Untersuchung.",
+    "phenotypesHeading": "Vier Grundlegende Stress-Phänotypen",
+    "typeOverthinker": "Der Grübler:",
+    "descOverthinker": "Mentale Gedankenschleifen, Spannungskopfschmerzen und Schlafstörungen.",
+    "typeVolcano": "Der Vulkan:",
+    "descVolcano": "Akute Kampf-Aktivierung, Herzklopfen und plötzliche emotionale Entladungen.",
+    "typePleaser": "Der Anpasser:",
+    "descPleaser": "Konfliktvermeidung durch Unterdrückung eigener Grenzen (Fawn-Reaktion).",
+    "typeHermit": "Der Einsiedler:",
+    "descHermit": "Erstarrung (Freeze-Reaktion), sozialer Rückzug und emotionale Taubheit.",
+    "faqTitle": "Häufig gestellte Fragen (FAQ)",
+    "faq1Q": "Q: Wie funktioniert die Somatische Heatmap?",
+    "faq1A": "A: Das Erfassen von Verspannungszonen verknüpft körperliche Signale mit Erregungsmustern des autonomen Nervensystems.",
+    "faq2Q": "Q: Was beschreibt das 4F-Modell?",
+    "faq2A": "A: Die angeborenen Überlebensreaktionen: Fight (Kampf), Flight (Flucht), Freeze (Erstarrung) und Fawn (Anpassung).",
+    "faq3Q": "Q: Wie schützt Typ-Erkennung vor Burnout?",
+    "faq3A": "A: Frühwarnsignale des Körpers ermöglichen gezielte Gegenmaßnahmen, bevor chronische Erschöpfung eintritt.",
+    "faq4Q": "Q: Werden Gesundheitsdaten gespeichert?",
+    "faq4A": "A: Niemals. Die Auswertung läuft vollständig privat und lokal in Ihrem Webbrowser ab.",
+    "reviewDate": "Redaktionelle Prüfung: November 2026",
+    "reviewTeam": "DopaBrain Stressphysiologie-Team"
   }
 }

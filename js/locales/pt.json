@@ -176,5 +176,30 @@
     "emotionalAge": "Idade Emocional",
     "workStyle": "Estilo de Trabalho",
     "animalPersonality": "Personalidade Animal"
+  },
+  "about": {
+    "summaryTitle": "Guia de Tipos de Estresse: Mapa Corporal, Fisiologia e FAQ",
+    "scienceDesc": "Sob pressão, o eixo HPA libera cortisol e adrenalina, provocando tensões somáticas na cabeça, ombros, peito e estômago.",
+    "boundary": "Aviso Clínico: Esta ferramenta é uma autoavaliação educativa somática e não substitui um diagnóstico médico especializado.",
+    "phenotypesHeading": "Quatro Fenótipos Primários de Estresse",
+    "typeOverthinker": "O Ruminador:",
+    "descOverthinker": "Pensamento obsessivo, dores de cabeça tensionais e insônia.",
+    "typeVolcano": "O Vulcão:",
+    "descVolcano": "Descarga simpática intensa, coração acelerado e explosões de irritabilidade.",
+    "typePleaser": "O Pacificador:",
+    "descPleaser": "Resposta de submissão (fawn), suprimindo próprias necessidades para evitar conflitos.",
+    "typeHermit": "O Eremita:",
+    "descHermit": "Resposta de congelamento (freeze), isolamento social e fadiga extrema.",
+    "faqTitle": "Perguntas Frequentes (FAQ)",
+    "faq1Q": "Q: Como funciona o mapa somático de calor?",
+    "faq1A": "A: Associa áreas corporais com os circuitos de alerta do sistema nervoso autônomo.",
+    "faq2Q": "Q: O que é o modelo 4F de sobrevivência?",
+    "faq2A": "A: As reações instintivas evolutivas: luta (fight), fuga (flight), congelamento (freeze) e apaziguamento (fawn).",
+    "faq3Q": "Q: Como a identificação do tipo previne o burnout?",
+    "faq3A": "A: Facilita a adoção de pausas conscientes antes que a sobrecarga alostática se torne crônica.",
+    "faq4Q": "Q: Meus dados corporais são salvos?",
+    "faq4A": "A: De forma alguma. Todos os cálculos ocorrem localmente no seu dispositivo.",
+    "reviewDate": "Revisão Editorial: Novembro 2026",
+    "reviewTeam": "Equipe de Fisiologia do Estresse DopaBrain"
   }
 }

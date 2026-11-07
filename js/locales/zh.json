@@ -176,5 +176,30 @@
     "emotionalAge": "心理情感年龄",
     "workStyle": "工作风格测试",
     "animalPersonality": "动物性格测试"
+  },
+  "about": {
+    "summaryTitle": "压力类型科学指南：身体热力图、四大表型与FAQ",
+    "scienceDesc": "当大脑感知负荷时，HPA轴（下丘脑-垂体-肾上腺轴）会分泌皮质醇与肾上腺素，在头部、颈肩、胸口及腹部引发可感知的躯体化张力。",
+    "boundary": "临床声明：本测试是一项用于识别身体压力警讯的自我察觉工具，不构成医学或精神病学临床诊断。",
+    "phenotypesHeading": "四大核心压力表型",
+    "typeOverthinker": "过度思考型 (The Overthinker):",
+    "descOverthinker": "大脑反复反刍、紧张性头痛、失眠，陷入分析瘫痪。",
+    "typeVolcano": "火山爆发型 (The Volcano):",
+    "descVolcano": "交感神经过度激活、心跳加速、易怒与情绪剧烈宣泄。",
+    "typePleaser": "讨好顺从型 (The People-Pleaser):",
+    "descPleaser": "迎合（Fawn）反应，极力回避冲突，压抑自身需求迎合他人。",
+    "typeHermit": "隐匿逃避型 (The Hermit):",
+    "descHermit": "冻结（Freeze）反应，社交撤退、情感麻木与身心耗竭。",
+    "faqTitle": "常见问题解答 (FAQ)",
+    "faq1Q": "Q: 身体热力图的科学原理是什么？",
+    "faq1A": "A: 通过标注紧张感集中的生理部位，将躯体化反应与植物神经系统的激活状态关联分析。",
+    "faq2Q": "Q: 什么是4F应激防御模型？",
+    "faq2A": "A: 指杏仁核面对威胁时引发的战斗（Fight）、逃跑（Flight）、冻结（Freeze）与讨好（Fawn）生存机制。",
+    "faq3Q": "Q: 了解压力类型如何预防职业倦怠？",
+    "faq3A": "A: 及早识别身体发出的微小信号，能在负荷演变为慢性身心耗竭前建立心理防护边界。",
+    "faq4Q": "Q: 我的身体选项与测试记录会被上传吗？",
+    "faq4A": "A: 绝不。所有运算均在本地浏览器中瞬间完成，不会记录或传输至外部服务器。",
+    "reviewDate": "内容审阅：2026年11月",
+    "reviewTeam": "DopaBrain 压力生理学团队"
   }
 }

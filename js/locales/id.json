@@ -176,5 +176,30 @@
     "emotionalAge": "Usia Emosional",
     "workStyle": "Gaya Kerja",
     "animalPersonality": "Kepribadian Hewan"
+  },
+  "about": {
+    "summaryTitle": "Panduan Sains Tipe Stres: Peta Tubuh Somatik & FAQ",
+    "scienceDesc": "Saat mengalami tekanan, aksis HPA memicu pelepasan kortisol dan adrenalin, memunculkan ketegangan somatik di kepala, leher, dada, dan perut.",
+    "boundary": "Catatan Medis: Tes ini adalah sarana edukasi kesadaran tubuh dan bukan pengganti diagnosis medis klinis.",
+    "phenotypesHeading": "Empat Fenotipe Utama Reaksi Stres",
+    "typeOverthinker": "Si Pemikir Berlebih:",
+    "descOverthinker": "Ruminasi pikiran tanpa henti, sakit kepala tegang, dan insomnia.",
+    "typeVolcano": "Si Gunung Berapi:",
+    "descVolcano": "Lonjakan saraf simpatik, jantung berdebar kencang, dan ledakan amarah mendadak.",
+    "typePleaser": "Si Penyenang Orang Lain:",
+    "descPleaser": "Respon kepatuhan (fawn), menekan kebutuhan diri demi menghindari konflik.",
+    "typeHermit": "Si Penyendiri:",
+    "descHermit": "Respon membeku (freeze), menarik diri dari sosial, dan mati rasa emosional.",
+    "faqTitle": "Pertanyaan Umum (FAQ)",
+    "faq1Q": "Q: Bagaimana cara kerja heatmap tubuh?",
+    "faq1A": "A: Menghubungkan titik ketegangan fisik dengan pola aktivasi sistem saraf otonom Anda.",
+    "faq2Q": "Q: Apa itu respon 4F dalam stres?",
+    "faq2A": "A: Reaksi biologis purba saat amigdala mendeteksi ancaman: Fight, Flight, Freeze, dan Fawn.",
+    "faq3Q": "Q: Bisakah mengenali tipe stres mencegah burnout?",
+    "faq3A": "A: Ya. Membaca tanda awal tubuh memungkinkan Anda mengambil jeda pemulihan sebelum kelelahan menjadi kronis.",
+    "faq4Q": "Q: Apakah data saya disimpan di server?",
+    "faq4A": "A: Tidak pernah. Seluruh pemrosesan berjalan lokal dan privat di peramban Anda.",
+    "reviewDate": "Tinjauan Redaksi: November 2026",
+    "reviewTeam": "Tim Fisiologi Stres DopaBrain"
   }
 }

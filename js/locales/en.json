@@ -176,5 +176,30 @@
     "emotionalAge": "Emotional Age",
     "workStyle": "Work Style",
     "animalPersonality": "Animal Personality"
+  },
+  "about": {
+    "summaryTitle": "About Stress Types: Somatic Heatmap, Physiology & FAQ",
+    "scienceDesc": "When the brain perceives pressure, the hypothalamic-pituitary-adrenal (HPA) axis releases cortisol and adrenaline. The body responds somatically in predictable patterns across the head, neck, chest, and stomach.",
+    "boundary": "Clinical Disclaimer: This assessment is an educational self-reflection framework for tracking bodily stress cues. It does not constitute medical diagnosis or clinical psychological screening.",
+    "phenotypesHeading": "Four Primary Stress Phenotypes",
+    "typeOverthinker": "The Overthinker:",
+    "descOverthinker": "Mental rumination, tension headaches, insomnia, and hyper-analytical worry loops.",
+    "typeVolcano": "The Volcano:",
+    "descVolcano": "Sympathetic nervous system fight surge, racing heart, irritability, and sudden emotional release.",
+    "typePleaser": "The People-Pleaser:",
+    "descPleaser": "Fawn stress response, conflict avoidance, suppressing personal needs to maintain external peace.",
+    "typeHermit": "The Hermit:",
+    "descHermit": "Freeze response, social withdrawal, emotional numbing, and executive fatigue.",
+    "faqTitle": "Frequently Asked Questions",
+    "faq1Q": "Q: How does the somatic body heatmap work?",
+    "faq1A": "A: Tapping your body tension zones correlates physical symptoms with autonomic nervous system arousal patterns, creating an individualized stress profile.",
+    "faq2Q": "Q: What is the fight-flight-freeze-fawn model?",
+    "faq2A": "A: It describes the evolutionary survival responses triggered when the amygdala perceives threat, determining whether a person confronts, flees, freezes, or appeases.",
+    "faq3Q": "Q: Can recognizing stress types prevent burnout?",
+    "faq3A": "A: Yes. Identifying early bodily signals allows you to employ targeted decompression exercises, setting boundaries before allostatic load becomes chronic burnout.",
+    "faq4Q": "Q: Are my health responses or selections saved?",
+    "faq4A": "A: Never. All calculations are executed locally in your browser. No somatic choices, answers, or stress types are ever collected or sent to remote servers.",
+    "reviewDate": "Editorial Review: November 2026",
+    "reviewTeam": "DopaBrain Stress Physiology Team"
   }
 }

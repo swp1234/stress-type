@@ -176,5 +176,30 @@
     "emotionalAge": "Edad Emocional",
     "workStyle": "Estilo de Trabajo",
     "animalPersonality": "Animal Interior"
+  },
+  "about": {
+    "summaryTitle": "Guía de Tipos de Estrés: Mapa Corporal, Fisiología y FAQ",
+    "scienceDesc": "Cuando el cerebro percibe presión, el eje HPA libera cortisol y adrenalina, manifestando tensión somática en la cabeza, cuello, pecho y abdomen.",
+    "boundary": "Aviso Clínico: Esta evaluación es una herramienta educativa de autorreflexión somática y no sustituye el diagnóstico médico o psicológico.",
+    "phenotypesHeading": "Cuatro Fenotipos Primarios de Estrés",
+    "typeOverthinker": "El Rumiador Mental:",
+    "descOverthinker": "Rumiación cognitiva, cefaleas tensionales e insomnio por hiperalerta analítica.",
+    "typeVolcano": "El Volcán:",
+    "descVolcano": "Activación simpática aguda, pulso acelerado y descargas explosivas de irritabilidad.",
+    "typePleaser": "El Complaciente:",
+    "descPleaser": "Respuesta de sumisión (fawn), evitando conflictos y sacrificando necesidades personales.",
+    "typeHermit": "El Ermitaño:",
+    "descHermit": "Respuesta de congelamiento (freeze), aislamiento social y fatiga afectiva.",
+    "faqTitle": "Preguntas Frecuentes (FAQ)",
+    "faq1Q": "Q: ¿Cómo funciona el mapa somático de calor?",
+    "faq1A": "A: Relaciona los puntos de tensión corporal con patrones de activación del sistema nervioso autónomo.",
+    "faq2Q": "Q: ¿Qué es el modelo 4F del estrés?",
+    "faq2A": "A: Describe las respuestas evolutivas de defensa: lucha (fight), huida (flight), congelación (freeze) y sumisión (fawn).",
+    "faq3Q": "Q: ¿Cómo previene el agotamiento crónico?",
+    "faq3A": "A: Permite aplicar pausas restaurativas específicas antes de que la carga alostática se convierta en burnout.",
+    "faq4Q": "Q: ¿Se almacenan mis respuestas de salud?",
+    "faq4A": "A: Jamás. Todas las operaciones se realizan 100% de manera local y privada en su navegador.",
+    "reviewDate": "Revisión Editorial: Noviembre 2026",
+    "reviewTeam": "Equipo de Fisiología del Estrés DopaBrain"
   }
 }
