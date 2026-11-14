@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +7,8 @@
   <title>Stress Type Test - Free Burnout Quiz | DopaBrain</title>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3600813755953882" crossorigin="anonymous"></script>
   <meta name="description" content="Discover your stress type with an interactive body heatmap and 8 real-life scenarios. Are you an Overthinker, Volcano, or People-Pleaser? Try free!">
-    <meta name="dateModified" content="2026-11-12">
-  <meta name="keywords" content="스트레스 유형 테스트, 바디 히트맵, 스트레스 반응, 심리테스트, 스트레스 자가진단, 번아웃 테스트">
+    <meta name="dateModified" content="2026-11-14">
+  <meta name="keywords" content="stress type test, burnout quiz, stress response test, body heatmap stress, fight flight freeze test, dopabrain">
   <meta name="theme-color" content="#ff6b35">
   <link rel="canonical" href="https://dopabrain.com/stress-type/">
 
@@ -20,8 +20,8 @@
   <meta property="og:image:width" content="512">
   <meta property="og:image:height" content="512">
   <meta property="og:image:type" content="image/png">
-  <meta property="og:locale" content="ko_KR">
-  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="ko_KR">
   <meta property="og:locale:alternate" content="ja_JP">
   <meta property="og:locale:alternate" content="zh_CN">
 
@@ -30,8 +30,8 @@
   <meta name="twitter:description" content="Body heatmap + 8 scenarios reveal your stress type. Are you an Overthinker or Volcano?">
   <meta name="twitter:image" content="https://dopabrain.com/portal/img/og/stress-type.png">
 
-  <link rel="alternate" hreflang="ko" href="https://dopabrain.com/stress-type/">
-  <link rel="alternate" hreflang="en" href="https://dopabrain.com/stress-type/?lang=en">
+  <link rel="alternate" hreflang="en" href="https://dopabrain.com/stress-type/">
+  <link rel="alternate" hreflang="ko" href="https://dopabrain.com/stress-type/?lang=ko">
   <link rel="alternate" hreflang="zh" href="https://dopabrain.com/stress-type/?lang=zh">
   <link rel="alternate" hreflang="hi" href="https://dopabrain.com/stress-type/?lang=hi">
   <link rel="alternate" hreflang="ru" href="https://dopabrain.com/stress-type/?lang=ru">
@@ -43,6 +43,19 @@
   <link rel="alternate" hreflang="de" href="https://dopabrain.com/stress-type/?lang=de">
   <link rel="alternate" hreflang="fr" href="https://dopabrain.com/stress-type/?lang=fr">
   <link rel="alternate" hreflang="x-default" href="https://dopabrain.com/stress-type/">
+  <script>
+  (function () {
+    var lang = new URLSearchParams(window.location.search).get('lang');
+    if (!lang) return;
+    var target = document.querySelector('link[rel="alternate"][hreflang="' + lang + '"]');
+    if (!target) return;
+    var canonical = document.querySelector('link[rel="canonical"]');
+    if (canonical) canonical.href = target.href;
+    var ogUrl = document.querySelector('meta[property="og:url"]');
+    if (ogUrl) ogUrl.content = target.href;
+    document.documentElement.lang = lang;
+  })();
+  </script>
 
   <script type="application/ld+json">
   {
@@ -1029,8 +1042,8 @@
           <ellipse class="body-zone" data-zone="stomach" cx="100" cy="168" rx="30" ry="24" />
           <text class="body-zone-label" x="100" y="168" data-zone-label="stomach">Stomach</text>
 
-          <!-- Upper Back -->
-          <rect class="body-zone" data-zone="upper_back" x="72" y="92" width="56" height="40" rx="8" opacity="0" />
+          <!-- Upper Back (rendered via dedicated toggle button below) -->
+          <rect class="body-zone" data-zone="upper_back" x="72" y="92" width="56" height="40" rx="8" opacity="0" style="pointer-events:none;" />
           <!-- Rendered as overlay label below chest -->
 
           <!-- Lower Back -->
@@ -1062,12 +1075,12 @@
           <!-- Body outline (decorative, behind zones) -->
         </svg>
 
-        <!-- Upper back toggle button (overlaid since it overlaps chest) -->
+        <!-- Upper back toggle button (placed below SVG so Chest stays 100% tappable and >=44px target) -->
         <button class="body-zone-overlay" id="upper-back-btn"
-                style="position:absolute;top:22%;left:50%;transform:translateX(-50%);
+                style="display:inline-flex;align-items:center;justify-content:center;margin:12px auto 0;
                        background:var(--surface);border:1px solid var(--border);color:var(--text-muted);
-                       padding:6px 14px;border-radius:20px;font-size:11px;cursor:pointer;
-                       transition:all 0.2s;min-height:32px;white-space:nowrap;z-index:2;"
+                       padding:10px 18px;border-radius:20px;font-size:13px;cursor:pointer;
+                       transition:all 0.2s;min-height:44px;min-width:44px;white-space:nowrap;"
                 data-zone="upper_back">
           <span data-zone-label="upper_back" data-i18n="body.zones.upper_back">Upper Back</span>
         </button>
@@ -1661,7 +1674,7 @@
       const appsEl = $('recommended-apps');
       appsEl.innerHTML = '';
       const appKeys = t(`types.${primaryType}.apps`);
-      const currentLang = (window.i18n && window.i18n.currentLang) || (new URLSearchParams(window.location.search).get('lang')) || 'ko';
+      const currentLang = (window.i18n && window.i18n.currentLang) || (new URLSearchParams(window.location.search).get('lang')) || 'en';
       if (Array.isArray(appKeys)) {
         appKeys.forEach(appKey => {
           const info = APP_LINKS[appKey];
@@ -1725,7 +1738,7 @@
     /* ===== Init ===== */
 
     function preserveLanguageLinks() {
-      const currentLang = (window.i18n && window.i18n.currentLang) || (new URLSearchParams(window.location.search).get('lang')) || 'ko';
+      const currentLang = (window.i18n && window.i18n.currentLang) || (new URLSearchParams(window.location.search).get('lang')) || 'en';
       const links = document.querySelectorAll('.related-card, .related-grid a, section.related-games a');
       const base = (window.location.origin && window.location.origin !== 'null') ? window.location.origin : 'https://dopabrain.com';
       links.forEach(link => {

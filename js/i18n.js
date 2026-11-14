@@ -48,20 +48,45 @@ class I18n {
             if (!this.translations[lang]) await this.loadTranslations(lang);
             this.currentLang = lang;
             localStorage.setItem('app_language', lang);
-            document.documentElement.lang = lang;
+            this.syncSeoState(lang);
             this.updateUI();
         } catch (e) {}
         return true;
     }
+    getSeoHref(lang = this.currentLang) {
+        const baseUrl = 'https://dopabrain.com/stress-type/';
+        const safeLang = this.supportedLanguages.includes(lang) ? lang : 'en';
+        const alt = document.querySelector(`link[rel="alternate"][hreflang="${safeLang}"]`);
+        if (alt && alt.href) return alt.href;
+        return safeLang === 'en' ? baseUrl : `${baseUrl}?lang=${encodeURIComponent(safeLang)}`;
+    }
+    syncSeoState(lang = this.currentLang) {
+        const safeLang = this.supportedLanguages.includes(lang) ? lang : 'en';
+        document.documentElement.lang = safeLang;
+        const seoHref = this.getSeoHref(safeLang);
+        const canonical = document.querySelector('link[rel="canonical"]');
+        if (canonical) canonical.href = seoHref;
+        const ogUrl = document.querySelector('meta[property="og:url"]');
+        if (ogUrl) ogUrl.content = seoHref;
+        const ogLocaleMap = {
+            ko: 'ko_KR', en: 'en_US', ja: 'ja_JP', zh: 'zh_CN', es: 'es_ES', pt: 'pt_BR',
+            hi: 'hi_IN', ru: 'ru_RU', id: 'id_ID', tr: 'tr_TR', de: 'de_DE', fr: 'fr_FR'
+        };
+        const ogLocale = document.querySelector('meta[property="og:locale"]');
+        if (ogLocale && ogLocaleMap[safeLang]) ogLocale.content = ogLocaleMap[safeLang];
+    }
     updateUI() {
         try {
+            this.syncSeoState(this.currentLang);
             document.querySelectorAll('[data-i18n]').forEach(el => {
-                const val = this.t(el.getAttribute('data-i18n'));
-                if (typeof val === 'string') el.textContent = val;
+                const key = el.getAttribute('data-i18n');
+                const val = this.t(key);
+                if (typeof val === 'string' && val && val !== key) el.textContent = val;
             });
             document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
-                const val = this.t(el.getAttribute('data-i18n-placeholder'));
-                if (typeof val === 'string') el.placeholder = val;
+                const key = el.getAttribute('data-i18n-placeholder');
+                const val = this.t(key);
+                if (typeof val === 'string' && val && val !== key) el.placeholder = val;
             });
             const titleKey = 'app.title';
             const title = this.t(titleKey);
@@ -84,3 +109,4 @@ class I18n {
     }
 }
 const i18n = new I18n();
+window.i18n = i18n;
