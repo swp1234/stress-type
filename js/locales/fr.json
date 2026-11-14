@@ -202,5 +202,15 @@
     "faq4A": "A: Non, jamais. Toutes les données sont traitées exclusivement en local dans votre navigateur.",
     "reviewDate": "Revue Éditoriale : Novembre 2026",
     "reviewTeam": "Équipe Physiologie du Stress DopaBrain"
+  },
+  "curated": {
+    "badge": "LECTURES ANTI-STRESS",
+    "title": "Livres Recommandés pour Clôturer le Cycle du Stress",
+    "book1Title": "Pourquoi les zèbres n’ont pas d’ulcères",
+    "book1Desc": "Robert M. Sapolsky • Comprendre l’axe du stress et les tensions somatiques chroniques.",
+    "book2Title": "Burn-out : Libérer le cycle du stress",
+    "book2Desc": "Emily Nagoski • Méthodes concrètes pour apaiser les réponses de lutte, fuite ou figement.",
+    "readPill": "Voir le livre ↗",
+    "disclosure": "Sélection éditoriale dédiée à la physiologie du stress."
   }
 }

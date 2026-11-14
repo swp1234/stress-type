@@ -202,5 +202,15 @@
     "faq4A": "A: Never. All calculations are executed locally in your browser. No somatic choices, answers, or stress types are ever collected or sent to remote servers.",
     "reviewDate": "Editorial Review: November 2026",
     "reviewTeam": "DopaBrain Stress Physiology Team"
+  },
+  "curated": {
+    "badge": "SOMATIC STRESS READING",
+    "title": "Recommended Books to Reset Your Stress Cycle",
+    "book1Title": "Why Zebras Don't Get Ulcers",
+    "book1Desc": "Robert M. Sapolsky, Ph.D. • How HPA-axis cortisol & bodily tension respond to chronic pressure.",
+    "book2Title": "Burnout: The Secret to Unlocking the Stress Cycle",
+    "book2Desc": "Emily Nagoski, Ph.D. • Practical somatic movement & breathing steps to complete the stress response.",
+    "readPill": "View Book ↗",
+    "disclosure": "Curated for somatic stress education. Links adapt by region (dopabrain-20)."
   }
 }

@@ -202,5 +202,15 @@
     "faq4A": "A: De forma alguma. Todos os cálculos ocorrem localmente no seu dispositivo.",
     "reviewDate": "Revisão Editorial: Novembro 2026",
     "reviewTeam": "Equipe de Fisiologia do Estresse DopaBrain"
+  },
+  "curated": {
+    "badge": "LEITURAS SOBRE ESTRESSE SOMÁTICO",
+    "title": "Livros Recomendados para Completar o Ciclo do Estresse",
+    "book1Title": "Por que as zebras não têm úlceras?",
+    "book1Desc": "Robert M. Sapolsky • Como a tensão física e o cortisol respondem à sobrecarga crônica.",
+    "book2Title": "Burnout: O segredo para romper o ciclo do estresse",
+    "book2Desc": "Emily Nagoski • Práticas simples de respiração e movimento para aliviar o corpo.",
+    "readPill": "Ver livro ↗",
+    "disclosure": "Curadoria educativa sobre fisiologia do estresse e recuperação."
   }
 }

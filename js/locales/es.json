@@ -202,5 +202,15 @@
     "faq4A": "A: Jamás. Todas las operaciones se realizan 100% de manera local y privada en su navegador.",
     "reviewDate": "Revisión Editorial: Noviembre 2026",
     "reviewTeam": "Equipo de Fisiología del Estrés DopaBrain"
+  },
+  "curated": {
+    "badge": "LECTURAS DE REGULACIÓN SOMÁTICA",
+    "title": "Libros Recomendados para Cerrar el Ciclo del Estrés",
+    "book1Title": "¿Por qué las cebras no tienen úlcera?",
+    "book1Desc": "Robert M. Sapolsky • Cómo el cortisol y la tensión crónica se expresan en el cuerpo.",
+    "book2Title": "Burnout: El secreto para desbloquear el ciclo del estrés",
+    "book2Desc": "Emily Nagoski • Estrategias prácticas para liberar la respuesta de lucha, huida o bloqueo.",
+    "readPill": "Ver libro ↗",
+    "disclosure": "Lecturas educativas seleccionadas sobre fisiología del estrés."
   }
 }

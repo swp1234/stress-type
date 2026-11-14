@@ -202,5 +202,15 @@
     "faq4A": "A: Tidak pernah. Seluruh pemrosesan berjalan lokal dan privat di peramban Anda.",
     "reviewDate": "Tinjauan Redaksi: November 2026",
     "reviewTeam": "Tim Fisiologi Stres DopaBrain"
+  },
+  "curated": {
+    "badge": "BACAAN SAINS STRES",
+    "title": "Buku Rekomendasi untuk Mereset Siklus Stres Tubuh",
+    "book1Title": "Why Zebras Don't Get Ulcers",
+    "book1Desc": "Robert M. Sapolsky • Bagaimana stres kronis memengaruhi ketegangan otot & saraf.",
+    "book2Title": "Burnout: Unlocking the Stress Cycle",
+    "book2Desc": "Emily Nagoski • Langkah praktis menyelesaikan respons lawan-lari-beku dalam tubuh.",
+    "readPill": "Lihat Buku ↗",
+    "disclosure": "Pilihan bacaan berbasis bukti untuk memahami sinyal stres tubuh."
   }
 }

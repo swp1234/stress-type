@@ -202,5 +202,15 @@
     "faq4A": "A: Niemals. Die Auswertung läuft vollständig privat und lokal in Ihrem Webbrowser ab.",
     "reviewDate": "Redaktionelle Prüfung: November 2026",
     "reviewTeam": "DopaBrain Stressphysiologie-Team"
+  },
+  "curated": {
+    "badge": "SOMATISCHE STRESSLITERATUR",
+    "title": "Empfohlene Bücher zum Abschließen des Stresszyklus",
+    "book1Title": "Warum Zebras keine Magengeschwüre bekommen",
+    "book1Desc": "Prof. Robert M. Sapolsky • Wie Cortisol und Stressreaktionen sich körperlich manifestieren.",
+    "book2Title": "Burnout: Den Stresszyklus erfolgreich durchbrechen",
+    "book2Desc": "Emily Nagoski • Wissenschaftliche Körper- und Atemübungen zum Entladen von Anspannung.",
+    "readPill": "Ansehen ↗",
+    "disclosure": "Kuratierte Fachliteratur zur Stressphysiologie."
   }
 }

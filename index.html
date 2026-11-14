@@ -861,6 +861,23 @@
       .type-preview { grid-template-columns: 1fr 1fr; }
       .body-svg-wrap { width: 220px; }
     }
+  
+    .curated-resources-card { max-width: 480px; margin: 18px auto; padding: 18px; background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; text-align: left; box-sizing: border-box; }
+    .curated-badge { display: inline-block; font-size: 10px; font-weight: 800; letter-spacing: 0.06em; color: #fdba74; background: rgba(255,107,53,0.16); padding: 3px 8px; border-radius: 6px; }
+    .curated-title { font-size: 15px; font-weight: 700; color: var(--text, #f8fafc); margin: 6px 0 12px; }
+    .curated-grid { display: flex; flex-direction: column; gap: 10px; }
+    .curated-item { display: flex; align-items: center; gap: 12px; min-height: 48px; padding: 12px 14px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 12px; text-decoration: none; color: inherit; transition: all 0.2s; box-sizing: border-box; touch-action: manipulation; }
+    .curated-item:hover { border-color: rgba(255,107,53,0.45); background: rgba(255,255,255,0.07); transform: translateY(-1px); }
+    .curated-icon { font-size: 22px; flex-shrink: 0; }
+    .curated-info { flex: 1; min-width: 0; }
+    .curated-info strong { display: block; font-size: 13.5px; line-height: 1.35; margin-bottom: 2px; color: var(--text, #f8fafc); }
+    .curated-info span { display: block; font-size: 11.5px; line-height: 1.4; color: var(--text-muted, #94a3b8); }
+    .curated-ext-pill { flex-shrink: 0; font-size: 11px; font-weight: 700; color: #fdba74; background: rgba(255,107,53,0.14); padding: 5px 8px; border-radius: 6px; white-space: nowrap; }
+    .curated-disclosure { margin: 10px 0 0; font-size: 11px; color: var(--text-muted, #94a3b8); line-height: 1.4; }
+    [data-theme="light"] .curated-resources-card { background: rgba(255,107,53,0.04); border-color: rgba(255,107,53,0.2); }
+    [data-theme="light"] .curated-badge, [data-theme="light"] .curated-ext-pill { color: #c2410c; }
+    [data-theme="light"] .curated-item { background: #fff; border-color: rgba(0,0,0,0.1); }
+
   </style>
     <!-- Schema.org - WebApplication -->
     <script type="application/ld+json">
@@ -1176,6 +1193,34 @@
       </div>
 
       
+
+      <!-- Curated Somatic Stress Reading -->
+      <div class="curated-resources-card" id="curated-resources-card">
+        <div class="curated-header">
+          <span class="curated-badge" data-i18n="curated.badge">SOMATIC STRESS READING</span>
+          <h4 class="curated-title" data-i18n="curated.title">Recommended Books to Reset Your Stress Cycle</h4>
+        </div>
+        <div class="curated-grid">
+          <a href="https://www.amazon.com/dp/0805073698?tag=dopabrain-20" target="_blank" rel="noopener noreferrer nofollow" class="curated-item" data-curated-key="zebras">
+            <span class="curated-icon" aria-hidden="true">🦓</span>
+            <div class="curated-info">
+              <strong data-i18n="curated.book1Title">Why Zebras Don't Get Ulcers</strong>
+              <span data-i18n="curated.book1Desc">Robert M. Sapolsky, Ph.D. • How HPA-axis cortisol &amp; bodily tension respond to chronic pressure.</span>
+            </div>
+            <span class="curated-ext-pill" data-i18n="curated.readPill">View Book ↗</span>
+          </a>
+          <a href="https://www.amazon.com/dp/1984818325?tag=dopabrain-20" target="_blank" rel="noopener noreferrer nofollow" class="curated-item" data-curated-key="burnoutCycle">
+            <span class="curated-icon" aria-hidden="true">🔥</span>
+            <div class="curated-info">
+              <strong data-i18n="curated.book2Title">Burnout: The Secret to Unlocking the Stress Cycle</strong>
+              <span data-i18n="curated.book2Desc">Emily Nagoski, Ph.D. • Practical somatic movement &amp; breathing steps to complete the stress response.</span>
+            </div>
+            <span class="curated-ext-pill" data-i18n="curated.readPill">View Book ↗</span>
+          </a>
+        </div>
+        <p class="curated-disclosure" data-i18n="curated.disclosure">Curated for somatic stress education. Links adapt by region (dopabrain-20).</p>
+      </div>
+
     <!-- Educational Stress Physiology Guide & FAQ Section -->
     <section class="about-section" style="max-width:480px;margin:24px auto 16px;padding:0 12px;box-sizing:border-box;">
       <details class="about-test faq-accordion" open style="background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:14px;overflow:hidden;text-align:left;">
@@ -1737,7 +1782,54 @@
 
     /* ===== Init ===== */
 
+
+    function updateCuratedResources(lang) {
+      const asins = { zebras: '0805073698', burnoutCycle: '1984818325' };
+      const koQueries = { zebras: '얼룩말은 왜 위궤양에 걸리지 않는가', burnoutCycle: '번아웃 에밀리 나고스키' };
+      const amazonDomains = {
+        en: { domain: 'amazon.com', tag: 'dopabrain-20' },
+        de: { domain: 'amazon.de', tag: '' },
+        fr: { domain: 'amazon.fr', tag: '' },
+        es: { domain: 'amazon.es', tag: '' },
+        pt: { domain: 'amazon.com', tag: 'dopabrain-20' },
+        ja: { domain: 'amazon.co.jp', tag: '' }
+      };
+      const resolvedLang = lang || (window.i18n && window.i18n.currentLang) || 'en';
+      document.querySelectorAll('#curated-resources-card .curated-item').forEach(item => {
+        const key = item.dataset.curatedKey;
+        const asin = asins[key];
+        if (!asin) return;
+        if (resolvedLang === 'ko') {
+          item.href = 'https://search.kyobobook.co.kr/search?keyword=' + encodeURIComponent(koQueries[key] || key);
+        } else {
+          const market = amazonDomains[resolvedLang] || amazonDomains.en;
+          item.href = 'https://www.' + market.domain + '/dp/' + asin + (market.tag ? ('?tag=' + market.tag) : '');
+        }
+        if (!item.dataset.curatedTracked) {
+          item.dataset.curatedTracked = 'true';
+          item.addEventListener('click', () => {
+            if (typeof gtag === 'function') {
+              gtag('event', 'curated_resource_click', {
+                app_name: 'stress-type',
+                event_category: 'stress_type',
+                resource_key: key,
+                content_locale: (window.i18n && window.i18n.currentLang) || resolvedLang,
+                cta_surface: 'curated_resources'
+              });
+              gtag('event', 'content_cta_click', {
+                cta_surface: 'stress_type_curated',
+                destination: item.href,
+                source: 'stress_type_result',
+                lang: (window.i18n && window.i18n.currentLang) || resolvedLang
+              });
+            }
+          });
+        }
+      });
+    }
+
     function preserveLanguageLinks() {
+      updateCuratedResources();
       const currentLang = (window.i18n && window.i18n.currentLang) || (new URLSearchParams(window.location.search).get('lang')) || 'en';
       const links = document.querySelectorAll('.related-card, .related-grid a, section.related-games a');
       const base = (window.location.origin && window.location.origin !== 'null') ? window.location.origin : 'https://dopabrain.com';

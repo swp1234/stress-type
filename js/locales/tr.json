@@ -202,5 +202,15 @@
     "faq4A": "A: Kesinlikle hayır. Tüm hesaplamalar tamamen tarayıcınızda yerel olarak gerçekleşir.",
     "reviewDate": "Editöryal İnceleme: Kasım 2026",
     "reviewTeam": "DopaBrain Stres Fizyolojisi Ekibi"
+  },
+  "curated": {
+    "badge": "SOMATİK STRES OKUMALARI",
+    "title": "Stres Döngüsünü Sıfırlamak İçin Önerilen Kitaplar",
+    "book1Title": "Zebralar Neden Ülser Olmaz?",
+    "book1Desc": "Robert M. Sapolsky • Kronik baskının bedende bıraktığı gerilimi ve kortizol tepkisini anlayın.",
+    "book2Title": "Tükenmişlik (Burnout)",
+    "book2Desc": "Emily Nagoski • Savaş-kaç-don tepkisini bedenden sağlıklı şekilde boşaltma rehberi.",
+    "readPill": "İncele ↗",
+    "disclosure": "Stres fizyolojisini derinlemesine anlamak için seçilen kaynaklar."
   }
 }

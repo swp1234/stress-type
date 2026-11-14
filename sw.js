@@ -1,4 +1,4 @@
-const CACHE_NAME = 'stress-type-v1';
+const CACHE_NAME = 'stress-type-v2';
 const ASSETS = [
   '/stress-type/',
   '/stress-type/index.html',
